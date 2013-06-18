@@ -11,6 +11,24 @@ import java.util.List;
  * @author Rayan
  */
 public class Usuario {
+    private static Usuario instance;
+
+    /**
+     * @return the instance
+     */
+    public static Usuario getInstance() {
+        if(instance == null)
+            return new Usuario();
+        else
+            return instance;
+    }
+
+    /**
+     * @param aInstance the instance to set
+     */
+    public Usuario(){
+        instance = this;
+    }
     private String login;
     private String senha;
     private String nome;
