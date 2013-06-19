@@ -167,9 +167,10 @@ public class PrincipalController implements Initializable {
     @FXML
     private void abrirListas(){
         ObservableList<String> itens = null;
-       // listaListas.setItems(itens);
-        itens = FXCollections.observableArrayList ("pegar os itens do xml e adicionar");
-        listaListas.setCellFactory(CheckBoxListCell.forListView((Callback<String, ObservableValue<Boolean>>) itens));
+        listaListas.setItems(itens);
+        itens = FXCollections.observableArrayList ("123", "123", "12312312");
+        listaListas.setItems(itens);
+        //listaListas.setCellFactory(CheckBoxListCell.forListView((Callback<String, ObservableValue<Boolean>>) itens));
         //listaListas.setItems(itens);
         System.out.println("abriu listas");   
     }

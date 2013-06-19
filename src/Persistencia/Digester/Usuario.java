@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Digester;
+package Persistencia.Digester;
 
 /**
  *
  * @author Rayan
  */
-public class Subitem {
+public class Usuario {
     
 }
