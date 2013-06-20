@@ -7,7 +7,7 @@ package Persistencia;
 import Modelo.Usuario;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public final class Autenticador {
     
-    protected List<Usuario> todosUsuarios = null;
+    protected ArrayList<Usuario> todosUsuarios = null;
     
     protected void instanciarUsuarios(){
         String localizacao = null;      
@@ -38,7 +38,7 @@ public final class Autenticador {
     }
     
     public Autenticador(){
-        todosUsuarios = null;
+        todosUsuarios = new ArrayList<>();
         instanciarUsuarios();
     }
     
