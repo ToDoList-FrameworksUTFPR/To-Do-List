@@ -4,6 +4,8 @@
  */
 package Visao;
 
+import Modelo.Usuario;
+import Persistencia.Autenticador;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -21,6 +23,7 @@ import javafx.scene.paint.Paint;
 public class LoginController implements Initializable {
     
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
+    private Autenticador autenticador;
     
     @FXML
     private Label lblCadastrar;
@@ -43,6 +46,14 @@ public class LoginController implements Initializable {
             lblInformacao.setText("Login / Senha devem ser preenchidos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         }else{
+            /*
+            Usuario temp = new Usuario();
+            temp.setLogin("");
+            temp.setSenha("");
+            if(autenticador.verificarLogin(temp)){
+            *
+            * }
+             */
             if("teste".equals(txtLogin.getText()) && "teste".equals(txtSenha.getText())){
                 lblInformacao.setText("Login / Senha validados com sucesso.");
                 lblInformacao.setTextFill(Paint.valueOf("green"));
