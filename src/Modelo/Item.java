@@ -1,11 +1,16 @@
+package Modelo;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
 
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  *
@@ -15,12 +20,15 @@ public class Item {
     private String nome;
     private String local;
     private int prioridade;
-    private Date dataCriacao;
-    private Date dataFinalizar;
-    private Date dataFinalizado;
+    private String dataCriacao;
+    private String dataFinalizar;
+    private String dataFinalizado;
     private String descricao;
-    private List<Subitem> listaSubItens;
+    private ArrayList<Subitem> listaSubItens;
 
+    public Item(){
+        listaSubItens = new ArrayList<>();
+    }
     /**
      * @return the nome
      */
@@ -66,42 +74,48 @@ public class Item {
     /**
      * @return the dataCriacao
      */
-    public Date getDataCriacao() {
+    public String getDataCriacao() {
         return dataCriacao;
     }
 
     /**
      * @param dataCriacao the dataCriacao to set
      */
-    public void setDataCriacao(Date dataCriacao) {
+    public void setDataCriacao(String dataCriacao) {
+        /*DateFormat dt = new SimpleDateFormat("dd/MM/yyyy");  
+        Date date = new Date();  
+        try {
+            date = (Date)dt.parse(dataCriacao);
+        } catch (ParseException ex) {}*/
         this.dataCriacao = dataCriacao;
     }
 
     /**
      * @return the dataFinalizar
      */
-    public Date getDataFinalizar() {
+    public String getDataFinalizar() {
         return dataFinalizar;
     }
 
     /**
      * @param dataFinalizar the dataFinalizar to set
      */
-    public void setDataFinalizar(Date dataFinalizar) {
+    public void setDataFinalizar(String dataFinalizar) {
         this.dataFinalizar = dataFinalizar;
     }
 
     /**
      * @return the dataFinalizado
      */
-    public Date getDataFinalizado() {
+    public String getDataFinalizado() {
         return dataFinalizado;
     }
 
     /**
      * @param dataFinalizado the dataFinalizado to set
      */
-    public void setDataFinalizado(Date dataFinalizado) {
+    public void setDataFinalizado(String dataFinalizado) {
+       
         this.dataFinalizado = dataFinalizado;
     }
 
@@ -122,15 +136,55 @@ public class Item {
     /**
      * @return the listaSubItens
      */
-    public List<Subitem> getListaSubItens() {
+    public ArrayList<Subitem> getListaSubItens() {
         return listaSubItens;
-    }
-
-    /**
-     * @param listaSubItens the listaSubItens to set
-     */
-    public void setListaSubItens(List<Subitem> listaSubItens) {
-        this.listaSubItens = listaSubItens;
-    }
+    }  
    
+    public void adicionarSubitem(Subitem l){
+        this.listaSubItens.add(l);
+    }
+    public Subitem encontrarSubitem(String nome){
+        for(Subitem l : listaSubItens){
+            if(l.getNome().equals(nome)){
+                return l;
+            }
+        }
+        return null;
+    }
+    public void removerSubItem(Subitem l){
+        listaSubItens.remove(l);
+
+    }
+    @Override
+    public String toString() {
+        String dtCriacao = null;
+        String dtFinalizar = null;
+        String dtFinalizado = null;
+        if (dataCriacao != null) {
+            dtCriacao = DateFormat.getDateInstance().format(dataCriacao);
+        }
+        if (dataFinalizar != null) {
+            dtFinalizar = DateFormat.getDateInstance().format(dataFinalizar);
+        }
+        if (dataFinalizado != null) {
+            dtFinalizado = DateFormat.getDateInstance().format(dataFinalizado);
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("[Item nome=");
+        sb.append(nome);
+        sb.append(" local=");
+        sb.append(local);
+        sb.append(" prioridade=");
+        sb.append(prioridade);
+        sb.append(" descricao=");
+        sb.append(descricao);
+        sb.append(" dataCriacao=");
+        sb.append(dtCriacao);
+        sb.append(" dataFinalizar=");
+        sb.append(dtFinalizar);
+        sb.append(" dataFinalizado=");
+        sb.append(dtFinalizado);
+        sb.append("]");
+        return sb.toString();
+    }
 }

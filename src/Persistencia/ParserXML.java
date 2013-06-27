@@ -4,14 +4,13 @@
  */
 package Persistencia;
 
-import Modelo.Item;
-import Modelo.Lista;
-import Modelo.Subitem;
 import Modelo.Usuario;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import org.apache.commons.digester3.Digester;
+import org.apache.commons.digester3.binder.DigesterLoader;
+import org.apache.commons.digester3.xmlrules.FromXmlRulesModule;
 import org.xml.sax.SAXException;
 
 /**
@@ -21,40 +20,23 @@ import org.xml.sax.SAXException;
 public class ParserXML {
     private Usuario retorno = null;
     public ParserXML(String arquivo) {
+        DigesterLoader digesterLoader = DigesterLoader.newLoader(new FromXmlRulesModule() {
+            @Override
+            protected void loadRules() {
+                loadXMLRules(new File("src/xml/digester-catalog-rules.xml")); //getClass().getResource("/digester-catalog-rules.xml")
+
+            }
+        });
+        Digester digester = digesterLoader.newDigester();
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+        digester.push(usuarios);
+
         try {
-         Digester digester = new Digester();
-         digester.setValidating( false );
-
-         digester.addObjectCreate( "usuario", Usuario.class );
-		 digester.addSetProperties( "usuario", "login", "login" );
-		 digester.addSetProperties( "usuario", "senha", "senha" );
-		 digester.addSetProperties( "usuario", "nome", "nome" );
-
-         digester.addObjectCreate( "usuario/listas/lista", Lista.class );
-		 digester.addSetProperties( "usuario/listas/lista", "nome", "nome" );
-                 
-         digester.addObjectCreate( "usuario/listas/lista/item", Item.class );
-                 
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "nome" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "local" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "prioridade" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "dataCriacao" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "dataFinalizar" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "dataFinalizado" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item", "descricao" );
-         
-         digester.addObjectCreate( "usuario/listas/lista/item/subitens/subitem", Subitem.class );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item/subitens/subitem", "nome" );
-                digester.addBeanPropertySetter( "usuario/listas/lista/item/subitens/subitem", "realizado" );
-         
-                
-
-
-         File inputFile = new File(arquivo);
-         retorno = (Usuario) digester.parse( inputFile );           
-
-      } catch( IOException | SAXException exc ) {
-      }
+            ArrayList<Usuario> resultado = digester.parse(new File(arquivo));            
+            retorno = resultado.get(0);
+        } catch (IOException | SAXException e) {
+            System.out.println("" + e.getMessage());
+        }
    }
     public Usuario pegarUsuario(){
         return retorno;

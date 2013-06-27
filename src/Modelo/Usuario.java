@@ -1,39 +1,30 @@
+package Modelo;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
 
-import java.util.List;
+
+import java.util.ArrayList;
 
 /**
  *
  * @author Rayan
  */
 public class Usuario {
-    private static Usuario instance;
-
-    /**
-     * @return the instance
-     */
-    public static Usuario getInstance() {
-        if(instance == null)
-            return new Usuario();
-        else
-            return instance;
-    }
 
     /**
      * @param aInstance the instance to set
      */
-    public Usuario(){
-        instance = this;
-    }
     private String login;
     private String senha;
     private String nome;
-    private List<Lista> listas;
+    private ArrayList<Lista> listas;
 
+    public Usuario(){
+        listas = new ArrayList<>();
+    }
     /**
      * @return the login
      */
@@ -79,14 +70,22 @@ public class Usuario {
     /**
      * @return the listas
      */
-    public List<Lista> getListas() {
+    public ArrayList<Lista> getListas() {
         return listas;
     }
-
-    /**
-     * @param listas the listas to set
-     */
-    public void setListas(List<Lista> listas) {
-        this.listas = listas;
+    
+    public void adicionarLista(Lista l){
+        listas.add(l);
+    }
+    public Lista encontrarLista(String nome){
+        for(Lista l : listas){
+            if(l.getNome().equals(nome)){
+                return l;
+            }
+        }
+        return null;
+    }
+    public void removerLista(Lista l){
+        listas.remove(l);
     }
 }

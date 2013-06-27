@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE digester-rules PUBLIC "-//Apache Commons //DTD digester-rules XML V1.0//EN" "http://commons.apache.org/digester/dtds/digester-rules-3.0.dtd">
+<digester-rules>
+    <pattern value="usuario">
+        <object-create-rule classname="Modelo.Usuario"/>
+        <pattern value="listas/lista">
+            <object-create-rule classname="Modelo.Lista" />        
+            <pattern value="itens/item">
+                <object-create-rule classname="Modelo.Item"/>
+                <pattern value="subitens/subitem">
+                    <object-create-rule classname="Modelo.Subitem"/>
+                    <set-properties-rule/>
+                    <set-next-rule methodname="adicionarSubitem" paramtype="Modelo.Subitem"/>
+                </pattern>
+                <set-properties-rule/>
+                <set-next-rule methodname="adicionarItem" paramtype="Modelo.Item"/>
+            </pattern>
+            <set-properties-rule/>         
+            <set-next-rule methodname="adicionarLista" paramtype="Modelo.Lista"/>
+        </pattern>
+        <set-properties-rule/>
+        <set-next-rule methodname="add" paramtype="Modelo.Usuario"/>
+    </pattern>
+</digester-rules>

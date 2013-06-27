@@ -1,10 +1,12 @@
+package Modelo;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Modelo;
 
-import java.util.List;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -12,8 +14,11 @@ import java.util.List;
  */
 public class Lista {
     private String nome;
-    private List<Item> listaItens;
+    private ArrayList<Item> listaItens;
 
+    public Lista(){
+        listaItens = new ArrayList<>();
+    }
     /**
      * @return the nome
      */
@@ -31,15 +36,22 @@ public class Lista {
     /**
      * @return the listaItens
      */
-    public List<Item> getListaItens() {
+    public ArrayList<Item> getListaItens() {
         return listaItens;
-    }
-
-    /**
-     * @param listaItens the listaItens to set
-     */
-    public void setListaItens(List<Item> listaItens) {
-        this.listaItens = listaItens;
-    }
+    }    
     
+    public void adicionarItem(Item l){
+        listaItens.add(l);
+    }
+    public Item encontrarItem(String nome){
+        for(Item l : listaItens){
+            if(l.getNome().equals(nome)){
+                return l;
+            }
+        }
+        return null;
+    }
+    public void removerItem(Item l){
+        listaItens.remove(l);
+    }
 }
