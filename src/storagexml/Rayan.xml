@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<usuario login="" senha="" nome="">
+	<listas>
+		<lista nome="">
+			<item>
+                            <nome></nome>
+                            <local></local>
+                            <prioridade></prioridade>
+                            <dataCriacao></dataCriacao>
+                            <dataFinalizar></dataFinalizar>
+                            <dataFinalizado></dataFinalizado>
+                            <descricao></descricao>
+                            <subitens>
+                                    <subitem>
+                                            <nome></nome>
+                                            <realizado></realizado>
+                                    </subitem>
+                                    <subitem>
+                                            <nome></nome>
+                                            <realizado></realizado>
+                                    </subitem>
+                            </subitens>
+			</item>			
+		</lista>
+	</listas>
+</usuario>

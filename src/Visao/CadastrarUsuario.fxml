@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="269.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Visao.CadastrarUsuarioController">
+<AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="269.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Controle.CadastrarUsuarioController">
   <children>
     <Label layoutX="80.0" layoutY="17.0" text="Cadastrar usuário">
       <font>

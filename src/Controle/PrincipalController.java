@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Visao;
+package Controle;
 
+import Visao.ProjetoFinal;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.image.BufferedImage;

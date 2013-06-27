@@ -4,6 +4,7 @@
  */
 package Visao;
 
+import Controle.CadastrarUsuarioController;
 import java.net.URL;
 import java.sql.Savepoint;
 import java.util.ResourceBundle;

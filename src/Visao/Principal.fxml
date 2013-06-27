@@ -9,7 +9,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Visao.PrincipalController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Controle.PrincipalController">
   <children>
     <TabPane prefHeight="451.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
       <tabs>
