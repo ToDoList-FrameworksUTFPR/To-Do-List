@@ -19,7 +19,7 @@ import org.xml.sax.SAXException;
  * @author Rayan
  */
 public class ParserXML {
-    private ArrayList<Usuario> retorno = null;
+    private Usuario retorno = null;
     public ParserXML(String arquivo) {
         try {
          Digester digester = new Digester();
@@ -51,12 +51,12 @@ public class ParserXML {
 
 
          File inputFile = new File(arquivo);
-         retorno = (ArrayList<Usuario>) digester.parse( inputFile );           
+         retorno = (Usuario) digester.parse( inputFile );           
 
       } catch( IOException | SAXException exc ) {
       }
    }
-    public ArrayList<Usuario> pegarUsuario(){
+    public Usuario pegarUsuario(){
         return retorno;
     }
 }
