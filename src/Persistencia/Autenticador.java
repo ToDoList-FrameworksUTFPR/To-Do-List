@@ -5,11 +5,11 @@
 package Persistencia;
 
 import Modelo.Usuario;
+import Visao.ProjetoFinal;
 import java.io.File;
-import java.io.IOException;
+import java.io.FilenameFilter;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Arrays;
 
 /**
  *
@@ -20,32 +20,33 @@ public final class Autenticador {
     protected ArrayList<Usuario> todosUsuarios = null;
     
     protected void instanciarUsuarios(){
-        String localizacao = null;      
-        try {
-            localizacao = new File(".").getCanonicalPath(); //"C:\\TesteArquivos\\";
-        } catch (IOException ex) {
-            Logger.getLogger(Autenticador.class.getName()).log(Level.SEVERE, null, ex);
+        String local = "src/xml/Usuarios";
+        ArrayList<File> listaArquivosUsuarios = new ArrayList<>();
+        FilenameFilter filtro = new  FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return name.toLowerCase().endsWith(".xml".toLowerCase());
+            }
+        };
+        listaArquivosUsuarios.addAll(Arrays.asList(new File(local).listFiles(filtro)));
+        for(File f : listaArquivosUsuarios){
+            ParserXML parserUsuario = new ParserXML((f.getParent() + "\\"+ f.getName()));
+            todosUsuarios.add(parserUsuario.pegarUsuario());
         }
-
-        File arquivosUsuarios[] = new File(localizacao).listFiles(); 
-        
-        for(File u : arquivosUsuarios){
-            //insere atraves de cada parser em cada arquivo na lista.
-        }
-        
-        //atraves dos arquivos lidos, utilizar o parser do XML e realizar a leitura na variavel
-        // para posteriormente verificar se é possivel autenticar ou nao
     }
     
     public Autenticador(){
-        todosUsuarios = new ArrayList<>();
+        todosUsuarios = new ArrayList<>();        
         instanciarUsuarios();
     }
     
     public boolean verificarLogin(Usuario u){
         for(Usuario x : todosUsuarios){
-            if(x.getLogin().equals(u.getLogin()) && x.getSenha().equals(u.getSenha()))
+            if(x.getLogin().equals(u.getLogin()) && x.getSenha().equals(u.getSenha())){
+                ProjetoFinal p = ProjetoFinal.getInstance();
+                p.instanciarUsuario(x);
                 return true;
+            }
         }
         return false;
     }

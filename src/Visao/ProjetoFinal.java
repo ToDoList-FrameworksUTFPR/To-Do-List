@@ -6,6 +6,7 @@ package Visao;
  */
 
 
+import Modelo.Usuario;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
@@ -21,6 +22,7 @@ public class ProjetoFinal extends Application {
     
     public Stage stage;
     public static ProjetoFinal instance;
+    private Usuario usuarioUtilizador;
     
     public static ProjetoFinal getInstance() {
         if (instance == null)
@@ -28,7 +30,12 @@ public class ProjetoFinal extends Application {
         else
             return instance;
     }
-
+    public void instanciarUsuario(Usuario u){
+        this.usuarioUtilizador = u;
+    }
+    public Usuario retornarUsuario(){
+        return this.usuarioUtilizador;
+    }
     private Parent trocarCena(String fxml) {
         try{
             Parent page = (Parent) FXMLLoader.load(ProjetoFinal.class.getResource(fxml), null, new JavaFXBuilderFactory());
@@ -63,7 +70,7 @@ public class ProjetoFinal extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml")); //iniciando em Principal para testar
         
         Scene scene = new Scene(root);
         this.stage = stage;

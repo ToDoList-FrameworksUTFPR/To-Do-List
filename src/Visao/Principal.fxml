@@ -17,97 +17,84 @@
           <content>
             <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="600.0">
               <children>
-                <Accordion />
-                <Accordion prefHeight="420.0" prefWidth="604.0">
+                <Accordion layoutX="186.0" layoutY="29.0" minWidth="406.0" prefHeight="391.0" prefWidth="413.0">
                   <expandedPane>
-                    <TitledPane fx:id="ttListas" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#abrirListas" text="Listas">
+                    <TitledPane fx:id="x2" alignment="CENTER" animated="false" contentDisplay="CENTER" prefHeight="350.0" prefWidth="430.0" text="Listar itens">
                       <content>
-                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="600.0">
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="426.0">
                           <children>
-                            <ListView fx:id="listaListas" layoutY="37.0" prefHeight="337.0" prefWidth="168.0" />
-                            <Button fx:id="btnDeletar" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#deletarLista" prefWidth="166.0" text="Deletar lista" />
-                            <Accordion layoutX="168.0" prefHeight="372.0" prefWidth="430.0">
-                              <expandedPane>
-                                <TitledPane fx:id="x2" alignment="CENTER" animated="false" contentDisplay="CENTER" prefHeight="350.0" prefWidth="430.0" text="Listar itens">
-                                  <content>
-                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="426.0">
-                                      <children>
-                                        <Label layoutX="3.0" layoutY="33.0" text="Oranizar por:" />
-                                        <Label layoutX="62.0" layoutY="1.0" text="Itens">
-                                          <font>
-                                            <Font size="20.0" />
-                                          </font>
-                                        </Label>
-                                        <ComboBox fx:id="comboFiltro" layoutX="83.0" layoutY="30.0" prefHeight="21.0" prefWidth="82.0">
-                                          <items>
-                                            <FXCollections fx:factory="observableArrayList">
-                                              <String fx:value="Item 1" />
-                                              <String fx:value="Item 2" />
-                                              <String fx:value="Item 3" />
-                                            </FXCollections>
-                                          </items>
-                                        </ComboBox>
-                                        <ListView fx:id="listaItens" layoutX="3.0" layoutY="61.0" prefHeight="265.0" prefWidth="164.0" />
-                                      </children>
-                                    </AnchorPane>
-                                  </content>
-                                </TitledPane>
-                              </expandedPane>
-                              <panes>
-                                <TitledPane fx:id="x1" alignment="CENTER" animated="false" contentDisplay="CENTER" prefHeight="305.0" prefWidth="226.0" text="Cadastrar item">
-                                  <content>
-                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                      <children>
-                                        <Button fx:id="cadItembtnAdicionarItem" layoutX="84.0" layoutY="250.0" mnemonicParsing="false" onAction="#cadItemAcao" prefWidth="228.0" text="Adicionar item" />
-                                        <Label layoutX="60.0" layoutY="17.0" text="Nome" />
-                                        <Label layoutX="60.0" layoutY="61.0" text="Local" />
-                                        <Label layoutX="265.0" layoutY="16.0" text="Prioridade" />
-                                        <Label layoutX="60.0" layoutY="114.0" text="Data de criação" />
-                                        <Label layoutX="227.0" layoutY="114.0" text="Data encerramento" />
-                                        <Label layoutX="62.0" layoutY="167.0" text="Descrição" />
-                                        <TextField fx:id="cadItemNome" layoutX="60.0" layoutY="33.0" prefWidth="134.0" />
-                                        <TextField fx:id="cadItemLocal" layoutX="60.0" layoutY="77.0" prefWidth="276.0" />
-                                        <TextField fx:id="cadItemDataCriacao" layoutX="60.0" layoutY="130.0" prefWidth="100.0" />
-                                        <TextField fx:id="cadItemDataEncerramento" layoutX="227.0" layoutY="130.0" prefWidth="111.0" />
-                                        <ComboBox fx:id="cadItemPrioridade" layoutX="265.0" layoutY="33.0">
-                                          <items>
-                                            <FXCollections fx:factory="observableArrayList">
-                                              <String fx:value="Item 1" />
-                                              <String fx:value="Item 2" />
-                                              <String fx:value="Item 3" />
-                                            </FXCollections>
-                                          </items>
-                                        </ComboBox>
-                                        <TextArea fx:id="cadItemDescricao" layoutX="62.0" layoutY="186.0" prefHeight="46.0" prefWidth="275.0" wrapText="true" />
-                                        <Label fx:id="lblInformativoCadItem" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="279.0" prefWidth="357.0" />
-                                      </children>
-                                    </AnchorPane>
-                                  </content>
-                                </TitledPane>
-                                <fx:reference source="x2" />
-                              </panes>
-                            </Accordion>
+                            <Label layoutX="3.0" layoutY="33.0" text="Oranizar por:" />
+                            <Label layoutX="62.0" layoutY="1.0" text="Itens">
+                              <font>
+                                <Font size="20.0" fx:id="x4" />
+                              </font>
+                            </Label>
+                            <ComboBox fx:id="comboFiltro" layoutX="83.0" layoutY="30.0" prefHeight="21.0" prefWidth="82.0">
+                              <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Item 1" />
+                                  <String fx:value="Item 2" />
+                                  <String fx:value="Item 3" />
+                                </FXCollections>
+                              </items>
+                            </ComboBox>
+                            <ListView fx:id="listaItens" layoutX="3.0" layoutY="61.0" prefHeight="282.0" prefWidth="164.0" />
                           </children>
                         </AnchorPane>
                       </content>
                     </TitledPane>
                   </expandedPane>
                   <panes>
-                    <TitledPane fx:id="ttCadListas" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#abrirCadastroListas" text="Cadastrar uma lista">
+                    <TitledPane fx:id="x1" alignment="CENTER" animated="false" contentDisplay="CENTER" prefHeight="305.0" prefWidth="226.0" text="Cadastrar item">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                            <Label layoutX="262.0" layoutY="58.0" text="Nome da lista:" />
-                            <TextField fx:id="txtNomeLista" layoutX="201.0" layoutY="95.0" prefWidth="200.0" promptText="nome da lista" />
-                            <Button fx:id="btnAdicionarLista" layoutX="246.0" layoutY="143.0" mnemonicParsing="false" onAction="#cadastrarLista" prefHeight="36.0" prefWidth="108.0" text="Adicionar lista" />
-                            <Label fx:id="lblInformCad" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="212.0" prefWidth="274.0" />
+                            <Button fx:id="cadItembtnAdicionarItem" layoutX="84.0" layoutY="250.0" mnemonicParsing="false" onAction="#cadItemAcao" prefWidth="228.0" text="Adicionar item" />
+                            <Label layoutX="60.0" layoutY="17.0" text="Nome" />
+                            <Label layoutX="60.0" layoutY="61.0" text="Local" />
+                            <Label layoutX="265.0" layoutY="16.0" text="Prioridade" />
+                            <Label layoutX="60.0" layoutY="114.0" text="Data de criação" />
+                            <Label layoutX="227.0" layoutY="114.0" text="Data encerramento" />
+                            <Label layoutX="62.0" layoutY="167.0" text="Descrição" />
+                            <TextField fx:id="cadItemNome" layoutX="60.0" layoutY="33.0" prefWidth="134.0" />
+                            <TextField fx:id="cadItemLocal" layoutX="60.0" layoutY="77.0" prefWidth="276.0" />
+                            <TextField fx:id="cadItemDataCriacao" layoutX="60.0" layoutY="130.0" prefWidth="100.0" />
+                            <TextField fx:id="cadItemDataEncerramento" layoutX="227.0" layoutY="130.0" prefWidth="111.0" />
+                            <ComboBox fx:id="cadItemPrioridade" layoutX="265.0" layoutY="33.0">
+                              <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="Item 1" />
+                                  <String fx:value="Item 2" />
+                                  <String fx:value="Item 3" />
+                                </FXCollections>
+                              </items>
+                            </ComboBox>
+                            <TextArea fx:id="cadItemDescricao" layoutX="62.0" layoutY="186.0" prefHeight="46.0" prefWidth="275.0" wrapText="true" />
+                            <Label fx:id="lblInformativoCadItem" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="279.0" prefWidth="357.0" />
                           </children>
                         </AnchorPane>
                       </content>
                     </TitledPane>
-                    <fx:reference source="ttListas" />
+                    <fx:reference source="x2" />
                   </panes>
                 </Accordion>
+                <Button id="btnDeletar" fx:id="removerLista" contentDisplay="GRAPHIC_ONLY" layoutX="123.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#deletarLista" prefHeight="35.0" prefWidth="38.0" />
+                <ListView fx:id="listaListas" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="168.0" />
+                <Button id="adicionar" fx:id="adicionarNovaLista" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="7.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#cadastrarLista" prefHeight="35.0" prefWidth="38.0">
+                  <font>
+                    <Font size="9.0" fx:id="x3" />
+                  </font>
+                </Button>
+                <Button fx:id="editarLista" contentDisplay="GRAPHIC_ONLY" font="$x3" layoutX="66.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#editarLista" prefHeight="35.0" prefWidth="38.0" />
+                <Label font="$x4" layoutX="61.0" layoutY="28.0" text="Listas" />
+                <Label fx:id="lblSaudacao" layoutX="7.0" layoutY="6.0" prefHeight="19.0" prefWidth="413.0" style="&#10;" text="Olá,">
+                  <font>
+                    <Font size="14.0" />
+                  </font>
+                </Label>
+                <Separator layoutX="175.0" layoutY="25.0" orientation="VERTICAL" prefHeight="394.9999000000025" />
+                <Separator layoutX="8.0" layoutY="26.0" prefWidth="592.0" />
+                <Label fx:id="lblAlterarDados" layoutX="524.0" layoutY="6.0" onMouseClicked="#alterarDados" onMouseEntered="#alterarDados_mouseEmCima" onMouseExited="#alterarDados_mouseFora" text="Alterar dados" textFill="#606060" />
               </children>
             </AnchorPane>
           </content>

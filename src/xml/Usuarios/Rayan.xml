@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<usuario login="loginUsuario" senha="senhaUsuario" nome="nomeusuario">
+<usuario login="teste" senha="123" nome="nomeusuario">
     <listas>
         <lista nome="nomeLista">
             <itens>

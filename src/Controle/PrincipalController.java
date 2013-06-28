@@ -4,6 +4,7 @@
  */
 package Controle;
 
+import Modelo.Lista;
 import Visao.ProjetoFinal;
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -11,8 +12,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -26,12 +27,12 @@ import javafx.scene.control.Tab;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TitledPane;
-import javafx.scene.control.cell.CheckBoxListCell;
-import javafx.scene.control.cell.CheckBoxListCellBuilder;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
-import javafx.util.Callback;
 import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -56,6 +57,16 @@ public class PrincipalController implements Initializable {
     /* /Tab gráficos */
     
     /* Tab Tarefas */
+    @FXML
+    private Label lblSaudacao;
+    @FXML
+    private Label lblAlterarDados;
+    @FXML
+    private Button adicionarNovaLista;
+    @FXML
+    private Button removerLista;
+    @FXML
+    private Button editarLista;
     @FXML
     private TitledPane ttListas;
     @FXML
@@ -139,6 +150,17 @@ public class PrincipalController implements Initializable {
         );
         comboFiltro.setItems(itens);
         comboFiltro.setValue(itens.get(0));
+        
+        Image imagemAdicionar = new Image(getClass().getResourceAsStream("adicionar.png"));
+        Image imagemEditar = new Image(getClass().getResourceAsStream("editar.png"));
+        Image imagemRemover = new Image(getClass().getResourceAsStream("remover.png"));
+        
+        adicionarNovaLista.setGraphic(new ImageView(imagemAdicionar));
+        editarLista.setGraphic(new ImageView(imagemEditar));
+        removerLista.setGraphic(new ImageView(imagemRemover));
+        
+        lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
+        lblSaudacao.setTextFill(Paint.valueOf("gray"));
     }    
     @FXML
     private void salvarGrafico() throws AWTException, IOException{
@@ -167,36 +189,48 @@ public class PrincipalController implements Initializable {
     }
     @FXML
     private void abrirListas(){
-        ObservableList<String> itens = null;
+        ArrayList<Lista> lista = new ArrayList<>();
+        ObservableList<Lista> itens = null;
         listaListas.setItems(itens);
-        itens = FXCollections.observableArrayList ("123", "123", "12312312");
+        for(Lista l : aplicacao.retornarUsuario().getListas()){
+            lista.add(l);
+        }
+        itens = FXCollections.observableArrayList(lista);             
         listaListas.setItems(itens);
-        //listaListas.setCellFactory(CheckBoxListCell.forListView((Callback<String, ObservableValue<Boolean>>) itens));
-        //listaListas.setItems(itens);
-        System.out.println("abriu listas");   
     }
     @FXML
     private void abrirCadastroListas(){
         //atualizar a lista 
     }
+    
+    @FXML
+    private void cadastrarLista(){
+       
+    }
+    @FXML
+    private void editarLista(){
+       if(listaListas.getSelectionModel().getSelectedItem() != null){
+            
+       }
+    }
     @FXML
     private void deletarLista(){
         if(listaListas.getSelectionModel().getSelectedItem() != null){
-            System.out.println("Deletar -> " +  listaListas.getSelectionModel().getSelectedItem().toString());
-            listaListas.getItems().remove(listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.retornarUsuario().removerLista((Lista) listaListas.getSelectionModel().getSelectedItem());
+            abrirListas();
         }
     }
     @FXML
-    private void cadastrarLista(){
-        if(!txtNomeLista.getText().isEmpty()){
-            listaListas.getItems().add(txtNomeLista.getText());
-            lblInformCad.setText("Lista adicionada com sucesso!");
-            lblInformCad.setTextFill(Paint.valueOf("darkgreen"));
-            txtNomeLista.setText("");
-        }else{
-            lblInformCad.setText("Erro ao adicionar lista.");
-            lblInformCad.setTextFill(Paint.valueOf("red"));
-        }
+    public void alterarDados(){
+        aplicacao.goTo("AlterarDados");
+    }
+    @FXML
+    public void alterarDados_mouseEmCima(){
+        lblAlterarDados.setTextFill(Paint.valueOf("darkgray"));
+    }
+    @FXML
+    public void alterarDados_mouseFora(){
+        lblAlterarDados.setTextFill(Paint.valueOf("gray"));        
     }
     @FXML
     private void cadItemAcao(){
