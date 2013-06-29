@@ -17,10 +17,9 @@ import javafx.scene.paint.Paint;
  * @author Rayan
  */
 public class LoginController implements Initializable {
-    
+
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
     private Autenticador autenticador = new Autenticador();
-    
     @FXML
     private Label lblCadastrar;
     @FXML
@@ -30,41 +29,43 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField txtSenha;
 
-    
     @FXML
     private void entrarAcao() {
-        if(txtLogin.getText().isEmpty() || txtSenha.getText().isEmpty()){
+        if (txtLogin.getText().isEmpty() || txtSenha.getText().isEmpty()) {
             lblInformacao.setText("Login / Senha devem ser preenchidos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
-        }else{
+        } else {
             Usuario temp = new Usuario();
             temp.setLogin(txtLogin.getText());
             temp.setSenha(txtSenha.getText());
-            
-            if(autenticador.verificarLogin(temp)){
+
+            if (autenticador.verificarLogin(temp)) {
                 lblInformacao.setText("Login / Senha validados com sucesso.");
                 lblInformacao.setTextFill(Paint.valueOf("green"));
                 aplicacao.goTo("Principal");
-            }else{
+            } else {
                 lblInformacao.setText("Login / Senha inválidos.");
                 lblInformacao.setTextFill(Paint.valueOf("red"));
             }
         }
     }
-    
+
     @Override
-    public void initialize(URL url, ResourceBundle rb) {}    
-    
+    public void initialize(URL url, ResourceBundle rb) {
+    }
+
     @FXML
-    public void mouseDentro(){
+    public void mouseDentro() {
         lblCadastrar.setTextFill(Paint.valueOf("darkgray"));
     }
+
     @FXML
-    public void mouseFora(){
-        lblCadastrar.setTextFill(Paint.valueOf("gray"));        
+    public void mouseFora() {
+        lblCadastrar.setTextFill(Paint.valueOf("gray"));
     }
+
     @FXML
-    public void mouseClick(){
+    public void mouseClick() {
         aplicacao.goTo("CadastrarUsuario");
     }
 }

@@ -26,13 +26,11 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TitledPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javax.imageio.ImageIO;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -41,21 +39,16 @@ import javax.swing.JOptionPane;
 public class PrincipalController implements Initializable {
 
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
-    
     @FXML
     private Tab tabMenuGraficos;
     @FXML
     private Tab tabMenuTarefas;
-    
     /* Tab gráficos */
     @FXML
-    private PieChart graficoTarefas;    
+    private PieChart graficoTarefas;
     @FXML
-    private ComboBox comboFormato;    
-    @FXML
-    private Button btnExportar;
+    private ComboBox comboFormato;
     /* /Tab gráficos */
-    
     /* Tab Tarefas */
     @FXML
     private Label lblSaudacao;
@@ -68,25 +61,13 @@ public class PrincipalController implements Initializable {
     @FXML
     private Button editarLista;
     @FXML
-    private TitledPane ttListas;
-    @FXML
-    private TitledPane ttCadListas;
-    @FXML
     private ListView listaListas;
-    @FXML
-    private Button btnDeletar;
     @FXML
     private ComboBox comboFiltro;
     @FXML
-    private Button btnAdicionarLista;
-    @FXML
-    private TextField txtNomeLista;
-    @FXML
     private Label lblInformCad;
-    
     @FXML
     private ListView listaItens;
-    
     @FXML
     private TextField cadItemNome;
     @FXML
@@ -99,15 +80,11 @@ public class PrincipalController implements Initializable {
     private TextArea cadItemDescricao;
     @FXML
     private ComboBox cadItemPrioridade;
-    @FXML
-    private Label lblInformativoCadItem;
-    @FXML
-    private Button cadItembtnAdicionarItem;
     /* /Tab Tarefas */
-    
+
     @FXML
     private void abrirAbaGraficos() {
-        if(tabMenuGraficos.isSelected()){
+        if (tabMenuGraficos.isSelected()) {
             try {
                 ObservableList<PieChart.Data> pieChartData = null;
                 graficoTarefas.setTitle("");
@@ -115,127 +92,129 @@ public class PrincipalController implements Initializable {
                 pieChartData = FXCollections.observableArrayList(
                         new PieChart.Data("Realizadas sem atraso", 75),
                         new PieChart.Data("Realizadas com atraso", 33.5),
-                        new PieChart.Data("Não realizadas", 22)
-                );
-            graficoTarefas.setTitle("Número de tarefas");
-            graficoTarefas.setData(pieChartData); 
+                        new PieChart.Data("Não realizadas", 22));
+                graficoTarefas.setTitle("Número de tarefas");
+                graficoTarefas.setData(pieChartData);
             } catch (Exception e) {
                 //colocar o log
             }
         }
     }
+
     @FXML
     private void abrirAbaTarefas() {
-        
+        if (tabMenuTarefas.isSelected()) {
+            abrirListas();
+        }
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        ObservableList<String> itens = null;        
+        ObservableList<String> itens = null;
         comboFormato.setItems(itens);
         itens = FXCollections.observableArrayList(
-            "png",
-            "jpg",
-            "bmp"
-        );
+                "png",
+                "jpg",
+                "bmp");
         comboFormato.setItems(itens);
         comboFormato.setValue(itens.get(0));
         abrirListas();
-        itens = null;        
+        itens = null;
         comboFiltro.setItems(itens);
         itens = FXCollections.observableArrayList(
-            "Nome",
-            "Data",
-            "Prioridade"
-        );
+                "Nome",
+                "Data",
+                "Prioridade");
         comboFiltro.setItems(itens);
         comboFiltro.setValue(itens.get(0));
-        
-        Image imagemAdicionar = new Image(getClass().getResourceAsStream("adicionar.png"));
-        Image imagemEditar = new Image(getClass().getResourceAsStream("editar.png"));
-        Image imagemRemover = new Image(getClass().getResourceAsStream("remover.png"));
-        
+
+        Image imagemAdicionar = new Image(getClass().getResourceAsStream("Imagens/adicionar.png"));
+        Image imagemEditar = new Image(getClass().getResourceAsStream("Imagens/editar.png"));
+        Image imagemRemover = new Image(getClass().getResourceAsStream("Imagens/remover.png"));
+
         adicionarNovaLista.setGraphic(new ImageView(imagemAdicionar));
         editarLista.setGraphic(new ImageView(imagemEditar));
         removerLista.setGraphic(new ImageView(imagemRemover));
-        
+
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));
-    }    
+    }
+
     @FXML
-    private void salvarGrafico() throws AWTException, IOException{
+    private void salvarGrafico() throws AWTException, IOException {
         BufferedImage img = new Robot().createScreenCapture(
-        new java.awt.Rectangle(
-          (int)aplicacao.stage.getX()+65,       (int)aplicacao.stage.getY()+85,
-          (int)aplicacao.stage.getWidth()-135, (int)aplicacao.stage.getHeight()-90)
-        );
-            FileChooser fileChooser = new FileChooser();
-            FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
-            fileChooser.getExtensionFilters().add(exts);
-            try {
-                String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
-                if(!arquivo.isEmpty()){
-                    try {
-                        ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
-                    } catch (Exception e) {
-                        //colocar o LOG
-                    }
-                 }
+                new java.awt.Rectangle(
+                (int) aplicacao.stage.getX() + 65, (int) aplicacao.stage.getY() + 85,
+                (int) aplicacao.stage.getWidth() - 135, (int) aplicacao.stage.getHeight() - 90));
+        FileChooser fileChooser = new FileChooser();
+        FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
+        fileChooser.getExtensionFilters().add(exts);
+        try {
+            String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
+            if (!arquivo.isEmpty()) {
+                try {
+                    ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
+                } catch (Exception e) {
+                    //colocar o LOG
+                }
+            }
         } catch (Exception e) {
             //colocar o log
         }
-            
-             
+
+
     }
+
     @FXML
-    private void abrirListas(){
+    private void abrirListas() {
         ArrayList<Lista> lista = new ArrayList<>();
         ObservableList<Lista> itens = null;
         listaListas.setItems(itens);
-        for(Lista l : aplicacao.retornarUsuario().getListas()){
+        for (Lista l : aplicacao.retornarUsuario().getListas()) {
             lista.add(l);
         }
-        itens = FXCollections.observableArrayList(lista);             
+        itens = FXCollections.observableArrayList(lista);
         listaListas.setItems(itens);
     }
+
     @FXML
-    private void abrirCadastroListas(){
-        //atualizar a lista 
+    private void cadastrarLista() {
+        aplicacao.goTo("CadastrarLista");
     }
-    
+
     @FXML
-    private void cadastrarLista(){
-       
+    private void editarLista() {
+        if (listaListas.getSelectionModel().getSelectedItem() != null) {
+        }
     }
+
     @FXML
-    private void editarLista(){
-       if(listaListas.getSelectionModel().getSelectedItem() != null){
-            
-       }
-    }
-    @FXML
-    private void deletarLista(){
-        if(listaListas.getSelectionModel().getSelectedItem() != null){
+    private void deletarLista() {
+        if (listaListas.getSelectionModel().getSelectedItem() != null) {
             aplicacao.retornarUsuario().removerLista((Lista) listaListas.getSelectionModel().getSelectedItem());
             abrirListas();
         }
     }
+
     @FXML
-    public void alterarDados(){
+    public void alterarDados() {
         aplicacao.goTo("AlterarDados");
     }
+
     @FXML
-    public void alterarDados_mouseEmCima(){
+    public void alterarDados_mouseEmCima() {
         lblAlterarDados.setTextFill(Paint.valueOf("darkgray"));
     }
+
     @FXML
-    public void alterarDados_mouseFora(){
-        lblAlterarDados.setTextFill(Paint.valueOf("gray"));        
+    public void alterarDados_mouseFora() {
+        lblAlterarDados.setTextFill(Paint.valueOf("gray"));
     }
+
     @FXML
-    private void cadItemAcao(){
-        if(cadItemNome.getText().isEmpty() || cadItemLocal.getText().isEmpty() || cadItemPrioridade.getPromptText().isEmpty()
-           || cadItemDescricao.getText().isEmpty() || cadItemDataCriacao.getText().isEmpty()|| cadItemDataEncerramento.getText().isEmpty()){
+    private void cadItemAcao() {
+        if (cadItemNome.getText().isEmpty() || cadItemLocal.getText().isEmpty() || cadItemPrioridade.getPromptText().isEmpty()
+                || cadItemDescricao.getText().isEmpty() || cadItemDataCriacao.getText().isEmpty() || cadItemDataEncerramento.getText().isEmpty()) {
             lblInformCad.setText("Item adicionado com sucesso!");
             lblInformCad.setTextFill(Paint.valueOf("darkgreen"));
             cadItemNome.setText("");
@@ -245,7 +224,7 @@ public class PrincipalController implements Initializable {
             cadItemDataEncerramento.setText("");
             cadItemDescricao.setText("");
             listaItens.getItems().add(cadItemNome.getText());
-        }else{
+        } else {
             lblInformCad.setText("Erro ao adicionar item.");
             lblInformCad.setTextFill(Paint.valueOf("red"));
         }

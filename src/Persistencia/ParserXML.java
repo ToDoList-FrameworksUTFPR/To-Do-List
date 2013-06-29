@@ -23,7 +23,7 @@ public class ParserXML {
         DigesterLoader digesterLoader = DigesterLoader.newLoader(new FromXmlRulesModule() {
             @Override
             protected void loadRules() {
-                loadXMLRules(new File("src/xml/digester-catalog-rules.xml")); //getClass().getResource("/digester-catalog-rules.xml")
+                loadXMLRules(getClass().getResource("digester-catalog-rules.xml"));
 
             }
         });

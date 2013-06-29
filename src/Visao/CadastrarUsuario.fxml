@@ -20,8 +20,8 @@
     <Label layoutX="46.0" layoutY="105.0" text="Login" />
     <Label layoutX="46.0" layoutY="148.0" text="Senha" />
     <Label layoutX="46.0" layoutY="191.0" text="Repita a senha" />
-    <Button fx:id="btnCadastrar" layoutX="50.0" layoutY="244.0" mnemonicParsing="false" onAction="#cadastrarAcao" text="Cadastrar" />
-    <Button fx:id="btnCancelar" layoutX="138.0" layoutY="244.0" mnemonicParsing="false" onAction="#cancelarAcao" text="Cancelar" />
+    <Button id="btnCadastrar" layoutX="50.0" layoutY="244.0" mnemonicParsing="false" onAction="#cadastrarAcao" text="Cadastrar" />
+    <Button id="btnCancelar" layoutX="138.0" layoutY="244.0" mnemonicParsing="false" onAction="#cancelarAcao" text="Cancelar" />
     <Label fx:id="lblInformacao" alignment="CENTER" layoutX="18.0" layoutY="277.0" prefWidth="237.0" textFill="RED" />
     <Label layoutX="47.0" layoutY="60.0" text="Nome" />
     <TextField fx:id="txtNome" layoutX="46.0" layoutY="76.0" prefWidth="144.0" />

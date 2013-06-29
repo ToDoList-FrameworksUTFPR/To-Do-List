@@ -114,7 +114,7 @@
                     </FXCollections>
                   </items>
                 </ComboBox>
-                <Button fx:id="btnExportar" layoutX="225.0" layoutY="6.0" mnemonicParsing="false" onAction="#salvarGrafico" text="Exportar imagem" />
+                <Button id="btnExportar" layoutX="225.0" layoutY="6.0" mnemonicParsing="false" onAction="#salvarGrafico" text="Exportar imagem" />
               </children>
             </AnchorPane>
           </content>

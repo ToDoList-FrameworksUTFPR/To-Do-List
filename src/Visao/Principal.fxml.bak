@@ -94,7 +94,7 @@
                 </Label>
                 <Separator layoutX="175.0" layoutY="25.0" orientation="VERTICAL" prefHeight="394.9999000000025" />
                 <Separator layoutX="8.0" layoutY="26.0" prefWidth="592.0" />
-                <Label fx:id="lblAlterarDados" layoutX="524.0" layoutY="6.0" onMouseEntered="#alterarDados_mouseEmCima" onMouseExited="#alterarDados_mouseFora" text="Alterar dados" textFill="#606060" />
+                <Label fx:id="lblAlterarDados" layoutX="524.0" layoutY="6.0" onMouseClicked="#alterarDados" onMouseEntered="#alterarDados_mouseEmCima" onMouseExited="#alterarDados_mouseFora" text="Alterar dados" textFill="#606060" />
               </children>
             </AnchorPane>
           </content>
