@@ -6,6 +6,9 @@ package Visao;
  */
 
 
+import Modelo.Item;
+import Modelo.Lista;
+import Modelo.Subitem;
 import Modelo.Usuario;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +26,11 @@ public class ProjetoFinal extends Application {
     public Stage stage;
     public static ProjetoFinal instance;
     private Usuario usuarioUtilizador;
-    
+    /* Objetos temporarios para utilizar como forma de retorno*/
+    private Lista listaTemp = null;
+    private Item itemTemp = null;
+    private Subitem subItemTemp = null;
+    /**********************************************************/
     public static ProjetoFinal getInstance() {
         if (instance == null)
             return new ProjetoFinal();
@@ -91,5 +98,47 @@ public class ProjetoFinal extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+    }
+
+    /**
+     * @return the listaTemp
+     */
+    public Lista getListaTemp() {
+        return listaTemp;
+    }
+
+    /**
+     * @param listaTemp the listaTemp to set
+     */
+    public void setListaTemp(Lista listaTemp) {
+        this.listaTemp = listaTemp;
+    }
+
+    /**
+     * @return the itemTemp
+     */
+    public Item getItemTemp() {
+        return itemTemp;
+    }
+
+    /**
+     * @param itemTemp the itemTemp to set
+     */
+    public void setItemTemp(Item itemTemp) {
+        this.itemTemp = itemTemp;
+    }
+
+    /**
+     * @return the subItemTemp
+     */
+    public Subitem getSubItemTemp() {
+        return subItemTemp;
+    }
+
+    /**
+     * @param subItemTemp the subItemTemp to set
+     */
+    public void setSubItemTemp(Subitem subItemTemp) {
+        this.subItemTemp = subItemTemp;
     }
 }

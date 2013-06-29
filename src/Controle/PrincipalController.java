@@ -161,8 +161,6 @@ public class PrincipalController implements Initializable {
         } catch (Exception e) {
             //colocar o log
         }
-
-
     }
 
     @FXML
@@ -185,6 +183,8 @@ public class PrincipalController implements Initializable {
     @FXML
     private void editarLista() {
         if (listaListas.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.goTo("AlterarLista");
         }
     }
 
