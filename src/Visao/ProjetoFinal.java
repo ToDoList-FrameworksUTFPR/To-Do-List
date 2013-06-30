@@ -6,6 +6,7 @@ package Visao;
  */
 
 
+import Log.Log;
 import Modelo.Item;
 import Modelo.Lista;
 import Modelo.Subitem;
@@ -16,6 +17,7 @@ import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apache.log4j.BasicConfigurator;
 
 /**
  *
@@ -26,22 +28,24 @@ public class ProjetoFinal extends Application {
     public Stage stage;
     public static ProjetoFinal instance;
     private Usuario usuarioUtilizador;
+    private static Log log = new Log(ProjetoFinal.class);
     /* Objetos temporarios para utilizar como forma de retorno*/
     private Lista listaTemp = null;
     private Item itemTemp = null;
     private Subitem subItemTemp = null;
     /**********************************************************/
     public static ProjetoFinal getInstance() {
-        if (instance == null)
+        if (instance == null){
+            BasicConfigurator.configure();
             return new ProjetoFinal();
-        else
+        }else
             return instance;
     }
     public void instanciarUsuario(Usuario u){
         this.usuarioUtilizador = u;
     }
     public Usuario retornarUsuario(){
-        return this.usuarioUtilizador;
+        return usuarioUtilizador;
     }
     private Parent trocarCena(String fxml) {
         try{
@@ -56,8 +60,8 @@ public class ProjetoFinal extends Application {
             stage.sizeToScene();
             stage.centerOnScreen();
             return page;
-        }catch(Exception e){
-            //adicionar LOG
+        }catch(Exception e){            
+            log.error("trocarCena", "Erro ao trocar para cena:" + fxml, e);
             return null;
         }
     }
@@ -70,15 +74,15 @@ public class ProjetoFinal extends Application {
         try {
             trocarCena(arquivo + ".fxml");
         } catch (Exception ex) {
-            //adicionar LOG
+            log.error("trocarCena", "Erro ao trocar para cena:" + arquivo, ex);
         }
     }
 
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml")); //iniciando em Principal para testar
-        
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        log.info("start", "Carregando recurso de cena" + stage);
         Scene scene = new Scene(root);
         this.stage = stage;
         stage.setScene(scene);
@@ -86,6 +90,7 @@ public class ProjetoFinal extends Application {
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();
+        log.info("start", "Apresentando recurso, e chamando stage : " + stage);
     }
 
     /**
@@ -97,6 +102,7 @@ public class ProjetoFinal extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        log.info("main", "Carregando main com argumentos: " + args);
         launch(args);
     }
 

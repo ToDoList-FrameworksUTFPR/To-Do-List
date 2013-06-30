@@ -4,6 +4,7 @@
  */
 package Controle;
 
+import Log.Log;
 import Modelo.Lista;
 import Visao.ProjetoFinal;
 import java.net.URL;
@@ -22,6 +23,7 @@ import javafx.scene.paint.Paint;
 public class CadastrarListaController implements Initializable {
     
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
+    private static Log log = new Log(CadastrarListaController.class);
 
     @FXML
     public TextField txtNome;
@@ -43,8 +45,10 @@ public class CadastrarListaController implements Initializable {
             lblInformacao.setText("Lista cadastrada com sucesso!");
             lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
             Lista l = new Lista();
+            log.info("cadastrarAcao", "Gerado uma nova lista a ser cadastrada");
             l.setNome(txtNome.getText());
             aplicacao.retornarUsuario().adicionarLista(l);
+            //trabalhar xml para gerar lista
             aplicacao.goTo("Principal");       
         }
     }

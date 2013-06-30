@@ -1,5 +1,6 @@
 package Controle;
 
+import Log.Log;
 import Modelo.Usuario;
 import Persistencia.Autenticador;
 import Visao.ProjetoFinal;
@@ -19,7 +20,9 @@ import javafx.scene.paint.Paint;
 public class LoginController implements Initializable {
 
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
+    private static Log log = new Log(LoginController.class);
     private Autenticador autenticador = new Autenticador();
+    
     @FXML
     private Label lblCadastrar;
     @FXML
@@ -36,6 +39,7 @@ public class LoginController implements Initializable {
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
             Usuario temp = new Usuario();
+            log.info("entrarAcao", "Criado novo usuario temporario para verificação de login");
             temp.setLogin(txtLogin.getText());
             temp.setSenha(txtSenha.getText());
 

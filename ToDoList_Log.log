@@ -1,0 +1,8 @@
+0    [JavaFX Application Thread] INFO  Visao.ProjetoFinal  - Definiu e encontrou um recurso.
+391  [JavaFX Application Thread] INFO  Visao.ProjetoFinal  - Mostrou o recurso definido
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Retornou lista de arquivos com o filtro
+122  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor]  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+1154 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Carregando recurso de cenajavafx.stage.Stage@45d58963
+2191 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Apresentando recurso, e chamando stage : javafx.stage.Stage@45d58963
+17497 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Criado novo usuario temporario para verificação de login

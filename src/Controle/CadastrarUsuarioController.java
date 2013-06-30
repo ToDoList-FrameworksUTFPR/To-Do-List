@@ -4,6 +4,7 @@
  */
 package Controle;
 
+import Log.Log;
 import Visao.ProjetoFinal;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,6 +36,7 @@ public class CadastrarUsuarioController implements Initializable {
     @FXML
     public Label lblInformacao;
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
+    private static Log log = new Log(CadastrarUsuarioController.class);
 
     @FXML
     public void cancelarAcao() {
@@ -56,8 +58,9 @@ public class CadastrarUsuarioController implements Initializable {
                 txtSenha1.setText("");
                 lblInformacao.setText("Usuário cadastrado com sucesso!");
                 lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
-                aplicacao.goTo("Login");
+                log.info("cadastrarAcao", "Realizando o trabalho com xml de cadastro");
                 //trabalha com o xml para gerar o usuario              
+                aplicacao.goTo("Login");
             } else {
                 lblInformacao.setText("As senhas não conferem.");
                 lblInformacao.setTextFill(Paint.valueOf("red"));

@@ -4,6 +4,8 @@
  */
 package Controle;
 
+import Log.Log;
+import Modelo.Lista;
 import Visao.ProjetoFinal;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,6 +23,7 @@ import javafx.scene.paint.Paint;
 public class AlterarListaController implements Initializable {
     
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
+    private static Log log = new Log(AlterarListaController.class);
 
     @FXML
     public TextField txtNome;
@@ -41,8 +44,11 @@ public class AlterarListaController implements Initializable {
         } else {            
             lblInformacao.setText("Lista cadastrada com sucesso!");
             lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
-            aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome()).setNome(txtNome.getText());
+            Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
+            log.info("editarAcao", "Retornada a lista em variavel");
+            l.setNome(txtNome.getText());
             aplicacao.setListaTemp(null);
+            //trabalhar xml
             aplicacao.goTo("Principal");       
         }
     }

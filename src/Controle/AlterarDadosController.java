@@ -4,6 +4,7 @@
  */
 package Controle;
 
+import Log.Log;
 import Modelo.Usuario;
 import Visao.ProjetoFinal;
 import java.net.URL;
@@ -22,6 +23,7 @@ import javafx.scene.paint.Paint;
  */
 public class AlterarDadosController implements Initializable {
 
+    private static Log log = new Log(AlterarDadosController.class);
     /**
      * Initializes the controller class.
      */
@@ -53,10 +55,11 @@ public class AlterarDadosController implements Initializable {
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
             if (txtSenha.getText().equals(txtSenha1.getText())) {
-                lblInformacao.setText("Usuário cadastrado com sucesso!");
+                lblInformacao.setText("Usuário alterado com sucesso!");
                 lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
                 aplicacao.retornarUsuario().setNome(txtNome.getText());
                 aplicacao.retornarUsuario().setSenha(txtSenha.getText());
+                log.info("cadastrarAcao", "Alterado dados do usuário");
                 txtLogin.setText("");
                 txtNome.setText("");
                 txtSenha.setText("");
@@ -76,5 +79,6 @@ public class AlterarDadosController implements Initializable {
         txtLogin.setText(temp.getLogin());
         txtNome.setText(temp.getNome());
         txtSenha.setText(temp.getSenha());
+        log.info("initialize", "Iniciado form, e carregado dados do usuário. url -> " + url);
     }
 }
