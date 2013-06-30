@@ -2,9 +2,8 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Visao;
+package Controle;
 
-import Controle.LoginController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import org.junit.After;
@@ -13,15 +12,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.Ignore;
 
 /**
  *
  * @author Rayan
  */
-public class LoginControllerTest {
+public class PrincipalControllerTest {
     
-    public LoginControllerTest() {
+    public PrincipalControllerTest() {
     }
     
     @BeforeClass
@@ -41,51 +39,51 @@ public class LoginControllerTest {
     }
 
     /**
-     * Test of initialize method, of class LoginController.
+     * Test of initialize method, of class PrincipalController.
      */
     @Test
     public void testInitialize() {
         System.out.println("initialize");
         URL url = null;
         ResourceBundle rb = null;
-        LoginController instance = new LoginController();
+        PrincipalController instance = new PrincipalController();
         instance.initialize(url, rb);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of mouseDentro method, of class LoginController.
+     * Test of alterarDados method, of class PrincipalController.
      */
     @Test
-    public void testMouseDentro() {
-        System.out.println("mouseDentro");
-        LoginController instance = new LoginController();
-        instance.mouseDentro();
+    public void testAlterarDados() {
+        System.out.println("alterarDados");
+        PrincipalController instance = new PrincipalController();
+        instance.alterarDados();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of mouseFora method, of class LoginController.
+     * Test of alterarDados_mouseEmCima method, of class PrincipalController.
      */
     @Test
-    public void testMouseFora() {
-        System.out.println("mouseFora");
-        LoginController instance = new LoginController();
-        instance.mouseFora();
+    public void testAlterarDados_mouseEmCima() {
+        System.out.println("alterarDados_mouseEmCima");
+        PrincipalController instance = new PrincipalController();
+        instance.alterarDados_mouseEmCima();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of mouseClick method, of class LoginController.
+     * Test of alterarDados_mouseFora method, of class PrincipalController.
      */
-    @Ignore
-    public void testMouseClick() {
-        System.out.println("mouseClick");
-        LoginController instance = new LoginController();
-        instance.mouseClick();
+    @Test
+    public void testAlterarDados_mouseFora() {
+        System.out.println("alterarDados_mouseFora");
+        PrincipalController instance = new PrincipalController();
+        instance.alterarDados_mouseFora();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

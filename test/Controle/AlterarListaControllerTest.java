@@ -2,11 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Visao;
+package Controle;
 
-import Controle.CadastrarUsuarioController;
 import java.net.URL;
-import java.sql.Savepoint;
 import java.util.ResourceBundle;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -19,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author Rayan
  */
-public class CadastrarUsuarioControllerTest {
+public class AlterarListaControllerTest {
     
-    public CadastrarUsuarioControllerTest() {
+    public AlterarListaControllerTest() {
     }
     
     @BeforeClass
@@ -41,38 +39,38 @@ public class CadastrarUsuarioControllerTest {
     }
 
     /**
-     * Test of cancelarAcao method, of class CadastrarUsuarioController.
+     * Test of cancelarAcao method, of class AlterarListaController.
      */
     @Test
     public void testCancelarAcao() {
         System.out.println("cancelarAcao");
-        CadastrarUsuarioController instance = new CadastrarUsuarioController();
+        AlterarListaController instance = new AlterarListaController();
         instance.cancelarAcao();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of cadastrarAcao method, of class CadastrarUsuarioController.
+     * Test of editarAcao method, of class AlterarListaController.
      */
     @Test
-    public void testCadastrarAcao() {
-        System.out.println("cadastrarAcao");
-        CadastrarUsuarioController instance = new CadastrarUsuarioController();
-        instance.cadastrarAcao();
+    public void testEditarAcao() {
+        System.out.println("editarAcao");
+        AlterarListaController instance = new AlterarListaController();
+        instance.editarAcao();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of initialize method, of class CadastrarUsuarioController.
+     * Test of initialize method, of class AlterarListaController.
      */
     @Test
     public void testInitialize() {
         System.out.println("initialize");
         URL url = null;
         ResourceBundle rb = null;
-        CadastrarUsuarioController instance = new CadastrarUsuarioController();
+        AlterarListaController instance = new AlterarListaController();
         instance.initialize(url, rb);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
