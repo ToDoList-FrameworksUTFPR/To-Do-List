@@ -39,6 +39,7 @@ import javax.imageio.ImageIO;
 public class PrincipalController implements Initializable {
 
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
+    
     @FXML
     private Tab tabMenuGraficos;
     @FXML
@@ -49,6 +50,7 @@ public class PrincipalController implements Initializable {
     @FXML
     private ComboBox comboFormato;
     /* /Tab gráficos */
+    
     /* Tab Tarefas */
     @FXML
     private Label lblSaudacao;
@@ -63,7 +65,9 @@ public class PrincipalController implements Initializable {
     @FXML
     private ListView listaListas;
     @FXML
-    private ComboBox comboFiltro;
+    private ComboBox comboOrdenarLista;
+    @FXML
+    private ComboBox comboOrdenarItem;
     @FXML
     private Label lblInformCad;
     @FXML
@@ -120,13 +124,16 @@ public class PrincipalController implements Initializable {
         comboFormato.setValue(itens.get(0));
         abrirListas();
         itens = null;
-        comboFiltro.setItems(itens);
+        comboOrdenarLista.setItems(itens);
+        comboOrdenarItem.setItems(itens);
         itens = FXCollections.observableArrayList(
                 "Nome",
                 "Data",
                 "Prioridade");
-        comboFiltro.setItems(itens);
-        comboFiltro.setValue(itens.get(0));
+        comboOrdenarLista.setItems(itens);
+        comboOrdenarItem.setItems(itens);
+        comboOrdenarLista.setValue(itens.get(0));
+        comboOrdenarItem.setValue(itens.get(0));
 
         Image imagemAdicionar = new Image(getClass().getResourceAsStream("Imagens/adicionar.png"));
         Image imagemEditar = new Image(getClass().getResourceAsStream("Imagens/editar.png"));

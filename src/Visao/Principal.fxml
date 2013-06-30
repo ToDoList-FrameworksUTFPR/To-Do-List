@@ -23,13 +23,13 @@
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="328.0" prefWidth="426.0">
                           <children>
-                            <Label layoutX="3.0" layoutY="33.0" text="Oranizar por:" />
+                            <Label layoutX="3.0" layoutY="33.0" text="Ordenar por:" />
                             <Label layoutX="62.0" layoutY="1.0" text="Itens">
                               <font>
                                 <Font size="20.0" fx:id="x4" />
                               </font>
                             </Label>
-                            <ComboBox fx:id="comboFiltro" layoutX="83.0" layoutY="30.0" prefHeight="21.0" prefWidth="82.0">
+                            <ComboBox id="comboFiltro" fx:id="comboOrdenarItem" layoutX="83.0" layoutY="30.0" prefHeight="21.0" prefWidth="82.0">
                               <items>
                                 <FXCollections fx:factory="observableArrayList">
                                   <String fx:value="Item 1" />
@@ -79,7 +79,7 @@
                   </panes>
                 </Accordion>
                 <Button id="btnDeletar" fx:id="removerLista" contentDisplay="GRAPHIC_ONLY" layoutX="123.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#deletarLista" prefHeight="35.0" prefWidth="38.0" />
-                <ListView fx:id="listaListas" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="168.0" />
+                <ListView fx:id="listaListas" layoutY="141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="168.0" />
                 <Button id="adicionar" fx:id="adicionarNovaLista" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="7.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#cadastrarLista" prefHeight="35.0" prefWidth="38.0">
                   <font>
                     <Font size="9.0" fx:id="x3" />
@@ -95,6 +95,16 @@
                 <Separator layoutX="175.0" layoutY="25.0" orientation="VERTICAL" prefHeight="394.9999000000025" />
                 <Separator layoutX="8.0" layoutY="26.0" prefWidth="592.0" />
                 <Label fx:id="lblAlterarDados" layoutX="524.0" layoutY="6.0" onMouseClicked="#alterarDados" onMouseEntered="#alterarDados_mouseEmCima" onMouseExited="#alterarDados_mouseFora" text="Alterar dados" textFill="#606060" />
+                <Label layoutX="7.0" layoutY="108.0" text="Ordenar por:" />
+                <ComboBox fx:id="comboOrdenarLista" layoutX="84.0" layoutY="108.0" prefHeight="21.0" prefWidth="84.0">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
               </children>
             </AnchorPane>
           </content>

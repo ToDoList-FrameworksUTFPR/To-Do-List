@@ -4,7 +4,6 @@
  */
 package Controle;
 
-import Modelo.Lista;
 import Visao.ProjetoFinal;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -39,8 +38,7 @@ public class AlterarListaController implements Initializable {
         if (txtNome.getText().isEmpty()) {
             lblInformacao.setText("Favor preencher corretamente o campo.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
-        } else {
-            
+        } else {            
             lblInformacao.setText("Lista cadastrada com sucesso!");
             lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
             aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome()).setNome(txtNome.getText());
