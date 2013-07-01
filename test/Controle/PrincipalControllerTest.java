@@ -6,6 +6,7 @@ package Controle;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import org.easymock.EasyMock;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -32,6 +33,7 @@ public class PrincipalControllerTest {
     
     @Before
     public void setUp() {
+        PrincipalController p = EasyMock.createMock(PrincipalController.class);        
     }
     
     @After
