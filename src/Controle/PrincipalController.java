@@ -105,9 +105,16 @@ public class PrincipalController implements Initializable {
     @FXML
     private TextField txtDataFinalizado;
     /* /Informacoes do Item */
+    @FXML
+    private TextField txtNomeSubItem;
+    @FXML
+    private Label lblSubItemInfo;   
+    @FXML
+    private Button btnRemoverSubItem; 
     /* /SubItem */
     /* /Tab Tarefas */
 
+    /* tabGraficos */
     @FXML
     private void abrirAbaGraficos() {
         if (tabMenuGraficos.isSelected()) {
@@ -143,14 +150,166 @@ public class PrincipalController implements Initializable {
             graficoTarefas.setData(pieChartData);
         }
     }
+    @FXML
+    private void salvarGrafico() {
+        BufferedImage img = null;
+        try {
+            img = new Robot().createScreenCapture(
+                    new java.awt.Rectangle(
+                    (int) aplicacao.stage.getX() + 65, (int) aplicacao.stage.getY() + 85,
+                    (int) aplicacao.stage.getWidth() - 135, (int) aplicacao.stage.getHeight() - 90));
+        } catch (AWTException ex) {
+            log.error("salvarGrafico", "Erro ao capturar imagem da tela.", ex);
+        }
+        FileChooser fileChooser = new FileChooser();
+        FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
+        fileChooser.getExtensionFilters().add(exts);
+        String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
+        if (!arquivo.isEmpty()) {
+            try {
+                ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
+            } catch (IOException ex) {
+                log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivi ->" + arquivo, ex);
+            }
 
+        }
+    }
+    /* /tabGraficos */
+    /* tabTarefas */
     @FXML
     private void abrirAbaTarefas() {
         if (tabMenuTarefas.isSelected()) {
             abrirListas();
         }
+    }  
+    @FXML
+    public void alterarDados() {
+        aplicacao.goTo("AlterarDados");
     }
 
+    @FXML
+    public void alterarDados_mouseEmCima() {
+        lblAlterarDados.setTextFill(Paint.valueOf("darkgray"));
+    }
+
+    @FXML
+    public void alterarDados_mouseFora() {
+        lblAlterarDados.setTextFill(Paint.valueOf("gray"));
+    }    
+    /* lista */
+    @FXML
+    private void abrirListas() {
+        ObservableList<Lista> itens = null;
+        listaListas.setItems(itens);
+        itens = FXCollections.observableArrayList();
+        itens.addAll(aplicacao.retornarUsuario().getListas());
+        listaListas.setItems(itens);
+
+    }
+    @FXML
+    private void ordenacaoListaAcao() {
+        //oredenar listas
+        ArrayList<Lista> lista = new ArrayList<>();
+        ObservableList<Lista> itens = null;
+        listaListas.setItems(itens);
+        for (Lista l : aplicacao.retornarUsuario().getListas()) {
+            lista.add(l);
+        }
+        itens = FXCollections.observableArrayList(lista);
+        switch (comboOrdenarLista.getPromptText()) {
+            case "Nome":
+                Collections.sort(lista);
+                break;
+            case "Prioridade":
+                //Collections.sort(lista, new Comparator<>(){});
+                break;
+            case "Data":
+                //Collections.sort(lista, new Comparator<>(){});
+                break;
+        }
+        listaListas.setItems(itens);
+    }
+    @FXML
+    private void cadastrarLista() {
+        aplicacao.setListaTemp(null);
+        aplicacao.goTo("GerenciarLista");
+    }
+
+    @FXML
+    private void editarLista() {
+        if (listaListas.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.goTo("GerenciarLista");
+        }
+    }
+
+    @FXML
+    private void deletarLista() {
+        if (listaListas.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.retornarUsuario().removerLista((Lista) listaListas.getSelectionModel().getSelectedItem());
+            abrirListas();
+        }
+    }
+    /* /lista */
+    /* item */
+    @FXML
+    private void abrirListaItens() {
+        ObservableList<Item> itens = null;
+        Callback<Item, ObservableValue<Boolean>> getProperty = new Callback<Item, ObservableValue<Boolean>>() {
+            @Override
+            public ObservableValue<Boolean> call(Item p) {
+                return p.getSelected();
+            }
+        };
+        listaItens.setItems(itens);
+        itens = FXCollections.observableArrayList();
+        int index = aplicacao.retornarUsuario().getListas().indexOf((Lista) listaItens.getSelectionModel().getSelectedItem());
+
+        itens.addAll(aplicacao.retornarUsuario().getListas().get(index).getListaItens());
+        listaItens.setItems(itens);
+
+        Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);
+        listaItens.setCellFactory(forListView);
+    }    
+    @FXML
+    private void ordenacaoItemAcao() {
+        //oredenar itens
+    }
+    @FXML
+    private void cadastrarItem() {
+        aplicacao.setItemTemp(null);
+        aplicacao.goTo("GerenciarItem");
+    }
+
+    @FXML
+    private void editarItem() {
+        if (listaItens.getSelectionModel().getSelectedItem() != null && listaListas.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.setItemTemp((Item) listaItens.getSelectionModel().getSelectedItem());
+            aplicacao.goTo("GerenciarItem");
+        }
+    }
+
+    @FXML
+    private void deletarItem() {
+        if (listaItens.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.retornarUsuario().removerLista((Lista) listaItens.getSelectionModel().getSelectedItem());
+            abrirListas();
+        }
+    }
+    /* /item */
+    /* subitem */
+    @FXML
+    private void adicionarSubItem() {
+        if (!txtNomeSubItem.getText().isEmpty() && aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
+            lblSubItemInfo.setText("Subitem adicionado com sucesso.");
+            lblSubItemInfo.setTextFill(Paint.valueOf("darkgreen"));            
+        }else{
+            lblSubItemInfo.setText("Erro ao adicionar subitem.");
+            lblSubItemInfo.setTextFill(Paint.valueOf("red")); 
+        }
+    }
+    /* /subitem */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<String> itens = null;
@@ -185,152 +344,11 @@ public class PrincipalController implements Initializable {
         adicionarItem.setGraphic(new ImageView(imagemAdicionar));
         editarItem.setGraphic(new ImageView(imagemEditar));
         removerItem.setGraphic(new ImageView(imagemRemover));
+        
+        btnRemoverSubItem.setGraphic(new ImageView(imagemRemover));
 
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));
     }
-
-    @FXML
-    private void salvarGrafico() {
-        BufferedImage img = null;
-        try {
-            img = new Robot().createScreenCapture(
-                    new java.awt.Rectangle(
-                    (int) aplicacao.stage.getX() + 65, (int) aplicacao.stage.getY() + 85,
-                    (int) aplicacao.stage.getWidth() - 135, (int) aplicacao.stage.getHeight() - 90));
-        } catch (AWTException ex) {
-            log.error("salvarGrafico", "Erro ao capturar imagem da tela.", ex);
-        }
-        FileChooser fileChooser = new FileChooser();
-        FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
-        fileChooser.getExtensionFilters().add(exts);
-        String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
-        if (!arquivo.isEmpty()) {
-            try {
-                ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
-            } catch (IOException ex) {
-                log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivi ->" + arquivo, ex);
-            }
-
-        }
-    }
-
-    @FXML
-    private void abrirListas() {
-        ObservableList<Lista> itens = null;
-        listaListas.setItems(itens);
-        itens = FXCollections.observableArrayList();
-        itens.addAll(aplicacao.retornarUsuario().getListas());
-        listaListas.setItems(itens);
-
-    }
-
-    @FXML
-    private void abrirListaItens() {
-        ObservableList<Item> itens = null;
-        Callback<Item, ObservableValue<Boolean>> getProperty = new Callback<Item, ObservableValue<Boolean>>() {
-            @Override
-            public ObservableValue<Boolean> call(Item p) {
-                return p.getSelected();
-            }
-        };
-        listaItens.setItems(itens);
-        itens = FXCollections.observableArrayList();
-        int index = aplicacao.retornarUsuario().getListas().indexOf((Lista) listaItens.getSelectionModel().getSelectedItem());
-
-        itens.addAll(aplicacao.retornarUsuario().getListas().get(index).getListaItens());
-        listaItens.setItems(itens);
-
-        Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);
-        listaItens.setCellFactory(forListView);
-    }
-
-    @FXML
-    private void ordenacaoListaAcao() {
-        //oredenar listas
-        ArrayList<Lista> lista = new ArrayList<>();
-        ObservableList<Lista> itens = null;
-        listaListas.setItems(itens);
-        for (Lista l : aplicacao.retornarUsuario().getListas()) {
-            lista.add(l);
-        }
-        itens = FXCollections.observableArrayList(lista);
-        switch (comboOrdenarLista.getPromptText()) {
-            case "Nome":
-                Collections.sort(lista);
-                break;
-            case "Prioridade":
-                //Collections.sort(lista, new Comparator<>(){});
-                break;
-            case "Data":
-                //Collections.sort(lista, new Comparator<>(){});
-                break;
-        }
-        listaListas.setItems(itens);
-    }
-
-    @FXML
-    private void ordenacaoItemAcao() {
-        //oredenar itens
-    }
-
-    @FXML
-    private void cadastrarLista() {
-        aplicacao.setListaTemp(null);
-        aplicacao.goTo("GerenciarLista");
-    }
-
-    @FXML
-    private void editarLista() {
-        if (listaListas.getSelectionModel().getSelectedItem() != null) {
-            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
-            aplicacao.goTo("GerenciarLista");
-        }
-    }
-
-    @FXML
-    private void deletarLista() {
-        if (listaListas.getSelectionModel().getSelectedItem() != null) {
-            aplicacao.retornarUsuario().removerLista((Lista) listaListas.getSelectionModel().getSelectedItem());
-            abrirListas();
-        }
-    }
-
-    @FXML
-    private void cadastrarItem() {
-        aplicacao.setItemTemp(null);
-        aplicacao.goTo("GerenciarItem");
-    }
-
-    @FXML
-    private void editarItem() {
-        if (listaItens.getSelectionModel().getSelectedItem() != null && listaListas.getSelectionModel().getSelectedItem() != null) {
-            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
-            aplicacao.setItemTemp((Item) listaItens.getSelectionModel().getSelectedItem());
-            aplicacao.goTo("GerenciarItem");
-        }
-    }
-
-    @FXML
-    private void deletarItem() {
-        if (listaItens.getSelectionModel().getSelectedItem() != null) {
-            aplicacao.retornarUsuario().removerLista((Lista) listaItens.getSelectionModel().getSelectedItem());
-            abrirListas();
-        }
-    }
-
-    @FXML
-    public void alterarDados() {
-        aplicacao.goTo("AlterarDados");
-    }
-
-    @FXML
-    public void alterarDados_mouseEmCima() {
-        lblAlterarDados.setTextFill(Paint.valueOf("darkgray"));
-    }
-
-    @FXML
-    public void alterarDados_mouseFora() {
-        lblAlterarDados.setTextFill(Paint.valueOf("gray"));
-    }
+    /* /tabTarefas */
 }
