@@ -4,6 +4,8 @@
  */
 package Controle;
 
+import Log.Log;
+import Modelo.Item;
 import Modelo.Lista;
 import Visao.ProjetoFinal;
 import java.awt.AWTException;
@@ -12,8 +14,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.ResourceBundle;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -22,14 +29,16 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Tab;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
+import javafx.util.Callback;
 import javax.imageio.ImageIO;
 
 /**
@@ -39,19 +48,21 @@ import javax.imageio.ImageIO;
 public class PrincipalController implements Initializable {
 
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
-    
+    private Log log = new Log(PrincipalController.class);
+    /* TABS */
     @FXML
     private Tab tabMenuGraficos;
     @FXML
     private Tab tabMenuTarefas;
+    /* /TABS */
     /* Tab gráficos */
     @FXML
     private PieChart graficoTarefas;
     @FXML
     private ComboBox comboFormato;
     /* /Tab gráficos */
-    
     /* Tab Tarefas */
+    /* Lista */
     @FXML
     private Label lblSaudacao;
     @FXML
@@ -66,42 +77,70 @@ public class PrincipalController implements Initializable {
     private ListView listaListas;
     @FXML
     private ComboBox comboOrdenarLista;
+    /* /Lista */
+    /* Item */
+    @FXML
+    private Button adicionarItem;
+    @FXML
+    private Button removerItem;
+    @FXML
+    private Button editarItem;
     @FXML
     private ComboBox comboOrdenarItem;
     @FXML
-    private Label lblInformCad;
-    @FXML
     private ListView listaItens;
+    /* /Item */
+    /* SubItem */
+    /* Informacoes do Item */
     @FXML
-    private TextField cadItemNome;
+    private TextField txtNome;
     @FXML
-    private TextField cadItemLocal;
+    private TextField txtPrioridade;
     @FXML
-    private TextField cadItemDataCriacao;
+    private TextField txtLocal;
     @FXML
-    private TextField cadItemDataEncerramento;
+    private TextField txtDataCriacao;
     @FXML
-    private TextArea cadItemDescricao;
+    private TextField txtDataFinalizar;
     @FXML
-    private ComboBox cadItemPrioridade;
+    private TextField txtDataFinalizado;
+    /* /Informacoes do Item */
+    /* /SubItem */
     /* /Tab Tarefas */
 
     @FXML
     private void abrirAbaGraficos() {
         if (tabMenuGraficos.isSelected()) {
-            try {
-                ObservableList<PieChart.Data> pieChartData = null;
-                graficoTarefas.setTitle("");
-                graficoTarefas.setData(pieChartData);
-                pieChartData = FXCollections.observableArrayList(
-                        new PieChart.Data("Realizadas sem atraso", 75),
-                        new PieChart.Data("Realizadas com atraso", 33.5),
-                        new PieChart.Data("Não realizadas", 22));
-                graficoTarefas.setTitle("Número de tarefas");
-                graficoTarefas.setData(pieChartData);
-            } catch (Exception e) {
-                //colocar o log
+            int contRealizadasSemAtraso = 0, contRealizadasComAtraso = 0, contNaoRealizadas = 0, totalItens = 0;
+            for (Lista l : aplicacao.retornarUsuario().getListas()) {
+                totalItens++;
+                for (Item i : l.getListaItens()) {
+                    DateFormat d = new SimpleDateFormat("dd/MM/yyyy");
+                    try {
+                        if (!i.getDataFinalizado().isEmpty()) {
+                            if (d.parse(i.getDataFinalizado()).getTime() > d.parse(i.getDataFinalizar()).getTime()) {
+                                contRealizadasComAtraso++;
+                            } else if (d.parse(i.getDataFinalizado()).getTime() < d.parse(i.getDataFinalizar()).getTime()) {
+                                contRealizadasSemAtraso++;
+                            }
+                        } else {
+                            contNaoRealizadas++;
+                        }
+                    } catch (ParseException ex) {
+                        log.error("abrirAbaGraficos", "Erro ao realizar conversão de datas", ex);
+                    }
+
+                }
             }
+            ObservableList<PieChart.Data> pieChartData = null;
+            graficoTarefas.setTitle("");
+            graficoTarefas.setData(pieChartData);
+            pieChartData = FXCollections.observableArrayList(
+                    new PieChart.Data("Realizadas sem atraso (" + contRealizadasSemAtraso + ")", contRealizadasSemAtraso),
+                    new PieChart.Data("Realizadas com atraso (" + contRealizadasComAtraso + ")", contRealizadasComAtraso),
+                    new PieChart.Data("Não realizadas (" + contNaoRealizadas + ")", contNaoRealizadas));
+            graficoTarefas.setTitle("Número de tarefas");
+            graficoTarefas.setData(pieChartData);
         }
     }
 
@@ -143,35 +182,72 @@ public class PrincipalController implements Initializable {
         editarLista.setGraphic(new ImageView(imagemEditar));
         removerLista.setGraphic(new ImageView(imagemRemover));
 
+        adicionarItem.setGraphic(new ImageView(imagemAdicionar));
+        editarItem.setGraphic(new ImageView(imagemEditar));
+        removerItem.setGraphic(new ImageView(imagemRemover));
+
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));
     }
 
     @FXML
-    private void salvarGrafico() throws AWTException, IOException {
-        BufferedImage img = new Robot().createScreenCapture(
-                new java.awt.Rectangle(
-                (int) aplicacao.stage.getX() + 65, (int) aplicacao.stage.getY() + 85,
-                (int) aplicacao.stage.getWidth() - 135, (int) aplicacao.stage.getHeight() - 90));
+    private void salvarGrafico() {
+        BufferedImage img = null;
+        try {
+            img = new Robot().createScreenCapture(
+                    new java.awt.Rectangle(
+                    (int) aplicacao.stage.getX() + 65, (int) aplicacao.stage.getY() + 85,
+                    (int) aplicacao.stage.getWidth() - 135, (int) aplicacao.stage.getHeight() - 90));
+        } catch (AWTException ex) {
+            log.error("salvarGrafico", "Erro ao capturar imagem da tela.", ex);
+        }
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
         fileChooser.getExtensionFilters().add(exts);
-        try {
-            String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
-            if (!arquivo.isEmpty()) {
-                try {
-                    ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
-                } catch (Exception e) {
-                    //colocar o LOG
-                }
+        String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
+        if (!arquivo.isEmpty()) {
+            try {
+                ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
+            } catch (IOException ex) {
+                log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivi ->" + arquivo, ex);
             }
-        } catch (Exception e) {
-            //colocar o log
+
         }
     }
 
     @FXML
     private void abrirListas() {
+        ObservableList<Lista> itens = null;
+        listaListas.setItems(itens);
+        itens = FXCollections.observableArrayList();
+        itens.addAll(aplicacao.retornarUsuario().getListas());
+        listaListas.setItems(itens);
+
+    }
+
+    @FXML
+    private void abrirListaItens() {
+        ObservableList<Item> itens = null;
+        Callback<Item, ObservableValue<Boolean>> getProperty = new Callback<Item, ObservableValue<Boolean>>() {
+            @Override
+            public ObservableValue<Boolean> call(Item p) {
+                return p.getSelected();
+            }
+        };
+        listaItens.setItems(itens);
+        itens = FXCollections.observableArrayList();
+        int index = aplicacao.retornarUsuario().getListas().indexOf((Lista) listaItens.getSelectionModel().getSelectedItem());
+
+        itens.addAll(aplicacao.retornarUsuario().getListas().get(index).getListaItens());
+        listaItens.setItems(itens);
+
+        Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);
+        listaItens.setCellFactory(forListView);
+    }
+
+    @FXML
+    private void ordenacaoListaAcao() {
+        //oredenar listas
         ArrayList<Lista> lista = new ArrayList<>();
         ObservableList<Lista> itens = null;
         listaListas.setItems(itens);
@@ -179,19 +255,36 @@ public class PrincipalController implements Initializable {
             lista.add(l);
         }
         itens = FXCollections.observableArrayList(lista);
+        switch (comboOrdenarLista.getPromptText()) {
+            case "Nome":
+                Collections.sort(lista);
+                break;
+            case "Prioridade":
+                //Collections.sort(lista, new Comparator<>(){});
+                break;
+            case "Data":
+                //Collections.sort(lista, new Comparator<>(){});
+                break;
+        }
         listaListas.setItems(itens);
     }
 
     @FXML
+    private void ordenacaoItemAcao() {
+        //oredenar itens
+    }
+
+    @FXML
     private void cadastrarLista() {
-        aplicacao.goTo("CadastrarLista");
+        aplicacao.setListaTemp(null);
+        aplicacao.goTo("GerenciarLista");
     }
 
     @FXML
     private void editarLista() {
         if (listaListas.getSelectionModel().getSelectedItem() != null) {
             aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
-            aplicacao.goTo("AlterarLista");
+            aplicacao.goTo("GerenciarLista");
         }
     }
 
@@ -199,6 +292,29 @@ public class PrincipalController implements Initializable {
     private void deletarLista() {
         if (listaListas.getSelectionModel().getSelectedItem() != null) {
             aplicacao.retornarUsuario().removerLista((Lista) listaListas.getSelectionModel().getSelectedItem());
+            abrirListas();
+        }
+    }
+
+    @FXML
+    private void cadastrarItem() {
+        aplicacao.setItemTemp(null);
+        aplicacao.goTo("GerenciarItem");
+    }
+
+    @FXML
+    private void editarItem() {
+        if (listaItens.getSelectionModel().getSelectedItem() != null && listaListas.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.setItemTemp((Item) listaItens.getSelectionModel().getSelectedItem());
+            aplicacao.goTo("GerenciarItem");
+        }
+    }
+
+    @FXML
+    private void deletarItem() {
+        if (listaItens.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.retornarUsuario().removerLista((Lista) listaItens.getSelectionModel().getSelectedItem());
             abrirListas();
         }
     }
@@ -216,24 +332,5 @@ public class PrincipalController implements Initializable {
     @FXML
     public void alterarDados_mouseFora() {
         lblAlterarDados.setTextFill(Paint.valueOf("gray"));
-    }
-
-    @FXML
-    private void cadItemAcao() {
-        if (cadItemNome.getText().isEmpty() || cadItemLocal.getText().isEmpty() || cadItemPrioridade.getPromptText().isEmpty()
-                || cadItemDescricao.getText().isEmpty() || cadItemDataCriacao.getText().isEmpty() || cadItemDataEncerramento.getText().isEmpty()) {
-            lblInformCad.setText("Item adicionado com sucesso!");
-            lblInformCad.setTextFill(Paint.valueOf("darkgreen"));
-            cadItemNome.setText("");
-            cadItemLocal.setText("");
-            cadItemPrioridade.setValue(null);
-            cadItemDataCriacao.setText("");
-            cadItemDataEncerramento.setText("");
-            cadItemDescricao.setText("");
-            listaItens.getItems().add(cadItemNome.getText());
-        } else {
-            lblInformCad.setText("Erro ao adicionar item.");
-            lblInformCad.setTextFill(Paint.valueOf("red"));
-        }
     }
 }

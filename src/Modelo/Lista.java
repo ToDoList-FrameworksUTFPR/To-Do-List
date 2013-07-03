@@ -7,12 +7,14 @@ package Modelo;
 
 
 import java.util.ArrayList;
+import javafx.beans.property.SimpleBooleanProperty;
 
 /**
  *
  * @author Rayan
  */
-public class Lista {
+public class Lista implements Comparable<Object>{
+    private SimpleBooleanProperty selected;
     private String nome;
     private ArrayList<Item> listaItens;
 
@@ -53,5 +55,24 @@ public class Lista {
     }
     public void removerItem(Item l){
         listaItens.remove(l);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
+     * @return the selected
+     */
+    public SimpleBooleanProperty getSelected() {
+        return selected;
+    }
+
+    /**
+     * @param selected the selected to set
+     */
+    public void setSelected(SimpleBooleanProperty selected) {
+        this.selected = selected;
     }
 }

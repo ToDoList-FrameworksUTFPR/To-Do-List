@@ -8,12 +8,14 @@ package Modelo;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
+import javafx.beans.property.SimpleBooleanProperty;
 
 /**
  *
  * @author Rayan
  */
 public class Item {
+    private SimpleBooleanProperty selected;
     private String nome;
     private String local;
     private int prioridade;
@@ -183,5 +185,19 @@ public class Item {
         sb.append(dtFinalizado);
         sb.append("]");
         return sb.toString();
+    }
+
+    /**
+     * @return the selected
+     */
+    public SimpleBooleanProperty getSelected() {
+        return selected;
+    }
+
+    /**
+     * @param selected the selected to set
+     */
+    public void setSelected(SimpleBooleanProperty selected) {
+        this.selected = selected;
     }
 }
