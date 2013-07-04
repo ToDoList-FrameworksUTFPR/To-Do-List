@@ -6,7 +6,6 @@ package Controle;
 
 import Log.Log;
 import Modelo.Item;
-import Modelo.Usuario;
 import Visao.ProjetoFinal;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -61,7 +60,9 @@ public class GerenciarItemController implements Initializable {
 
     @FXML
     public void cadastrarAcao() {
-        if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty() || txtDataCriacao.getText().isEmpty() || txtDataFinalizar.getText().isEmpty() || comboPrioridade.getPromptText().isEmpty()) {
+        if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty() ||
+                txtDataCriacao.getText().isEmpty() || txtDataFinalizar.getText().isEmpty() ||
+                comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
@@ -81,7 +82,9 @@ public class GerenciarItemController implements Initializable {
     }
     @FXML
     public void alterarAcao() {
-        if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty() || txtDataCriacao.getText().isEmpty() || txtDataFinalizar.getText().isEmpty() || comboPrioridade.getPromptText().isEmpty()) {
+        if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty() ||
+                txtDataCriacao.getText().isEmpty() || txtDataFinalizar.getText().isEmpty() ||
+                comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {

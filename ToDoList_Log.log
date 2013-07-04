@@ -1130,3 +1130,791 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
 516  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 03 22:05:33 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3e4cb5a3
 935  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 03 22:05:34 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3e4cb5a3
 4503 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Jul 03 22:05:37 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 03 22:38:22 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 03 22:38:22 BRT 2013 : Retornou lista de arquivos com o filtro
+115  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Jul 03 22:38:22 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+508  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 03 22:38:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@76dcbe88
+946  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 03 22:38:23 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@76dcbe88
+6642 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [instanciarUsuarios] Wed Jul 03 22:38:28 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+6642 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [instanciarUsuarios] Wed Jul 03 22:38:28 BRT 2013 : Retornou lista de arquivos com o filtro
+6697 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [_constructor] Wed Jul 03 22:38:28 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+8893 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [entrarAcao] Wed Jul 03 22:38:30 BRT 2013 : Criado novo usuario temporario para verificação de login
+55476 [JavaFX Application Thread] INFO  Controle.AlterarDadosController  - [initialize] Wed Jul 03 22:39:17 BRT 2013 : Iniciado form, e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run195159103/To-Do-List.jar!/Visao/AlterarDados.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 09:27:35 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+51   [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 09:27:35 BRT 2013 : Retornou lista de arquivos com o filtro
+271  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 09:27:35 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+2650 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 09:27:37 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@4981b9dd
+6090 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 09:27:41 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@4981b9dd
+100543 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 09:29:15 BRT 2013 : Criado novo usuario temporario para verificação de login
+151584 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [cadastrarAcao] Thu Jul 04 09:30:06 BRT 2013 : Gerado uma nova lista a ser cadastrada
+154692 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Thu Jul 04 09:30:09 BRT 2013 : Gerado uma nova lista a ser cadastrada
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 12:03:05 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 12:03:05 BRT 2013 : Retornou lista de arquivos com o filtro
+173  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 12:03:05 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+619  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 12:03:05 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@63d181de
+1362 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 12:03:06 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@63d181de
+12000 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [instanciarUsuarios] Thu Jul 04 12:03:17 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+12000 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [instanciarUsuarios] Thu Jul 04 12:03:17 BRT 2013 : Retornou lista de arquivos com o filtro
+12028 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [_constructor] Thu Jul 04 12:03:17 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+16549 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [entrarAcao] Thu Jul 04 12:03:21 BRT 2013 : Criado novo usuario temporario para verificação de login
+27700 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Thu Jul 04 12:03:32 BRT 2013 : Gerado uma nova lista a ser cadastrada
+52922 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 04 12:03:58 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run530957509/To-Do-List.jar!/Visao/GerenciarItem.fxml
+58926 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 04 12:04:04 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run530957509/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:39:54 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:39:54 BRT 2013 : Retornou lista de arquivos com o filtro
+185  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:39:54 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+774  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:39:55 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1e290049
+1596 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:39:56 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1e290049
+2347 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:39:56 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:40:47 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:40:47 BRT 2013 : Retornou lista de arquivos com o filtro
+110  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:40:47 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+458  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:40:47 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@76dcbe88
+842  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:40:48 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@76dcbe88
+1753 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:40:48 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:41:57 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:41:57 BRT 2013 : Retornou lista de arquivos com o filtro
+103  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:41:57 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+477  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:41:57 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@16610faf
+862  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:41:57 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@16610faf
+4003 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:42:01 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:42:31 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:42:31 BRT 2013 : Retornou lista de arquivos com o filtro
+92   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:42:31 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+437  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:42:31 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@384ee98f
+810  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:42:32 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@384ee98f
+2069 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:42:33 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:43:10 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:43:11 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:43:11 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+438  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:43:11 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@69607702
+818  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:43:11 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@69607702
+2101 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:43:13 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:43:37 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:43:37 BRT 2013 : Retornou lista de arquivos com o filtro
+90   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:43:38 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+433  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:43:38 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@44c7c82a
+812  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:43:38 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@44c7c82a
+3977 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:43:41 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:44:07 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:44:07 BRT 2013 : Retornou lista de arquivos com o filtro
+89   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:44:07 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+437  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:44:07 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@69607702
+801  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:44:07 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@69607702
+1661 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:44:08 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:44:36 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:44:36 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:44:36 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+443  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:44:37 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@384ee98f
+824  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:44:37 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@384ee98f
+2281 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:44:39 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:46:22 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:46:22 BRT 2013 : Retornou lista de arquivos com o filtro
+96   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:46:22 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+464  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:46:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c255a5a
+825  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:46:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c255a5a
+2341 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:46:24 BRT 2013 : Criado novo usuario temporario para verificação de login
+32095 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 04 14:46:54 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run994783726/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:48:26 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:48:26 BRT 2013 : Retornou lista de arquivos com o filtro
+90   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:48:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+426  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:48:27 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c255a5a
+790  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:48:27 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c255a5a
+2767 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:48:29 BRT 2013 : Criado novo usuario temporario para verificação de login
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:48:55 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:48:55 BRT 2013 : Retornou lista de arquivos com o filtro
+89   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:48:55 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+435  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:48:56 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c255a5a
+810  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:48:56 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c255a5a
+1749 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:48:57 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:51:54 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:51:54 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:51:54 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+427  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:51:54 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@75be18e2
+794  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:51:55 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@75be18e2
+1917 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:51:56 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:52:39 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:52:39 BRT 2013 : Retornou lista de arquivos com o filtro
+92   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:52:39 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+435  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:52:40 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@384ee98f
+821  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:52:40 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@384ee98f
+2048 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:52:41 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:53:18 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:53:18 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:53:18 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+430  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:53:19 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@69607702
+819  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:53:19 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@69607702
+1666 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:53:20 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:55:57 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:55:57 BRT 2013 : Retornou lista de arquivos com o filtro
+92   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:55:57 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+444  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:55:58 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c255a5a
+841  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:55:58 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c255a5a
+2115 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:55:59 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:59:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 14:59:21 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 14:59:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+446  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:59:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@44c7c82a
+816  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 14:59:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@44c7c82a
+1986 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 14:59:23 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:01:15 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:01:15 BRT 2013 : Retornou lista de arquivos com o filtro
+94   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:01:15 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+450  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:01:15 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@384ee98f
+839  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:01:16 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@384ee98f
+1900 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:01:17 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:02:05 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:02:05 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:02:05 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+486  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:02:05 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3a1e003b
+854  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:02:06 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3a1e003b
+3236 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:02:08 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:03:03 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:03:03 BRT 2013 : Retornou lista de arquivos com o filtro
+92   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:03:03 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+451  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:03:03 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
+818  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:03:03 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
+2107 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:03:05 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:06:20 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:06:20 BRT 2013 : Retornou lista de arquivos com o filtro
+92   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:06:20 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+436  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:06:20 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+809  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:06:20 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+1799 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:06:21 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:07:04 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:07:04 BRT 2013 : Retornou lista de arquivos com o filtro
+110  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:07:04 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+165  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - Begin event threw exception
+java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+376  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - An error occurred while parsing XML from 'file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml', see nested exceptions
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml; lineNumber: 6; columnNumber: 144; Error at line 6 char 144: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3118)
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3146)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1355)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+597  [JavaFX Application Thread] ERROR Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:07:04 BRT 2013 : Realizando parser. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml; lineNumber: 6; columnNumber: 144; Error at line 6 char 144: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3118)
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3146)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1355)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+1225 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:07:05 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@261e7c17
+1594 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:07:05 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@261e7c17
+9708 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:07:13 BRT 2013 : Criado novo usuario temporario para verificação de login
+15178 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:07:19 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:07:31 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:07:31 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:07:31 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+143  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - Begin event threw exception
+java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+325  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - An error occurred while parsing XML from 'file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml', see nested exceptions
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml; lineNumber: 6; columnNumber: 144; Error at line 6 char 144: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3118)
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3146)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1355)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+537  [JavaFX Application Thread] ERROR Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:07:32 BRT 2013 : Realizando parser. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml; lineNumber: 6; columnNumber: 144; Error at line 6 char 144: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3118)
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3146)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1355)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+1083 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:07:32 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@5292d5fb
+1469 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:07:33 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@5292d5fb
+2902 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:07:34 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:07:42 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:07:42 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:07:42 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+141  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - Begin event threw exception
+java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+278  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - An error occurred while parsing XML from 'file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml', see nested exceptions
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml; lineNumber: 6; columnNumber: 147; Error at line 6 char 147: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3118)
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3146)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1355)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+453  [JavaFX Application Thread] ERROR Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:07:43 BRT 2013 : Realizando parser. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/Rayan.xml; lineNumber: 6; columnNumber: 147; Error at line 6 char 147: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3118)
+	at org.apache.commons.digester3.Digester.createSAXException(Digester.java:3146)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1355)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:506)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1323)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2717)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:40)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:37)
+	at Persistencia.Autenticador.<init>(Autenticador.java:44)
+	at Controle.LoginController.<init>(LoginController.java:24)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:84)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.IllegalArgumentException: Cannot invoke Modelo.Item.setRealizado on bean class 'class Modelo.Item' - argument type mismatch - had objects of type "java.lang.String" but expected signature "javafx.beans.property.SimpleBooleanProperty"
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2235)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:2151)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1957)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:2064)
+	at org.apache.commons.beanutils.BeanUtilsBean.setProperty(BeanUtilsBean.java:1017)
+	at org.apache.commons.beanutils.BeanUtilsBean.populate(BeanUtilsBean.java:830)
+	at org.apache.commons.beanutils.BeanUtils.populate(BeanUtils.java:433)
+	at org.apache.commons.digester3.SetPropertiesRule.begin(SetPropertiesRule.java:232)
+	at org.apache.commons.digester3.Digester.startElement(Digester.java:1350)
+	... 46 more
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:2170)
+	... 54 more
+997  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:07:43 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7b0da3ae
+1366 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:07:44 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7b0da3ae
+2324 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:07:45 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:14:45 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:14:45 BRT 2013 : Retornou lista de arquivos com o filtro
+102  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:14:45 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+525  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:14:46 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6b429a7d
+983  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:14:46 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6b429a7d
+2040 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:14:47 BRT 2013 : Criado novo usuario temporario para verificação de login
+9445 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 04 15:14:55 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2042592600/To-Do-List.jar!/Visao/GerenciarItem.fxml
+14057 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 04 15:14:59 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2042592600/To-Do-List.jar!/Visao/GerenciarItem.fxml
+16456 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [alterarAcao] Thu Jul 04 15:15:02 BRT 2013 : Alterado dados do item
+18804 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 04 15:15:04 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2042592600/To-Do-List.jar!/Visao/GerenciarItem.fxml
+23800 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [alterarAcao] Thu Jul 04 15:15:09 BRT 2013 : Alterado dados do item
+25818 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 04 15:15:11 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2042592600/To-Do-List.jar!/Visao/GerenciarItem.fxml

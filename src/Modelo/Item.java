@@ -6,7 +6,6 @@ package Modelo;
  */
 
 
-import java.text.DateFormat;
 import java.util.ArrayList;
 import javafx.beans.property.SimpleBooleanProperty;
 
@@ -23,6 +22,7 @@ public class Item implements Comparable<Item>{
     private String dataFinalizar;
     private String dataFinalizado;
     private String descricao;
+    private boolean realizado;
     private ArrayList<Subitem> listaSubItens;
 
     public Item(){
@@ -154,39 +154,6 @@ public class Item implements Comparable<Item>{
         listaSubItens.remove(l);
 
     }
-    @Override
-    public String toString() {
-        String dtCriacao = null;
-        String dtFinalizar = null;
-        String dtFinalizado = null;
-        if (dataCriacao != null) {
-            dtCriacao = DateFormat.getDateInstance().format(dataCriacao);
-        }
-        if (dataFinalizar != null) {
-            dtFinalizar = DateFormat.getDateInstance().format(dataFinalizar);
-        }
-        if (dataFinalizado != null) {
-            dtFinalizado = DateFormat.getDateInstance().format(dataFinalizado);
-        }
-        StringBuilder sb = new StringBuilder();
-        sb.append("[Item nome=");
-        sb.append(nome);
-        sb.append(" local=");
-        sb.append(local);
-        sb.append(" prioridade=");
-        sb.append(prioridade);
-        sb.append(" descricao=");
-        sb.append(descricao);
-        sb.append(" dataCriacao=");
-        sb.append(dtCriacao);
-        sb.append(" dataFinalizar=");
-        sb.append(dtFinalizar);
-        sb.append(" dataFinalizado=");
-        sb.append(dtFinalizado);
-        sb.append("]");
-        return sb.toString();
-    }
-
     /**
      * @return the selected
      */
@@ -204,5 +171,19 @@ public class Item implements Comparable<Item>{
     @Override
     public int compareTo(Item o) {
         return this.getPrioridade() - o.getPrioridade();
+    }
+
+    /**
+     * @return the realizado
+     */
+    public boolean isRealizado() {
+        return realizado;
+    }
+
+    /**
+     * @param realizado the realizado to set
+     */
+    public void setRealizado(boolean realizado) {
+        this.realizado = realizado;
     }
 }

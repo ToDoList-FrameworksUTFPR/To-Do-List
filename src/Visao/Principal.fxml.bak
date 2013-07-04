@@ -40,13 +40,12 @@
                 <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" prefHeight="248.0" prefWidth="169.0" />
                 <Accordion layoutX="362.0" layoutY="75.0" prefHeight="343.0" prefWidth="233.0">
                   <expandedPane>
-                    <TitledPane fx:id="x3" alignment="CENTER" contentDisplay="CENTER" text="Adicionar subitem">
+                    <TitledPane fx:id="x6" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                            <Label layoutX="14.0" layoutY="14.0" text="Nome:" />
-                            <TextField fx:id="txtNomeSubItem" layoutX="14.0" layoutY="37.0" prefWidth="200.0" />
-                            <Button layoutX="79.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#adicionarSubItem" text="Adicionar" />
+                            <ListView layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
+                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" mnemonicParsing="false" onMouseClicked="#deletarItem" prefHeight="35.0" prefWidth="38.0" />
                           </children>
                         </AnchorPane>
                       </content>
@@ -73,16 +72,19 @@
                         </AnchorPane>
                       </content>
                     </TitledPane>
-                    <fx:reference source="x3" />
-                    <TitledPane fx:id="x6" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
+                    <TitledPane fx:id="x3" alignment="CENTER" contentDisplay="CENTER" text="Adicionar subitem">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                            <ListView layoutY="1.0" prefHeight="274.0" prefWidth="231.0" />
+                            <Label layoutX="14.0" layoutY="14.0" text="Nome:" />
+                            <TextField fx:id="txtNomeSubItem" layoutX="14.0" layoutY="37.0" prefWidth="200.0" />
+                            <Button layoutX="79.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#adicionarSubItem" text="Adicionar" />
+                            <Label fx:id="lblSubItemInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="129.0" prefWidth="185.0" />
                           </children>
                         </AnchorPane>
                       </content>
                     </TitledPane>
+                    <fx:reference source="x6" />
                   </panes>
                 </Accordion>
                 <Button id="btnDeletar" fx:id="removerLista" contentDisplay="GRAPHIC_ONLY" layoutX="123.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#deletarLista" prefHeight="35.0" prefWidth="38.0" />

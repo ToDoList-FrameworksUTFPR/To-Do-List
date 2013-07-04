@@ -3,19 +3,19 @@
     <listas>
         <lista nome="nomeLista" prioridade="1">
             <itens>
-                <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="12/10/10" dataFinalizado="">
+                <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="12/10/10" dataFinalizado="" realizado="true">
                     <descricao>123123</descricao>
                     <subitens>
-                        <subitem nome="123" realizado="" />
-                        <subitem nome="321" realizado="" />                    
+                        <subitem nome="123" realizado="true" />
+                        <subitem nome="321" realizado="0" />                    
                     </subitens>
                 </item>
                
-                <item nome="aaanome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="11/10/10" dataFinalizado="12/10/10">
+                <item nome="aaanome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="11/10/10" dataFinalizado="12/10/10" realizado="false">
                     <descricao>123123</descricao>
                     <subitens>
                         <subitem nome="333" realizado="1" />
-                        <subitem nome="3123" realizado="" />                    
+                        <subitem nome="3123" realizado="false" />                    
                     </subitens>
                 </item>
             </itens>			

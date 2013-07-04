@@ -22,6 +22,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.ResourceBundle;
+import javafx.beans.InvalidationListener;
+import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -160,22 +162,26 @@ public class PrincipalController implements Initializable {
         try {
             img = new Robot().createScreenCapture(
                     new java.awt.Rectangle(
-                    (int) aplicacao.stage.getX() + 65, (int) aplicacao.stage.getY() + 85,
-                    (int) aplicacao.stage.getWidth() - 135, (int) aplicacao.stage.getHeight() - 90));
+                    (int) aplicacao.stage.getX() + 40, (int) aplicacao.stage.getY() + 85,
+                    (int) aplicacao.stage.getWidth() - 65, (int) aplicacao.stage.getHeight() - 130));
         } catch (AWTException ex) {
             log.error("salvarGrafico", "Erro ao capturar imagem da tela.", ex);
         }
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
         fileChooser.getExtensionFilters().add(exts);
-        String arquivo = fileChooser.showSaveDialog(aplicacao.stage).getAbsolutePath();
-        if (!arquivo.isEmpty()) {
-            try {
-                ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
-            } catch (IOException ex) {
-                log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivi ->" + arquivo, ex);
-            }
+        File caminho = null; 
+        caminho = fileChooser.showSaveDialog(aplicacao.stage);
+        if(caminho != null){
+            String arquivo = caminho.getAbsolutePath();
+            if (!arquivo.isEmpty()) {
+                try {
+                    ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
+                } catch (IOException ex) {
+                    log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivi ->" + arquivo, ex);
+                }
 
+            }
         }
     }
     /* /tabGraficos */
@@ -256,27 +262,37 @@ public class PrincipalController implements Initializable {
             abrirListas();
         }
     }
+    @FXML
+    private void selecionarLista() {
+        aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
+        abrirListaItens();
+    }
     /* /lista */
     /* item */
 
     @FXML
     private void abrirListaItens() {
-        ObservableList<Item> itens = null;
-        Callback<Item, ObservableValue<Boolean>> getProperty = new Callback<Item, ObservableValue<Boolean>>() {
-            @Override
-            public ObservableValue<Boolean> call(Item p) {
-                return p.getSelected();
+        if(listaListas.getSelectionModel().getSelectedItem() != null){
+            ObservableList<Item> itens = null;
+            Callback<Item, ObservableValue<Boolean>> getProperty = new Callback<Item, ObservableValue<Boolean>>() {
+
+                @Override
+                public ObservableValue<Boolean> call(Item p) {
+                   return p.getSelected();
+                }
+                
+            };
+            listaItens.setItems(itens);
+            itens = FXCollections.observableArrayList();
+            int index = aplicacao.retornarUsuario().getListas().indexOf(aplicacao.getListaTemp());
+            if(index >= 0){
+                itens.addAll(aplicacao.retornarUsuario().getListas().get(index).getListaItens());
+                listaItens.setItems(itens);
+
+                Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);                
+                listaItens.setCellFactory(forListView);
             }
-        };
-        listaItens.setItems(itens);
-        itens = FXCollections.observableArrayList();
-        int index = aplicacao.retornarUsuario().getListas().indexOf((Lista) listaItens.getSelectionModel().getSelectedItem());
-
-        itens.addAll(aplicacao.retornarUsuario().getListas().get(index).getListaItens());
-        listaItens.setItems(itens);
-
-        Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);
-        listaItens.setCellFactory(forListView);
+        }
     }
 
     @FXML
