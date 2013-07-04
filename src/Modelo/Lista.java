@@ -13,9 +13,10 @@ import javafx.beans.property.SimpleBooleanProperty;
  *
  * @author Rayan
  */
-public class Lista implements Comparable<Object>{
+public class Lista implements Comparable<Lista>{
     private SimpleBooleanProperty selected;
     private String nome;
+    private int prioridade;
     private ArrayList<Item> listaItens;
 
     public Lista(){
@@ -56,12 +57,6 @@ public class Lista implements Comparable<Object>{
     public void removerItem(Item l){
         listaItens.remove(l);
     }
-
-    @Override
-    public int compareTo(Object o) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     /**
      * @return the selected
      */
@@ -74,5 +69,24 @@ public class Lista implements Comparable<Object>{
      */
     public void setSelected(SimpleBooleanProperty selected) {
         this.selected = selected;
+    }
+
+    @Override
+    public int compareTo(Lista o) {
+        return this.getNome().toUpperCase().compareTo(o.getNome().toUpperCase());
+    }
+
+    /**
+     * @return the prioridade
+     */
+    public int getPrioridade() {
+        return prioridade;
+    }
+
+    /**
+     * @param prioridade the prioridade to set
+     */
+    public void setPrioridade(int prioridade) {
+        this.prioridade = prioridade;
     }
 }

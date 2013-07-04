@@ -10,7 +10,7 @@ package Modelo;
  *
  * @author Rayan
  */
-public class Subitem {
+public class Subitem implements Comparable<Subitem>{
     private String nome;
     private boolean realizado;
 
@@ -40,5 +40,10 @@ public class Subitem {
      */
     public void setRealizado(boolean realizado) {
         this.realizado = realizado;
+    }
+
+    @Override
+    public int compareTo(Subitem o) {
+        return this.getNome().toUpperCase().compareTo(o.getNome().toUpperCase());
     }
 }

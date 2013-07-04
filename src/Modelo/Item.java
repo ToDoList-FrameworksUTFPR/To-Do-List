@@ -14,7 +14,7 @@ import javafx.beans.property.SimpleBooleanProperty;
  *
  * @author Rayan
  */
-public class Item {
+public class Item implements Comparable<Item>{
     private SimpleBooleanProperty selected;
     private String nome;
     private String local;
@@ -199,5 +199,10 @@ public class Item {
      */
     public void setSelected(SimpleBooleanProperty selected) {
         this.selected = selected;
+    }
+
+    @Override
+    public int compareTo(Item o) {
+        return this.getPrioridade() - o.getPrioridade();
     }
 }

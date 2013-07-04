@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <usuario login="1" senha="1" nome="Rayan">
     <listas>
-        <lista nome="nomeLista">
+        <lista nome="nomeLista" prioridade="1">
             <itens>
                 <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="12/10/10" dataFinalizado="">
                     <descricao>123123</descricao>
@@ -10,27 +10,26 @@
                         <subitem nome="321" realizado="" />                    
                     </subitens>
                 </item>
-                <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="12/10/10" dataFinalizado="13/10/10">
+               
+                <item nome="aaanome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="11/10/10" dataFinalizado="12/10/10">
+                    <descricao>123123</descricao>
+                    <subitens>
+                        <subitem nome="333" realizado="1" />
+                        <subitem nome="3123" realizado="" />                    
+                    </subitens>
+                </item>
+            </itens>			
+        </lista>
+        <lista nome="nomeLista1" prioridade="2">
+            <itens>
+                <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/11" dataFinalizar="12/10/10" dataFinalizado="">
                     <descricao>123123</descricao>
                     <subitens>
                         <subitem nome="123" realizado="" />
                         <subitem nome="321" realizado="" />                    
                     </subitens>
                 </item>
-                <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/10" dataFinalizar="12/10/10" dataFinalizado="13/10/10">
-                    <descricao>123123</descricao>
-                    <subitens>
-                        <subitem nome="123" realizado="" />
-                        <subitem nome="321" realizado="" />                    
-                    </subitens>
-                </item>
-                <item nome="noasdme" local="local" prioridade="1" dataCriacao="10/10/10" dataFinalizar="12/10/10" dataFinalizado="11/10/10">
-                    <descricao>123123</descricao>
-                    <subitens>
-                        <subitem nome="222" realizado="" />
-                        <subitem nome="321312" realizado="" />                    
-                    </subitens>
-                </item>
+               
                 <item nome="aaanome" local="local" prioridade="3" dataCriacao="10/10/10" dataFinalizar="11/10/10" dataFinalizado="12/10/10">
                     <descricao>123123</descricao>
                     <subitens>
@@ -38,6 +37,18 @@
                         <subitem nome="3123" realizado="" />                    
                     </subitens>
                 </item>
+            </itens>			
+        </lista>
+         <lista nome="nomeLista1a" prioridade="3">
+            <itens>
+                <item nome="nome" local="local" prioridade="2" dataCriacao="10/10/11" dataFinalizar="12/10/10" dataFinalizado="">
+                    <descricao>123123</descricao>
+                    <subitens>
+                        <subitem nome="123" realizado="" />
+                        <subitem nome="321" realizado="" />                    
+                    </subitens>
+                </item>
+               
                 <item nome="aaanome" local="local" prioridade="3" dataCriacao="10/10/10" dataFinalizar="11/10/10" dataFinalizado="12/10/10">
                     <descricao>123123</descricao>
                     <subitens>

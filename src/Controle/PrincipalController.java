@@ -19,6 +19,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.ResourceBundle;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -40,6 +41,7 @@ import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
 import javax.imageio.ImageIO;
+import org.apache.commons.collections.comparators.ComparatorChain;
 
 /**
  *
@@ -108,9 +110,9 @@ public class PrincipalController implements Initializable {
     @FXML
     private TextField txtNomeSubItem;
     @FXML
-    private Label lblSubItemInfo;   
+    private Label lblSubItemInfo;
     @FXML
-    private Button btnRemoverSubItem; 
+    private Button btnRemoverSubItem;
     /* /SubItem */
     /* /Tab Tarefas */
 
@@ -150,6 +152,7 @@ public class PrincipalController implements Initializable {
             graficoTarefas.setData(pieChartData);
         }
     }
+
     @FXML
     private void salvarGrafico() {
         BufferedImage img = null;
@@ -176,12 +179,14 @@ public class PrincipalController implements Initializable {
     }
     /* /tabGraficos */
     /* tabTarefas */
+
     @FXML
     private void abrirAbaTarefas() {
         if (tabMenuTarefas.isSelected()) {
             abrirListas();
         }
-    }  
+    }
+
     @FXML
     public void alterarDados() {
         aplicacao.goTo("AlterarDados");
@@ -195,8 +200,9 @@ public class PrincipalController implements Initializable {
     @FXML
     public void alterarDados_mouseFora() {
         lblAlterarDados.setTextFill(Paint.valueOf("gray"));
-    }    
+    }
     /* lista */
+
     @FXML
     private void abrirListas() {
         ObservableList<Lista> itens = null;
@@ -206,29 +212,28 @@ public class PrincipalController implements Initializable {
         listaListas.setItems(itens);
 
     }
+
     @FXML
     private void ordenacaoListaAcao() {
-        //oredenar listas
+        ComparatorChain chain;
         ArrayList<Lista> lista = new ArrayList<>();
         ObservableList<Lista> itens = null;
+
         listaListas.setItems(itens);
         for (Lista l : aplicacao.retornarUsuario().getListas()) {
             lista.add(l);
+        }        
+        if (comboOrdenarLista.getSelectionModel().getSelectedItem() == "Nome") {
+                Collections.sort(lista);
+        }else if(comboOrdenarLista.getSelectionModel().getSelectedItem() == "Prioridade"){
+                chain = new ComparatorChain();
+                chain.addComparator(new listaPrioridade());
+                Collections.sort(lista, chain);
         }
         itens = FXCollections.observableArrayList(lista);
-        switch (comboOrdenarLista.getPromptText()) {
-            case "Nome":
-                Collections.sort(lista);
-                break;
-            case "Prioridade":
-                //Collections.sort(lista, new Comparator<>(){});
-                break;
-            case "Data":
-                //Collections.sort(lista, new Comparator<>(){});
-                break;
-        }
         listaListas.setItems(itens);
     }
+
     @FXML
     private void cadastrarLista() {
         aplicacao.setListaTemp(null);
@@ -270,11 +275,17 @@ public class PrincipalController implements Initializable {
 
         Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);
         listaItens.setCellFactory(forListView);
-    }    
+    }
+
     @FXML
     private void ordenacaoItemAcao() {
+        ComparatorChain chain;
+        chain = new ComparatorChain();
+        chain.addComparator(new itemNome());
+        //Collections.sort(lista, chain);
         //oredenar itens
     }
+
     @FXML
     private void cadastrarItem() {
         aplicacao.setItemTemp(null);
@@ -299,17 +310,19 @@ public class PrincipalController implements Initializable {
     }
     /* /item */
     /* subitem */
+
     @FXML
     private void adicionarSubItem() {
         if (!txtNomeSubItem.getText().isEmpty() && aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
             lblSubItemInfo.setText("Subitem adicionado com sucesso.");
-            lblSubItemInfo.setTextFill(Paint.valueOf("darkgreen"));            
-        }else{
+            lblSubItemInfo.setTextFill(Paint.valueOf("darkgreen"));
+        } else {
             lblSubItemInfo.setText("Erro ao adicionar subitem.");
-            lblSubItemInfo.setTextFill(Paint.valueOf("red")); 
+            lblSubItemInfo.setTextFill(Paint.valueOf("red"));
         }
     }
     /* /subitem */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<String> itens = null;
@@ -326,9 +339,13 @@ public class PrincipalController implements Initializable {
         comboOrdenarItem.setItems(itens);
         itens = FXCollections.observableArrayList(
                 "Nome",
-                "Data",
                 "Prioridade");
         comboOrdenarLista.setItems(itens);
+
+        itens = FXCollections.observableArrayList(
+                "Nome",
+                "Data",
+                "Prioridade");
         comboOrdenarItem.setItems(itens);
         comboOrdenarLista.setValue(itens.get(0));
         comboOrdenarItem.setValue(itens.get(0));
@@ -344,11 +361,42 @@ public class PrincipalController implements Initializable {
         adicionarItem.setGraphic(new ImageView(imagemAdicionar));
         editarItem.setGraphic(new ImageView(imagemEditar));
         removerItem.setGraphic(new ImageView(imagemRemover));
-        
+
         btnRemoverSubItem.setGraphic(new ImageView(imagemRemover));
 
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));
     }
     /* /tabTarefas */
+    /* classes para comparador*/
+    class itemNome implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Item z1 = (Item) o1;
+            Item z2 = (Item) o2;
+            return z2.getNome().toUpperCase().compareTo(z1.getNome().toUpperCase());
+        }
+    }
+
+    class itemPrioridade implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Item z1 = (Item) o1;
+            Item z2 = (Item) o2;
+            return z2.getPrioridade() - z1.getPrioridade();
+        }
+    }
+
+    class listaPrioridade implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista z1 = (Lista) o1;
+            Lista z2 = (Lista) o2;
+            return z2.getPrioridade() - z1.getPrioridade();
+        }
+    }
+    /* /classes para comparador */
 }
