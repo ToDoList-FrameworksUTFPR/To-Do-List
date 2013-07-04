@@ -22,13 +22,13 @@
                     <Font size="9.0" fx:id="x5" />
                   </font>
                 </Button>
-                <Label layoutX="242.0" layoutY="72.0" text="Itens">
+                <Label layoutX="242.0" layoutY="67.0" text="Itens">
                   <font>
                     <Font size="20.0" fx:id="x4" />
                   </font>
                 </Label>
                 <Label layoutX="185.0" layoutY="141.0" text="Ordenar por:" />
-                <ComboBox id="comboFiltro" fx:id="comboOrdenarItem" layoutX="265.0" layoutY="138.0" onAction="#ordenacaoItemAcao" prefHeight="21.0" prefWidth="82.0">
+                <ComboBox id="comboFiltro" fx:id="comboOrdenarItem" layoutX="256.0" layoutY="138.0" onAction="#ordenacaoItemAcao" prefHeight="21.0" prefWidth="91.0">
                   <items>
                     <FXCollections fx:factory="observableArrayList">
                       <String fx:value="Item 1" />
@@ -37,14 +37,14 @@
                     </FXCollections>
                   </items>
                 </ComboBox>
-                <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" prefHeight="248.0" prefWidth="169.0" />
+                <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" onMouseClicked="#selecionarItem" prefHeight="248.0" prefWidth="169.0" />
                 <Accordion layoutX="362.0" layoutY="75.0" prefHeight="343.0" prefWidth="233.0">
                   <expandedPane>
                     <TitledPane fx:id="x6" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                            <ListView layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
+                            <ListView fx:id="listaSubItens" layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
                             <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" mnemonicParsing="false" onMouseClicked="#deletarItem" prefHeight="35.0" prefWidth="38.0" />
                           </children>
                         </AnchorPane>
@@ -58,16 +58,16 @@
                           <children>
                             <Label layoutX="7.0" layoutY="6.0" text="Nome:" />
                             <Label layoutX="170.0" layoutY="6.0" text="Prioridade" />
-                            <TextField layoutX="169.0" layoutY="24.0" prefWidth="38.0" />
-                            <TextField layoutX="7.0" layoutY="57.0" prefWidth="200.0" />
-                            <TextField layoutX="7.0" layoutY="97.0" prefWidth="84.0" />
+                            <TextField fx:id="txtPrioridade" editable="false" layoutX="169.0" layoutY="24.0" prefWidth="38.0" />
+                            <TextField fx:id="txtLocal" editable="false" layoutX="7.0" layoutY="57.0" prefWidth="200.0" />
+                            <TextField fx:id="txtDataCriacao" editable="false" layoutX="7.0" layoutY="97.0" prefWidth="84.0" />
                             <Label layoutX="7.0" layoutY="79.0" text="Data criação" />
                             <Label layoutX="7.0" layoutY="42.0" text="Local" />
-                            <Label layoutX="127.0" layoutY="79.0" text="Dt. Finalizar" />
-                            <TextField layoutX="127.0" layoutY="97.0" prefWidth="84.0" />
+                            <Label layoutX="127.0" layoutY="79.0" text="Data Finalizar" />
+                            <TextField fx:id="txtDataFinalizar" editable="false" layoutX="127.0" layoutY="97.0" prefWidth="84.0" />
                             <Label layoutX="7.0" layoutY="119.0" text="Data finalizado" />
-                            <TextField layoutX="7.0" layoutY="135.0" prefWidth="84.0" />
-                            <TextField layoutX="7.0" layoutY="22.0" prefWidth="130.0" />
+                            <TextField fx:id="txtDataFinalizado" editable="false" layoutX="7.0" layoutY="135.0" prefWidth="84.0" />
+                            <TextField fx:id="txtNome" editable="false" layoutX="7.0" layoutY="22.0" prefWidth="130.0" />
                           </children>
                         </AnchorPane>
                       </content>

@@ -1918,3 +1918,99 @@ Caused by: java.lang.IllegalArgumentException: argument type mismatch
 18804 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 04 15:15:04 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2042592600/To-Do-List.jar!/Visao/GerenciarItem.fxml
 23800 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [alterarAcao] Thu Jul 04 15:15:09 BRT 2013 : Alterado dados do item
 25818 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 04 15:15:11 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2042592600/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:24:32 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:24:32 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:24:32 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+438  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:24:33 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7dee05dc
+837  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:24:33 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7dee05dc
+2393 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:24:35 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:24:56 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:24:56 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:24:56 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+435  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:24:56 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+830  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:24:57 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+2028 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:24:58 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:25:39 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:25:39 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:25:39 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+435  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:25:39 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
+822  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:25:40 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
+2244 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:25:41 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:28:17 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:28:17 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:28:17 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+459  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:28:17 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+846  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:28:18 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+1823 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:28:19 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:29:24 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:29:24 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:29:24 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+457  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:29:25 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+837  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:29:25 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+1575 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:29:26 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:30:27 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:30:27 BRT 2013 : Retornou lista de arquivos com o filtro
+92   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:30:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+439  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:30:27 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7dee05dc
+810  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:30:28 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7dee05dc
+1664 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:30:29 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:32:14 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:32:14 BRT 2013 : Retornou lista de arquivos com o filtro
+95   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:32:15 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+445  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:32:15 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7dee05dc
+827  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:32:15 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7dee05dc
+1547 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:32:16 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:33:27 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:33:27 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:33:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+441  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:33:27 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7dee05dc
+830  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:33:27 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7dee05dc
+2412 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:33:29 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:35:14 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 15:35:14 BRT 2013 : Retornou lista de arquivos com o filtro
+95   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 15:35:14 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+439  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:35:14 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
+848  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 15:35:15 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
+1544 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 15:35:15 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:24:46 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:24:46 BRT 2013 : Retornou lista de arquivos com o filtro
+110  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:24:46 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+487  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:24:47 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@599da9aa
+875  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:24:47 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@599da9aa
+3391 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:24:50 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:26:43 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:26:43 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:26:43 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+429  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:26:44 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7a13f4c
+798  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:26:44 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7a13f4c
+1676 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:26:45 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:27:28 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:27:28 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:27:28 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+429  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:27:29 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+807  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:27:29 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+1777 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:27:30 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:28:10 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:28:10 BRT 2013 : Retornou lista de arquivos com o filtro
+89   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:28:10 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+433  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:28:10 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
+802  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:28:11 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
+1680 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:28:12 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:28:38 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:28:38 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:28:38 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+431  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:28:38 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7dee05dc
+806  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:28:39 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7dee05dc
+1944 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:28:40 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:29:31 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:29:31 BRT 2013 : Retornou lista de arquivos com o filtro
+89   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:29:31 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+430  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:29:32 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@4ba7cde3
+801  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:29:32 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@4ba7cde3
+2032 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:29:33 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:31:46 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:31:46 BRT 2013 : Retornou lista de arquivos com o filtro
+94   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:31:46 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+440  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:31:46 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@599da9aa
+810  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:31:47 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@599da9aa
+2473 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:31:48 BRT 2013 : Criado novo usuario temporario para verificação de login

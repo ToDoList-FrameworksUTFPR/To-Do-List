@@ -1,5 +1,7 @@
 package Modelo;
 
+import javafx.beans.property.SimpleBooleanProperty;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -10,9 +12,10 @@ package Modelo;
  *
  * @author Rayan
  */
-public class Subitem implements Comparable<Subitem>{
+public class Subitem{
     private String nome;
     private boolean realizado;
+    private SimpleBooleanProperty selected;
 
     /**
      * @return the nome
@@ -42,8 +45,18 @@ public class Subitem implements Comparable<Subitem>{
         this.realizado = realizado;
     }
 
-    @Override
-    public int compareTo(Subitem o) {
-        return this.getNome().toUpperCase().compareTo(o.getNome().toUpperCase());
+    /**
+     * @return the selected
+     */
+    public SimpleBooleanProperty getSelected() {
+        return selected;
     }
+
+    /**
+     * @param selected the selected to set
+     */
+    public void setSelected(SimpleBooleanProperty selected) {
+        this.selected = selected;
+    }
+
 }
