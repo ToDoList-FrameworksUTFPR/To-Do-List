@@ -2014,3 +2014,9 @@ Caused by: java.lang.IllegalArgumentException: argument type mismatch
 440  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:31:46 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@599da9aa
 810  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:31:47 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@599da9aa
 2473 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:31:48 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:46:08 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 16:46:08 BRT 2013 : Retornou lista de arquivos com o filtro
+95   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 16:46:08 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+456  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:46:08 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
+825  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:46:09 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
+5520 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:46:13 BRT 2013 : Criado novo usuario temporario para verificação de login
