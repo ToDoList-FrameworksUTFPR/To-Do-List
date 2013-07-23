@@ -2020,3 +2020,1206 @@ Caused by: java.lang.IllegalArgumentException: argument type mismatch
 456  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:46:08 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
 825  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 16:46:09 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
 5520 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 16:46:13 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 22:24:36 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 04 22:24:36 BRT 2013 : Retornou lista de arquivos com o filtro
+105  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 04 22:24:36 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+510  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 22:24:37 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@134d99bb
+930  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 04 22:24:37 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@134d99bb
+2010 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 04 22:24:38 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Jul 05 10:51:41 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Jul 05 10:51:41 BRT 2013 : Retornou lista de arquivos com o filtro
+113  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Jul 05 10:51:41 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+502  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Jul 05 10:51:41 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7a13f4c
+925  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Jul 05 10:51:42 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7a13f4c
+3823 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Jul 05 10:51:45 BRT 2013 : Criado novo usuario temporario para verificação de login
+10827 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Jul 05 10:51:52 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1602889491/To-Do-List.jar!/Visao/GerenciarItem.fxml
+11938 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Fri Jul 05 10:51:53 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+14043 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Fri Jul 05 10:51:55 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 09 09:05:52 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+4    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 09 09:05:52 BRT 2013 : Retornou lista de arquivos com o filtro
+121  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 09 09:05:52 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+831  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 09 09:05:53 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+1747 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 09 09:05:54 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+19427 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Tue Jul 09 09:06:11 BRT 2013 : Criado novo usuario temporario para verificação de login
+33949 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Tue Jul 09 09:06:26 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarListaController.cancelarAcao(GerenciarListaController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.Button.fire(Button.java:179)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:193)
+	at com.sun.javafx.scene.control.skin.SkinBase$4.handle(SkinBase.java:336)
+	at com.sun.javafx.scene.control.skin.SkinBase$4.handle(SkinBase.java:329)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:64)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3328)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 82 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 92 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 10 09:25:40 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+6    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 10 09:25:40 BRT 2013 : Retornou lista de arquivos com o filtro
+200  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Jul 10 09:25:40 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+5288 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 10 09:25:45 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@50c26564
+11796 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 10 09:25:52 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@50c26564
+22045 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Jul 10 09:26:02 BRT 2013 : Criado novo usuario temporario para verificação de login
+35418 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [cadastrarAcao] Wed Jul 10 09:26:16 BRT 2013 : Gerado uma nova lista a ser cadastrada
+42074 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Wed Jul 10 09:26:22 BRT 2013 : Gerado uma nova lista a ser cadastrada
+47599 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Wed Jul 10 09:26:28 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run720930299/To-Do-List.jar!/Visao/GerenciarItem.fxml
+49861 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Wed Jul 10 09:26:30 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+51868 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Wed Jul 10 09:26:32 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 10 09:26:41 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 10 09:26:41 BRT 2013 : Retornou lista de arquivos com o filtro
+94   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Jul 10 09:26:41 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+443  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 10 09:26:41 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6b429a7d
+827  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 10 09:26:41 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6b429a7d
+7288 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Jul 10 09:26:48 BRT 2013 : Criado novo usuario temporario para verificação de login
+1    [main] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:46:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+7    [main] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:46:21 BRT 2013 : Retornou lista de arquivos com o filtro
+268  [main] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:46:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+820  [main] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:46:22 BRT 2013 : Carregando recurso de cenanull
+850  [main] ERROR Persistencia.ParserXML  - [trocarCena] Thu Jul 11 10:46:22 BRT 2013 : Erro ao trocar para cena:.fxml
+java.lang.NullPointerException: Location is required.
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2739)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Visao.ProjetoFinalTest.testGoTo(ProjetoFinalTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:39)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1060)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:911)
+1424 [main] INFO  Persistencia.ParserXML  - [main] Thu Jul 11 10:46:22 BRT 2013 : Carregando main com argumentos: null
+1545 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [instanciarUsuarios] Thu Jul 11 10:46:22 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+1545 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [instanciarUsuarios] Thu Jul 11 10:46:22 BRT 2013 : Retornou lista de arquivos com o filtro
+1572 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:46:22 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+1622 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:46:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@46160dbd
+2146 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:46:23 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@46160dbd
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:47:02 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:47:02 BRT 2013 : Retornou lista de arquivos com o filtro
+90   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:47:02 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+423  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:47:02 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3a1e003b
+784  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:47:03 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3a1e003b
+2867 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:47:05 BRT 2013 : Criado novo usuario temporario para verificação de login
+11837 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 10:47:14 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2034290678/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:49:17 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:49:17 BRT 2013 : Retornou lista de arquivos com o filtro
+106  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:49:17 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+555  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:49:17 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@5b09b25f
+979  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:49:18 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@5b09b25f
+3650 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:49:20 BRT 2013 : Criado novo usuario temporario para verificação de login
+7360 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 10:49:24 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run730645340/To-Do-List.jar!/Visao/GerenciarItem.fxml
+8345 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Thu Jul 11 10:49:25 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+51275 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Thu Jul 11 10:50:08 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:50:38 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:50:38 BRT 2013 : Retornou lista de arquivos com o filtro
+100  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:50:38 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+479  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:50:38 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3a1e003b
+911  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:50:39 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3a1e003b
+2033 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:50:40 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:50:58 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:50:58 BRT 2013 : Retornou lista de arquivos com o filtro
+100  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:50:58 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+473  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:50:59 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@599da9aa
+878  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:50:59 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@599da9aa
+4359 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:51:02 BRT 2013 : Criado novo usuario temporario para verificação de login
+7480 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 10:51:06 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1611698832/To-Do-List.jar!/Visao/GerenciarItem.fxml
+8582 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Thu Jul 11 10:51:07 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:51:27 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:51:27 BRT 2013 : Retornou lista de arquivos com o filtro
+108  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:51:28 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+506  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:51:28 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7a13f4c
+926  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:51:28 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7a13f4c
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:51:56 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:51:56 BRT 2013 : Retornou lista de arquivos com o filtro
+103  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:51:57 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+480  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:51:57 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@599da9aa
+904  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:51:57 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@599da9aa
+2030 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:51:58 BRT 2013 : Criado novo usuario temporario para verificação de login
+5239 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Thu Jul 11 10:52:02 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarItemController.cancelarAcao(GerenciarItemController.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3117)
+	at javafx.scene.Scene$ClickGenerator.access$8600(Scene.java:3055)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3337)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 64 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 74 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:53:59 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:53:59 BRT 2013 : Retornou lista de arquivos com o filtro
+103  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:53:59 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+494  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:54:00 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3a1e003b
+924  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:54:00 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3a1e003b
+1853 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:54:01 BRT 2013 : Criado novo usuario temporario para verificação de login
+4737 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 10:54:04 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1943220083/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:54:33 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:54:33 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:54:34 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+446  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:54:34 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@30dfe0c6
+836  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:54:34 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@30dfe0c6
+1458 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:54:35 BRT 2013 : Criado novo usuario temporario para verificação de login
+6435 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 10:54:40 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1454406793/To-Do-List.jar!/Visao/GerenciarItem.fxml
+145055 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Thu Jul 11 10:56:58 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarListaController.cancelarAcao(GerenciarListaController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.Button.fire(Button.java:179)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:193)
+	at com.sun.javafx.scene.control.skin.SkinBase$4.handle(SkinBase.java:336)
+	at com.sun.javafx.scene.control.skin.SkinBase$4.handle(SkinBase.java:329)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:64)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3328)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 82 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 92 more
+146606 [JavaFX Application Thread] ERROR Controle.PrincipalController  - [trocarCena] Thu Jul 11 10:57:00 BRT 2013 : Erro ao trocar para cena:Principal.fxml
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1440)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.ComboBoxBase.valueInvalidated(ComboBoxBase.java:117)
+	at javafx.scene.control.ComboBoxBase$1.invalidated(ComboBoxBase.java:142)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:129)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:163)
+	at javafx.scene.control.ComboBoxBase.setValue(ComboBoxBase.java:148)
+	at Controle.PrincipalController.initialize(PrincipalController.java:436)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2152)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at Visao.ProjetoFinal.trocarCena(ProjetoFinal.java:52)
+	at Visao.ProjetoFinal.goTo(ProjetoFinal.java:75)
+	at Controle.GerenciarListaController.cancelarAcao(GerenciarListaController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:69)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:28)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Node.fireEvent(Node.java:6863)
+	at javafx.scene.control.Button.fire(Button.java:179)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:193)
+	at com.sun.javafx.scene.control.skin.SkinBase$4.handle(SkinBase.java:336)
+	at com.sun.javafx.scene.control.skin.SkinBase$4.handle(SkinBase.java:329)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:64)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:217)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:170)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:38)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:37)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:35)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:92)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:53)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:33)
+	at javafx.event.Event.fireEvent(Event.java:171)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3328)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3168)
+	at javafx.scene.Scene$MouseHandler.access$1900(Scene.java:3123)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1563)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2265)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:250)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:173)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:292)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:528)
+	at com.sun.glass.ui.View.notifyMouse(View.java:922)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:75)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:279)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1437)
+	... 82 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:371)
+	at java.util.ArrayList.get(ArrayList.java:384)
+	at Controle.PrincipalController.ordenacaoItemAcao(PrincipalController.java:329)
+	... 92 more
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:57:38 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:57:38 BRT 2013 : Retornou lista de arquivos com o filtro
+89   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:57:38 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+429  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:57:38 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@15c2ef1b
+810  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:57:39 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@15c2ef1b
+2300 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:57:40 BRT 2013 : Criado novo usuario temporario para verificação de login
+5052 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [cadastrarAcao] Thu Jul 11 10:57:43 BRT 2013 : Gerado uma nova lista a ser cadastrada
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:58:47 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 10:58:47 BRT 2013 : Retornou lista de arquivos com o filtro
+89   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 10:58:48 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+421  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:58:48 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7a13f4c
+797  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 10:58:48 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7a13f4c
+1489 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 10:58:49 BRT 2013 : Criado novo usuario temporario para verificação de login
+8713 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 10:58:56 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run403636931/To-Do-List.jar!/Visao/GerenciarItem.fxml
+11652 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 11 10:58:59 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run403636931/To-Do-List.jar!/Visao/GerenciarItem.fxml
+15734 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 11 10:59:03 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run403636931/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 11:04:07 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Jul 11 11:04:07 BRT 2013 : Retornou lista de arquivos com o filtro
+91   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Jul 11 11:04:07 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+445  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 11:04:08 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7a13f4c
+811  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Jul 11 11:04:08 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7a13f4c
+23364 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Jul 11 11:04:31 BRT 2013 : Criado novo usuario temporario para verificação de login
+35285 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Thu Jul 11 11:04:43 BRT 2013 : Iniciado form no modo 'edição', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1673614633/To-Do-List.jar!/Visao/GerenciarItem.fxml
+40880 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Thu Jul 11 11:04:48 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1673614633/To-Do-List.jar!/Visao/GerenciarItem.fxml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 16 20:45:08 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 16 20:45:08 BRT 2013 : Retornou lista de arquivos com o filtro
+128  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 16 20:45:09 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+904  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 16 20:45:09 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7dee05dc
+2017 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 16 20:45:10 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7dee05dc
+3785 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Tue Jul 16 20:45:12 BRT 2013 : Criado novo usuario temporario para verificação de login
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:08:39 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:08:39 BRT 2013 : Retornou lista de arquivos com o filtro
+104  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:08:39 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+686  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:08:40 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@660173e7
+1726 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:08:41 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@660173e7
+3350 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Tue Jul 23 13:08:42 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:52:06 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:52:06 BRT 2013 : Retornou lista de arquivos com o filtro
+112  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:52:06 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+585  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:52:06 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@134d99bb
+1075 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:52:07 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@134d99bb
+20986 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [cadastrarAcao] Tue Jul 23 13:52:27 BRT 2013 : Realizando o trabalho com xml de cadastro
+20990 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [[GravadorXML]] Tue Jul 23 13:52:27 BRT 2013 : Iniciado chamada de classe
+21115 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:52:27 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+21116 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:52:27 BRT 2013 : Retornou lista de arquivos com o filtro
+21136 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:52:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+21156 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:52:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+33793 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [entrarAcao] Tue Jul 23 13:52:40 BRT 2013 : Criado novo usuario temporario para verificação de login
+40394 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [cadastrarAcao] Tue Jul 23 13:52:46 BRT 2013 : Gerado uma nova lista a ser cadastrada
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:56:32 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:56:32 BRT 2013 : Retornou lista de arquivos com o filtro
+103  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:56:32 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+171  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:56:32 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+497  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:56:32 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@4f669ea1
+896  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:56:33 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@4f669ea1
+10541 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [cadastrarAcao] Tue Jul 23 13:56:42 BRT 2013 : Realizando o trabalho com xml de cadastro
+10546 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [[GravadorXML]] Tue Jul 23 13:56:42 BRT 2013 : Iniciado chamada de classe
+10649 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:56:42 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+10652 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:56:42 BRT 2013 : Retornou lista de arquivos com o filtro
+10661 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:56:42 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+10680 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:56:42 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+20069 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [cadastrarAcao] Tue Jul 23 13:56:52 BRT 2013 : Realizando o trabalho com xml de cadastro
+20070 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [[GravadorXML]] Tue Jul 23 13:56:52 BRT 2013 : Iniciado chamada de classe
+20076 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:56:52 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+20077 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:56:52 BRT 2013 : Retornou lista de arquivos com o filtro
+20127 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:56:52 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+20139 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:56:52 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:57:46 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:57:46 BRT 2013 : Retornou lista de arquivos com o filtro
+106  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:57:46 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+171  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:57:46 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+513  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:57:46 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7f950a3d
+914  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:57:47 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7f950a3d
+6911 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [cadastrarAcao] Tue Jul 23 13:57:53 BRT 2013 : Realizando o trabalho com xml de cadastro
+6914 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [[GravadorXML]] Tue Jul 23 13:57:53 BRT 2013 : Iniciado chamada de classe
+7002 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:57:53 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+7002 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:57:53 BRT 2013 : Retornou lista de arquivos com o filtro
+7013 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:57:53 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+7038 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:57:53 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+13047 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [cadastrarAcao] Tue Jul 23 13:57:59 BRT 2013 : Realizando o trabalho com xml de cadastro
+13048 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [[GravadorXML]] Tue Jul 23 13:57:59 BRT 2013 : Iniciado chamada de classe
+13055 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:57:59 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+13055 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:57:59 BRT 2013 : Retornou lista de arquivos com o filtro
+13084 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:57:59 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+13102 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Tue Jul 23 13:57:59 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:58:37 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Tue Jul 23 13:58:37 BRT 2013 : Retornou lista de arquivos com o filtro
+94   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:58:37 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+187  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Tue Jul 23 13:58:37 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml
+496  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:58:38 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@182660ad
+914  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Tue Jul 23 13:58:38 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@182660ad
+8683 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [cadastrarAcao] Tue Jul 23 13:58:46 BRT 2013 : Realizando o trabalho com xml de cadastro
+11544 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [instanciarUsuarios] Tue Jul 23 13:58:49 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+11545 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [instanciarUsuarios] Tue Jul 23 13:58:49 BRT 2013 : Retornou lista de arquivos com o filtro
+11563 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [_constructor] Tue Jul 23 13:58:49 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Novo.xml
+11574 [JavaFX Application Thread] INFO  Controle.CadastrarUsuarioController  - [_constructor] Tue Jul 23 13:58:49 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\Rayan.xml

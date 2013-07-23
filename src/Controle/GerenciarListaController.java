@@ -37,7 +37,7 @@ public class GerenciarListaController implements Initializable {
 
     @FXML
     public void cancelarAcao() {
-        txtNome.setText("");
+        aplicacao.setListaTemp(null);
         aplicacao.goTo("Principal");
     }
     @FXML
@@ -52,6 +52,7 @@ public class GerenciarListaController implements Initializable {
             log.info("cadastrarAcao", "Gerado uma nova lista a ser cadastrada");
             l.setNome(txtNome.getText());
             aplicacao.retornarUsuario().adicionarLista(l);
+            aplicacao.setListaTemp(null);
             //trabalhar xml para gerar lista
             aplicacao.goTo("Principal");       
         }

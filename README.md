@@ -1,4 +1,4 @@
 To-Do-List
 ==========
 
-Desenvolvimento de um projeto para a disciplina de frameworks.
+Desenvolvimento de um ToDo List para a disciplina de frameworks.

@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author Rayan
  */
-public class PrincipalControllerTest {
+public class GerenciarItemControllerTest {
     
-    public PrincipalControllerTest() {
+    public GerenciarItemControllerTest() {
     }
     
     @BeforeClass
@@ -39,50 +39,62 @@ public class PrincipalControllerTest {
     }
 
     /**
-     * Test of alterarDados method, of class PrincipalController.
+     * Test of cancelarAcao method, of class GerenciarItemController.
      */
     @Test
-    public void testAlterarDados() {
-        System.out.println("alterarDados");
-        PrincipalController instance = new PrincipalController();
-        instance.alterarDados();
+    public void testCancelarAcao() {
+        System.out.println("cancelarAcao");
+        GerenciarItemController instance = new GerenciarItemController();
+        instance.cancelarAcao();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of alterarDados_mouseEmCima method, of class PrincipalController.
+     * Test of cadastrarAcao method, of class GerenciarItemController.
      */
     @Test
-    public void testAlterarDados_mouseEmCima() {
-        System.out.println("alterarDados_mouseEmCima");
-        PrincipalController instance = new PrincipalController();
-        instance.alterarDados_mouseEmCima();
+    public void testCadastrarAcao() {
+        System.out.println("cadastrarAcao");
+        GerenciarItemController instance = new GerenciarItemController();
+        instance.cadastrarAcao();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of alterarDados_mouseFora method, of class PrincipalController.
+     * Test of alterarAcao method, of class GerenciarItemController.
      */
     @Test
-    public void testAlterarDados_mouseFora() {
-        System.out.println("alterarDados_mouseFora");
-        PrincipalController instance = new PrincipalController();
-        instance.alterarDados_mouseFora();
+    public void testAlterarAcao() {
+        System.out.println("alterarAcao");
+        GerenciarItemController instance = new GerenciarItemController();
+        instance.alterarAcao();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of initialize method, of class PrincipalController.
+     * Test of acaoAcao method, of class GerenciarItemController.
+     */
+    @Test
+    public void testAcaoAcao() {
+        System.out.println("acaoAcao");
+        GerenciarItemController instance = new GerenciarItemController();
+        instance.acaoAcao();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of initialize method, of class GerenciarItemController.
      */
     @Test
     public void testInitialize() {
         System.out.println("initialize");
         URL url = null;
         ResourceBundle rb = null;
-        PrincipalController instance = new PrincipalController();
+        GerenciarItemController instance = new GerenciarItemController();
         instance.initialize(url, rb);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");

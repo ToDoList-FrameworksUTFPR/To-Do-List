@@ -6,11 +6,21 @@ package Controle;
 
 import Log.Log;
 import Modelo.Item;
+import Modelo.Lista;
 import Visao.ProjetoFinal;
 import java.net.URL;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 import java.util.ResourceBundle;
+import javafx.beans.InvalidationListener;
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -50,11 +60,7 @@ public class GerenciarItemController implements Initializable {
 
     @FXML
     public void cancelarAcao() {
-        comboPrioridade.setPromptText("");
-        txtNome.setText("");
-        txtLocal.setText("");
-        txtDataFinalizar.setText("");
-        txtDataCriacao.setText("");
+        aplicacao.setItemTemp(null);
         aplicacao.goTo("Principal");
     }
 
@@ -74,8 +80,11 @@ public class GerenciarItemController implements Initializable {
                 itemtemp.setLocal(txtLocal.getText());
                 itemtemp.setDataCriacao(txtDataCriacao.getText());
                 itemtemp.setDataFinalizar(txtDataFinalizar.getText());
-                aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome()).adicionarItem(itemtemp);
+                Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
+                l.adicionarItem(itemtemp);
                 log.info("cadastrarAcao", "Cadastro de item realizado.");
+                aplicacao.setItemTemp(null);
+                aplicacao.setListaTemp(null);
                 //trabalha com o xml para gerar os dados     
                 aplicacao.goTo("Principal");  
         }
@@ -96,7 +105,9 @@ public class GerenciarItemController implements Initializable {
                 itemtemp.setPrioridade(Integer.parseInt(comboPrioridade.getPromptText()));
                 itemtemp.setLocal(txtLocal.getText());
                 itemtemp.setDataCriacao(txtDataCriacao.getText());
-                itemtemp.setDataFinalizar(txtDataFinalizar.getText());                
+                itemtemp.setDataFinalizar(txtDataFinalizar.getText());    
+                aplicacao.setItemTemp(null);
+                aplicacao.setListaTemp(null);            
                 log.info("alterarAcao", "Alterado dados do item");
                 //trabalha com o xml para gerar os dados     
                 aplicacao.goTo("Principal");  
@@ -112,6 +123,10 @@ public class GerenciarItemController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        ObservableList<String> itens = null;
+        comboPrioridade.setItems(itens);
+        itens = FXCollections.observableArrayList("1", "2", "3", "4", "5");
+        comboPrioridade.setItems(itens);
         if(aplicacao.getItemTemp() == null){
             lblTitulo.setText("Cadastrar item");
             btnAcao.setText("Cadastrar");

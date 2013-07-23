@@ -5,7 +5,10 @@
 package Controle;
 
 import Log.Log;
+import Modelo.Usuario;
+import Persistencia.GravadorXML;
 import Visao.ProjetoFinal;
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -53,14 +56,23 @@ public class CadastrarUsuarioController implements Initializable {
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
             if (txtSenha.getText().equals(txtSenha1.getText())) {
-                txtLogin.setText("");
-                txtSenha.setText("");
-                txtSenha1.setText("");
-                lblInformacao.setText("Usuário cadastrado com sucesso!");
-                lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
                 log.info("cadastrarAcao", "Realizando o trabalho com xml de cadastro");
-                //trabalha com o xml para gerar o usuario              
-                aplicacao.goTo("Login");
+                if(!new File("src/xml/Usuarios/" + txtLogin.getText() + ".xml").exists()){                    
+                    Usuario temp = new Usuario();
+                    temp.setLogin(txtLogin.getText());
+                    temp.setSenha(txtSenha.getText());
+                    temp.setNome(txtNome.getText());
+                    GravadorXML gravador = new GravadorXML(temp, txtLogin.getText() + ".xml");                    
+                    lblInformacao.setText("Usuário cadastrado com sucesso!");
+                    lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
+                    txtLogin.setText("");
+                    txtSenha.setText("");
+                    txtSenha1.setText("");    
+                    aplicacao.goTo("Login");
+                }else{
+                    lblInformacao.setText("Usuário com esse login ja existe!");
+                    lblInformacao.setTextFill(Paint.valueOf("orange"));
+                }
             } else {
                 lblInformacao.setText("As senhas não conferem.");
                 lblInformacao.setTextFill(Paint.valueOf("red"));
