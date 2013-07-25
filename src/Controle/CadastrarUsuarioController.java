@@ -62,7 +62,7 @@ public class CadastrarUsuarioController implements Initializable {
                     temp.setLogin(txtLogin.getText());
                     temp.setSenha(txtSenha.getText());
                     temp.setNome(txtNome.getText());
-                    GravadorXML gravador = new GravadorXML(temp, txtLogin.getText() + ".xml");                    
+                    GravadorXML gravador = new GravadorXML(temp);                    
                     lblInformacao.setText("Usuário cadastrado com sucesso!");
                     lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
                     txtLogin.setText("");
@@ -81,7 +81,5 @@ public class CadastrarUsuarioController implements Initializable {
     }
 
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
+    public void initialize(URL url, ResourceBundle rb) {}
 }

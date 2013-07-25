@@ -6,6 +6,8 @@ package Controle;
 
 import Log.Log;
 import Modelo.Lista;
+import Modelo.Usuario;
+import Persistencia.GravadorXML;
 import Visao.ProjetoFinal;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -53,7 +55,7 @@ public class GerenciarListaController implements Initializable {
             l.setNome(txtNome.getText());
             aplicacao.retornarUsuario().adicionarLista(l);
             aplicacao.setListaTemp(null);
-            //trabalhar xml para gerar lista
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario()); 
             aplicacao.goTo("Principal");       
         }
     }
@@ -63,22 +65,20 @@ public class GerenciarListaController implements Initializable {
             lblInformacao.setText("Favor preencher corretamente o campo.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {            
-            lblInformacao.setText("Lista cadastrada com sucesso!");
-            lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
-            Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
-            log.info("editarAcao", "Retornada a lista em variavel");
-            l.setNome(txtNome.getText());
+            lblInformacao.setText("Lista alterada com sucesso!");
+            lblInformacao.setTextFill(Paint.valueOf("darkgreen"));           
+            aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome()).setNome(txtNome.getText());
+            GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());  
             aplicacao.setListaTemp(null);
-            //trabalhar xml
             aplicacao.goTo("Principal");       
         }
     }
     @FXML
     public void acaoAcao() {
-        if(aplicacao.getItemTemp() == null)
-            cadastrarAcao();
-        else
+        if(aplicacao.getListaTemp() != null)
             alterarAcao();
+        else
+            cadastrarAcao();        
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {

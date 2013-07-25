@@ -38,7 +38,7 @@ public class ParserXML {
 
         try {
             ArrayList<Usuario> resultado = digester.parse(new File(arquivo));            
-            retorno = resultado.get(0);
+            retorno = resultado.get(0);            
         } catch (IOException | SAXException e) {
             log.error("_constructor", "Realizando parser. Variavel arquivo -> " + arquivo, e);
         }

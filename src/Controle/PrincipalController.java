@@ -306,18 +306,20 @@ public class PrincipalController implements Initializable {
     }
     @FXML
     private void selecionarItem() {
-        aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
-        aplicacao.setItemTemp((Item) listaItens.getSelectionModel().getSelectedItem());
-        Item temp = aplicacao.getItemTemp();
-        if(temp != null){
-            txtNome.setText(temp.getNome());
-            txtLocal.setText(temp.getLocal());
-            txtDataCriacao.setText(temp.getDataCriacao());
-            txtPrioridade.setText(String.valueOf(temp.getPrioridade()));
-            txtDataFinalizar.setText(temp.getDataFinalizar());
-            txtDataFinalizado.setText(temp.getDataFinalizado());
-        }     
-        abrirListaSubItens();   
+        if(aplicacao.getListaTemp() != null){
+            aplicacao.setListaTemp((Lista) listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.setItemTemp((Item) listaItens.getSelectionModel().getSelectedItem());
+            Item temp = aplicacao.getItemTemp();
+            if(temp != null){
+                txtNome.setText(temp.getNome());
+                txtLocal.setText(temp.getLocal());
+                txtDataCriacao.setText(temp.getDataCriacao());
+                txtPrioridade.setText(String.valueOf(temp.getPrioridade()));
+                txtDataFinalizar.setText(temp.getDataFinalizar());
+                txtDataFinalizado.setText(temp.getDataFinalizado());
+                abrirListaSubItens();
+            }     
+        }
     }
     @FXML
     private void ordenacaoItemAcao() {

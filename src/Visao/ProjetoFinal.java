@@ -27,7 +27,7 @@ public class ProjetoFinal extends Application {
     
     public Stage stage;
     public static ProjetoFinal instance;
-    private Usuario usuarioUtilizador;
+    public Usuario usuarioUtilizador;
     private static Log log = new Log(ProjetoFinal.class);
     /* Objetos temporarios para utilizar como forma de retorno*/
     private Lista listaTemp = null;
