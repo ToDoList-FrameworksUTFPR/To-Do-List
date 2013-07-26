@@ -6,6 +6,7 @@ package Controle;
 
 import Log.Log;
 import Modelo.Usuario;
+import Persistencia.GravadorXML;
 import Visao.ProjetoFinal;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -41,7 +42,6 @@ public class AlterarDadosController implements Initializable {
 
     @FXML
     public void cancelarAcao() {
-        txtLogin.setText("");
         txtNome.setText("");
         txtSenha.setText("");
         txtSenha1.setText("");
@@ -49,8 +49,9 @@ public class AlterarDadosController implements Initializable {
     }
 
     @FXML
-    public void cadastrarAcao() {
-        if (txtNome.getText().isEmpty() || txtLogin.getText().isEmpty() || txtSenha.getText().isEmpty() || txtSenha1.getText().isEmpty()) {
+    public void confirmarAcao() {
+        if (txtNome.getText().isEmpty() || txtLogin.getText().isEmpty() ||
+                txtSenha.getText().isEmpty() || txtSenha1.getText().isEmpty()) {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
@@ -64,7 +65,7 @@ public class AlterarDadosController implements Initializable {
                 txtNome.setText("");
                 txtSenha.setText("");
                 txtSenha1.setText("");
-                //trabalha com o xml para gerar os dados     
+                GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());      
                 aplicacao.goTo("Principal");         
             } else {
                 lblInformacao.setText("As senhas não conferem.");

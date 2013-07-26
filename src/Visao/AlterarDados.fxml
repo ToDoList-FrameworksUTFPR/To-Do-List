@@ -22,7 +22,7 @@
     <PasswordField fx:id="txtSenha" layoutX="13.0" layoutY="169.0" prefWidth="119.0" />
     <Label contentDisplay="CENTER" layoutX="142.0" layoutY="150.0" text="Repita a senha" textAlignment="CENTER" />
     <PasswordField id="txtSenha" fx:id="txtSenha1" layoutX="142.0" layoutY="169.0" prefWidth="119.0" />
-    <Button defaultButton="true" layoutX="32.0" layoutY="223.0" mnemonicParsing="false" onAction="#cadastrarAcao" prefHeight="23.0" prefWidth="103.0" text="Confirmar" />
+    <Button defaultButton="true" layoutX="32.0" layoutY="223.0" mnemonicParsing="false" onAction="#confirmarAcao" prefHeight="23.0" prefWidth="103.0" text="Confirmar" />
     <Button cancelButton="true" layoutX="135.0" layoutY="223.0" mnemonicParsing="false" onAction="#cancelarAcao" prefHeight="23.0" prefWidth="103.0" text="Cancelar" />
     <Label fx:id="lblInformacao" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="197.0" prefWidth="201.9998779296875" />
   </children>

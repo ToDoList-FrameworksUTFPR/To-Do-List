@@ -5,7 +5,7 @@
         <object-create-rule classname="Modelo.Usuario"/>
         <pattern value="listas/lista">
             <object-create-rule classname="Modelo.Lista" />        
-            <pattern value="itens/item">
+            <pattern value="listaItens/item">
                 <object-create-rule classname="Modelo.Item"/>
                 <pattern value="subitens/subitem">
                     <object-create-rule classname="Modelo.Subitem"/>

@@ -8,6 +8,7 @@ import Log.Log;
 import Modelo.Item;
 import Modelo.Lista;
 import Modelo.Subitem;
+import Persistencia.GravadorXML;
 import Visao.ProjetoFinal;
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -36,6 +37,7 @@ import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -109,6 +111,10 @@ public class PrincipalController implements Initializable {
     @FXML
     private TextField txtDataFinalizado;
     /* /Informacoes do Item */
+    /* Informacoes do Item */
+    @FXML
+    private TitledPane accListarSubItens;
+    /* Informacoes do Item */
     @FXML
     private TextField txtNomeSubItem;
     @FXML
@@ -260,6 +266,7 @@ public class PrincipalController implements Initializable {
         if (listaListas.getSelectionModel().getSelectedItem() != null) {
             aplicacao.retornarUsuario().removerLista((Lista) listaListas.getSelectionModel().getSelectedItem());
             abrirListas();
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
     @FXML
@@ -369,8 +376,9 @@ public class PrincipalController implements Initializable {
     @FXML
     private void deletarItem() {
         if (listaItens.getSelectionModel().getSelectedItem() != null) {
-            aplicacao.retornarUsuario().removerLista((Lista) listaItens.getSelectionModel().getSelectedItem());
+            aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome()).removerItem((Item) listaItens.getSelectionModel().getSelectedItem());
             abrirListas();
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
     /* /item */
@@ -398,13 +406,39 @@ public class PrincipalController implements Initializable {
         }        
     }
     @FXML
+    private void abrirAdicionarSubItem(){        
+        txtNomeSubItem.setText("");
+        lblSubItemInfo.setText("");
+    }
+    @FXML
     private void adicionarSubItem() {
         if (!txtNomeSubItem.getText().isEmpty() && aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
             lblSubItemInfo.setText("Subitem adicionado com sucesso.");
             lblSubItemInfo.setTextFill(Paint.valueOf("darkgreen"));
+            Subitem subitemtemp = new Subitem();
+            subitemtemp.setRealizado(false);
+            subitemtemp.setNome(txtNomeSubItem.getText());
+            aplicacao.retornarUsuario()
+                    .encontrarLista(aplicacao.getListaTemp().getNome())
+                    .encontrarItem(aplicacao.getItemTemp().getNome())
+                    .adicionarSubitem(subitemtemp);
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+            abrirListaSubItens();
+            accListarSubItens.setExpanded(true);
         } else {
             lblSubItemInfo.setText("Erro ao adicionar subitem.");
             lblSubItemInfo.setTextFill(Paint.valueOf("red"));
+        }
+    }
+    @FXML
+    private void deletarSubItem() {
+        if (listaSubItens.getSelectionModel().getSelectedItem() != null) {
+            aplicacao.retornarUsuario()
+                    .encontrarLista(aplicacao.getListaTemp().getNome())
+                    .encontrarItem(aplicacao.getItemTemp().getNome())
+                    .removerSubItem((Subitem) listaSubItens.getSelectionModel().getSelectedItem());
+            abrirListaSubItens();
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
     /* /subitem */

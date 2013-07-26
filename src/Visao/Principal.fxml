@@ -40,19 +40,19 @@
                 <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" onMouseClicked="#selecionarItem" prefHeight="248.0" prefWidth="169.0" />
                 <Accordion layoutX="362.0" layoutY="75.0" prefHeight="343.0" prefWidth="233.0">
                   <expandedPane>
-                    <TitledPane fx:id="x6" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
+                    <TitledPane id="x6" fx:id="accListarSubItens" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
                             <ListView fx:id="listaSubItens" layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
-                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" mnemonicParsing="false" onMouseClicked="#deletarItem" prefHeight="35.0" prefWidth="38.0" />
+                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
                           </children>
                         </AnchorPane>
                       </content>
                     </TitledPane>
                   </expandedPane>
                   <panes>
-                    <TitledPane fx:id="x7" alignment="CENTER" contentDisplay="CENTER" styleClass="first-titled-pane" text="Informações do item">
+                    <TitledPane id="x7" fx:id="accInformacoes" alignment="CENTER" contentDisplay="CENTER" styleClass="first-titled-pane" text="Informações do item">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
@@ -72,7 +72,7 @@
                         </AnchorPane>
                       </content>
                     </TitledPane>
-                    <TitledPane fx:id="x3" alignment="CENTER" contentDisplay="CENTER" text="Adicionar subitem">
+                    <TitledPane id="x3" fx:id="accAdicionarSubItem" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#abrirAdicionarSubItem" text="Adicionar subitem">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
@@ -84,7 +84,7 @@
                         </AnchorPane>
                       </content>
                     </TitledPane>
-                    <fx:reference source="x6" />
+                    <fx:reference source="accListarSubItens" />
                   </panes>
                 </Accordion>
                 <Button id="btnDeletar" fx:id="removerLista" contentDisplay="GRAPHIC_ONLY" layoutX="123.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#deletarLista" prefHeight="35.0" prefWidth="38.0" />
@@ -99,7 +99,11 @@
                 </Label>
                 <Separator layoutX="174.0" layoutY="25.0" orientation="VERTICAL" prefHeight="394.9999000000025" />
                 <Separator layoutX="8.0" layoutY="26.0" prefWidth="592.0" />
-                <Label fx:id="lblAlterarDados" layoutX="524.0" layoutY="6.0" onMouseClicked="#alterarDados" onMouseEntered="#alterarDados_mouseEmCima" onMouseExited="#alterarDados_mouseFora" text="Alterar dados" textFill="#606060" />
+                <Label fx:id="lblAlterarDados" layoutX="479.0" layoutY="5.0" onMouseClicked="#alterarDados" onMouseEntered="#alterarDados_mouseEmCima" onMouseExited="#alterarDados_mouseFora" text="Alterar dados">
+                  <textFill>
+                    <Color blue="0.376" green="0.376" red="0.376" fx:id="x1" />
+                  </textFill>
+                </Label>
                 <Label layoutX="7.0" layoutY="108.0" text="Ordenar por:" />
                 <ComboBox fx:id="comboOrdenarLista" layoutX="84.0" layoutY="108.0" onAction="#ordenacaoListaAcao" prefHeight="21.0" prefWidth="84.0">
                   <items>
@@ -113,6 +117,8 @@
                 <Button id="adicionar" fx:id="adicionarItem" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" font="$x5" layoutX="192.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#cadastrarItem" prefHeight="35.0" prefWidth="38.0" />
                 <Button id="btnDeletar" fx:id="removerItem" contentDisplay="GRAPHIC_ONLY" layoutX="309.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#deletarItem" prefHeight="35.0" prefWidth="38.0" />
                 <Separator layoutX="355.0" layoutY="26.0" orientation="VERTICAL" prefHeight="395.0" />
+                <Label layoutX="569.0" layoutY="5.0" text="Sair" textFill="$x1" />
+                <Label layoutX="559.0" layoutY="5.0" text="|" textFill="#bfbfbf" />
               </children>
             </AnchorPane>
           </content>
