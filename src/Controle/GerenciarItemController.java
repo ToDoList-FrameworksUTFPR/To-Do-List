@@ -74,6 +74,7 @@ public class GerenciarItemController implements Initializable {
             itemtemp.setLocal(txtLocal.getText());
             itemtemp.setDataCriacao(txtDataCriacao.getText());
             itemtemp.setDataFinalizar(txtDataFinalizar.getText());
+            itemtemp.setDataFinalizado(" ");
             Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
             l.adicionarItem(itemtemp);
             log.info("cadastrarAcao", "Cadastro de item realizado.");

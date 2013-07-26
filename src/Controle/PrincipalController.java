@@ -74,6 +74,8 @@ public class PrincipalController implements Initializable {
     @FXML
     private Label lblAlterarDados;
     @FXML
+    private Label lblSair;
+    @FXML
     private Button adicionarNovaLista;
     @FXML
     private Button removerLista;
@@ -205,7 +207,7 @@ public class PrincipalController implements Initializable {
     public void alterarDados() {
         aplicacao.goTo("AlterarDados");
     }
-
+    
     @FXML
     public void alterarDados_mouseEmCima() {
         lblAlterarDados.setTextFill(Paint.valueOf("darkgray"));
@@ -214,6 +216,20 @@ public class PrincipalController implements Initializable {
     @FXML
     public void alterarDados_mouseFora() {
         lblAlterarDados.setTextFill(Paint.valueOf("gray"));
+    }
+    @FXML
+    public void sair() {
+        aplicacao.sair();
+        aplicacao.goTo("Login");
+    }
+    @FXML
+    public void sair_mouseEmCima() {
+        lblSair.setTextFill(Paint.valueOf("darkgray"));
+    }
+
+    @FXML
+    public void sair_mouseFora() {
+        lblSair.setTextFill(Paint.valueOf("gray"));
     }
     /* lista */
 

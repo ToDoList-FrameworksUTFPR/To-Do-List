@@ -77,7 +77,13 @@ public class ProjetoFinal extends Application {
             log.error("trocarCena", "Erro ao trocar para cena:" + arquivo, ex);
         }
     }
-
+    
+    public void sair(){
+        this.listaTemp = null;
+        this.itemTemp = null;
+        this.subItemTemp = null;
+        this.usuarioUtilizador = null;
+    }
     
     @Override
     public void start(Stage stage) throws Exception {

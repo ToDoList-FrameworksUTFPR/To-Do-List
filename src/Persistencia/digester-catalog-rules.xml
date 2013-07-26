@@ -7,7 +7,7 @@
             <object-create-rule classname="Modelo.Lista" />        
             <pattern value="listaItens/item">
                 <object-create-rule classname="Modelo.Item"/>
-                <pattern value="subitens/subitem">
+                <pattern value="listaSubItens/subitem">
                     <object-create-rule classname="Modelo.Subitem"/>
                     <set-properties-rule/>
                     <set-next-rule methodname="adicionarSubitem" paramtype="Modelo.Subitem"/>
