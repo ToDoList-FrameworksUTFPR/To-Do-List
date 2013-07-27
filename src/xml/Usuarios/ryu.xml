@@ -1,11 +1,8 @@
-  <usuario login="ryu" nome="ryu" senha="ryu">
+  <usuario login="ryu" nome="Zé" senha="21">
     <listas>
       <lista nome="primeira" prioridade="0">
         <listaItens>
-          <item dataCriacao="10/10/10" dataFinalizar="10/10/11" local="nenhum" nome="item" prioridade="3" realizado="false">
-            <listaSubItens/>
-          </item>
-          <item dataCriacao="31" dataFinalizado="" dataFinalizar="31" local="31" nome="31" prioridade="2" realizado="false">
+          <item dataCriacao="10/10/2010" dataFinalizado=" " dataFinalizar="11/11/2011" local="1" nome="1" prioridade="1" realizado="false">
             <listaSubItens/>
           </item>
         </listaItens>

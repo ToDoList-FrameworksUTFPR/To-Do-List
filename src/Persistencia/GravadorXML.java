@@ -36,7 +36,8 @@ public class GravadorXML {
         }
         writer.getXMLIntrospector().setAttributesForPrimitives(true);
         writer.enablePrettyPrint();
-        writer.setWriteIDs(false);        
+        writer.setWriteIDs(false);       
+        writer.setWriteEmptyElements(true);
         writer.getXMLIntrospector().setElementNameMapper(new DecapitalizeNameMapper());
         
         try {                

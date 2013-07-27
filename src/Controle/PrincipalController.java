@@ -138,7 +138,7 @@ public class PrincipalController implements Initializable {
                 for (Item i : l.getListaItens()) {
                     DateFormat d = new SimpleDateFormat("dd/MM/yyyy");
                     try {
-                        if (!i.getDataFinalizado().isEmpty()) {
+                        if (i.getDataFinalizado() != null && !i.getDataFinalizado().isEmpty() && !i.getDataFinalizado().equals(" ")) {
                             if (d.parse(i.getDataFinalizado()).getTime() > d.parse(i.getDataFinalizar()).getTime()) {
                                 contRealizadasComAtraso++;
                             } else if (d.parse(i.getDataFinalizado()).getTime() < d.parse(i.getDataFinalizar()).getTime()) {
@@ -321,7 +321,6 @@ public class PrincipalController implements Initializable {
             if(index >= 0){
                 itens.addAll(aplicacao.retornarUsuario().getListas().get(index).getListaItens());
                 listaItens.setItems(itens);
-
                 Callback<ListView<Item>, ListCell<Item>> forListView = CheckBoxListCell.forListView(getProperty);                
                 listaItens.setCellFactory(forListView);
             }
@@ -392,8 +391,10 @@ public class PrincipalController implements Initializable {
     @FXML
     private void deletarItem() {
         if (listaItens.getSelectionModel().getSelectedItem() != null) {
-            aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome()).removerItem((Item) listaItens.getSelectionModel().getSelectedItem());
-            abrirListas();
+            aplicacao.retornarUsuario()
+                    .encontrarLista(aplicacao.getListaTemp().getNome())
+                    .removerItem((Item) listaItens.getSelectionModel().getSelectedItem());            
+            abrirListaItens();
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
