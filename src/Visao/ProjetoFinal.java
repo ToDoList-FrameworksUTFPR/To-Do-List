@@ -16,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.apache.log4j.BasicConfigurator;
 
@@ -92,9 +93,11 @@ public class ProjetoFinal extends Application {
         Scene scene = new Scene(root);
         this.stage = stage;
         stage.setScene(scene);
-        stage.setTitle("Lista - ToDo - Projeto Final - por Rayan / Robson");
+        stage.setTitle("ToDo List");
         stage.setResizable(false);
         stage.centerOnScreen();
+        Image icone = new Image(getClass().getResourceAsStream("/Controle/Imagens/icone_geral.png"));
+        stage.getIcons().add(icone);
         stage.show();
         log.info("start", "Apresentando recurso, e chamando stage : " + stage);
     }

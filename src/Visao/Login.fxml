@@ -5,8 +5,9 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="213.9609375" prefWidth="235.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Controle.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="219.0" prefWidth="235.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Controle.LoginController">
   <children>
     <TextField fx:id="txtLogin" layoutX="46.0" layoutY="52.0" prefWidth="148.0" promptText="login" />
     <Label id="lblLogin" layoutX="46.0" layoutY="30.0" text="Login" />
@@ -15,5 +16,10 @@
     <PasswordField fx:id="txtSenha" layoutX="46.0" layoutY="117.0" prefWidth="148.0" promptText="senha" />
     <Button id="btnEntrar" defaultButton="true" layoutX="82.0" layoutY="152.0" mnemonicParsing="false" onAction="#entrarAcao" prefHeight="22.0" prefWidth="76.0" text="Autenticar" />
     <Label fx:id="lblCadastrar" layoutX="161.0" layoutY="6.0" onMouseClicked="#mouseClick" onMouseExited="#mouseFora" onMouseMoved="#mouseDentro" style="&#10;" text="Cadastrar-se" textAlignment="JUSTIFY" textFill="GREY" />
+    <Label layoutX="43.0" layoutY="206.0" text="Desenvolvido por Rayan / Robson" textFill="GREY">
+      <font>
+        <Font size="10.0" />
+      </font>
+    </Label>
   </children>
 </AnchorPane>
