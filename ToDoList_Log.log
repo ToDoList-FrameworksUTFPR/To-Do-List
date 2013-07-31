@@ -1255,3 +1255,9 @@ java.lang.NullPointerException: Input stream must not be null
 19841 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Wed Jul 31 17:54:13 BRT 2013 : Iniciado chamada de classe
 22001 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Wed Jul 31 17:54:15 BRT 2013 : Iniciado chamada de classe
 24404 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Wed Jul 31 17:54:17 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 31 17:55:52 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Jul 31 17:55:52 BRT 2013 : Retornou lista de arquivos com o filtro
+100  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Jul 31 17:55:52 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+472  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 31 17:55:52 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1353d9d2
+842  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 31 17:55:52 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1353d9d2
+3571 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Jul 31 17:55:55 BRT 2013 : Criado novo usuario temporario para verificação de login

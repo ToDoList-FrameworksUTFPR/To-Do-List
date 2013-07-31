@@ -26,7 +26,6 @@ import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -381,12 +380,12 @@ public class PrincipalController implements Initializable {
                  };*/
                 listaItens.setCellFactory(forListView);
                 /*Tentativa falha de listener*/
-                listaItens.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                /*listaItens.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
                     @Override
                     public void changed(ObservableValue<? extends String> objeto, String antigo, String novo) {
                         System.out.println("Valor antigo: " + antigo + " -> novo : " + novo);
                     }
-                });
+                });*/
             }
         }
     }
