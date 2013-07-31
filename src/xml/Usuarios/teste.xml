@@ -4,22 +4,18 @@
         <listaItens/>
       </lista>
       <lista nome="xD" prioridade="3">
-        <listaItens/>
-      </lista>
-      <lista nome="sem nome" prioridade="3">
         <listaItens>
-          <item dataCriacao="10/10/2010" dataFinalizado=" " dataFinalizar="11/11/2011" local="1" nome="3" prioridade="4" realizado="true">
-            <listaSubItens>
-              <subitem nome="123123" realizado="false"/>
-            </listaSubItens>
-          </item>
-          <item dataCriacao="20/10/2010" dataFinalizado=" " dataFinalizar="20/10/2012" local="2" nome="2" prioridade="5" realizado="false">
+          <item dataCriacao="10/10/2010" dataFinalizado=" " dataFinalizar="11/11/2011" local="1" nome="1" prioridade="1" realizado="false">
             <listaSubItens/>
           </item>
-          <item dataCriacao="10/10/2010" dataFinalizado=" " dataFinalizar="11/11/2011" local="1" nome="1" prioridade="2" realizado="false">
+          <item dataCriacao="11/11/2011" dataFinalizado=" " dataFinalizar="10/10/2015" local="22" nome="22" prioridade="3" realizado="true">
             <listaSubItens/>
+            <selected bound="false" value="true"/>
           </item>
         </listaItens>
+      </lista>
+      <lista nome="sem nome" prioridade="3">
+        <listaItens/>
       </lista>
     </listas>
   </usuario>

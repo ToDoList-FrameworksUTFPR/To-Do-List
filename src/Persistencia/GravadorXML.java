@@ -5,7 +5,6 @@
 package Persistencia;
 
 import Log.Log;
-import Modelo.Lista;
 import Modelo.Usuario;
 import java.beans.IntrospectionException;
 import java.io.File;
@@ -23,16 +22,13 @@ import org.xml.sax.SAXException;
 public class GravadorXML {
     private static Log log = new Log(Autenticador.class);
     public GravadorXML(Usuario u){
-        for(Lista l : u.getListas()){
-            System.out.println("Quantidade de itens lista :" + l.getNome() + l.getListaItens().size());            
-        }
         String arquivo = u.getLogin() + ".xml";
-        log.info("[GravadorXML]", "Iniciado chamada de classe");
+        log.info("GravadorXML", "Iniciado chamada de classe");
         BeanWriter writer = new BeanWriter();
         try {
             writer = new BeanWriter(new FileOutputStream(new File("src/xml/Usuarios/" + arquivo)));
         } catch (FileNotFoundException ex) {
-            log.fatal("[GravadorXML]", "Erro ao gerar/substituir arquivo -> " + arquivo, ex);
+            log.fatal("GravadorXML", "Erro ao gerar/substituir arquivo -> " + arquivo, ex);
         }
         writer.getXMLIntrospector().setAttributesForPrimitives(true);
         writer.enablePrettyPrint();
@@ -43,7 +39,7 @@ public class GravadorXML {
         try {                
             writer.write(u);
         } catch (IOException | SAXException | IntrospectionException ex) {
-            log.fatal("[GravadorXML]", "Erro ao realizar a gravação de -> " + arquivo, ex);
+            log.fatal("GravadorXML", "Erro ao realizar a gravação de -> " + arquivo, ex);
         }
     }
     

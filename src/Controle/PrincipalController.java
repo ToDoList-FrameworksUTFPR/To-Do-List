@@ -26,9 +26,12 @@ import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.PieChart;
@@ -43,6 +46,8 @@ import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
@@ -181,9 +186,9 @@ public class PrincipalController implements Initializable {
         FileChooser fileChooser = new FileChooser();
         FileChooser.ExtensionFilter exts = new FileChooser.ExtensionFilter("Imagens (png, jpg, bmp)", new String[]{"*.png", "*.jpg", "*.bmp"});
         fileChooser.getExtensionFilters().add(exts);
-        File caminho = null; 
+        File caminho = null;
         caminho = fileChooser.showSaveDialog(aplicacao.stage);
-        if(caminho != null){
+        if (caminho != null) {
             String arquivo = caminho.getAbsolutePath();
             if (!arquivo.isEmpty()) {
                 try {
@@ -209,7 +214,7 @@ public class PrincipalController implements Initializable {
     public void alterarDados() {
         aplicacao.goTo("AlterarDados");
     }
-    
+
     @FXML
     public void alterarDados_mouseEmCima() {
         lblAlterarDados.setTextFill(Paint.valueOf("darkgray"));
@@ -219,11 +224,13 @@ public class PrincipalController implements Initializable {
     public void alterarDados_mouseFora() {
         lblAlterarDados.setTextFill(Paint.valueOf("gray"));
     }
+
     @FXML
     public void sair() {
         aplicacao.sair();
         aplicacao.goTo("Login");
     }
+
     @FXML
     public void sair_mouseEmCima() {
         lblSair.setTextFill(Paint.valueOf("darkgray"));
@@ -240,7 +247,7 @@ public class PrincipalController implements Initializable {
         ObservableList<String> itens = null;
         listaListas.setItems(itens);
         itens = FXCollections.observableArrayList();
-        for(Lista l : aplicacao.retornarUsuario().getListas()){
+        for (Lista l : aplicacao.retornarUsuario().getListas()) {
             itens.add(l.getNome());
         }
         listaListas.setItems(itens);
@@ -263,7 +270,7 @@ public class PrincipalController implements Initializable {
             chain.addComparator(new listaPrioridade());
             Collections.sort(lista, chain);
         }
-        itens = FXCollections.observableArrayList(lista);        
+        itens = FXCollections.observableArrayList(lista);
         listaListas.setItems(itens);
     }
 
@@ -291,11 +298,13 @@ public class PrincipalController implements Initializable {
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
+    public static String alteracao = null;
+
     @FXML
     private void selecionarLista() {
-        if(listaListas.getSelectionModel().getSelectedItem() != null){
+        if (listaListas.getSelectionModel().getSelectedItem() != null) {
             Lista temp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
-            aplicacao.setListaTemp(temp);        
+            aplicacao.setListaTemp(temp);
             ObservableList<String> itens = null;
             listaSubItens.setItems(itens);
             txtNome.setText("");
@@ -313,73 +322,102 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void abrirListaItens() {
-        if(listaListas.getSelectionModel().getSelectedItem() != null){
+        if (listaListas.getSelectionModel().getSelectedItem() != null) {
             ObservableList<String> itens = null;
-            Callback<String, ObservableValue<Boolean>> getProperty = new Callback<String, ObservableValue<Boolean>>() {
 
+            final Callback<String, ObservableValue<Boolean>> getProperty = new Callback<String, ObservableValue<Boolean>>() {
                 @Override
                 public ObservableValue<Boolean> call(String p) {
                     BooleanProperty truue = new SimpleBooleanProperty();
                     truue.setValue(Boolean.TRUE);
                     BooleanProperty faalse = new SimpleBooleanProperty();
                     faalse.setValue(Boolean.FALSE);
-                    for(Item i : aplicacao.getListaTemp().getListaItens()){
-                        if(i.getNome().equals(p)){
-                            if(i.isRealizado())
+                    for (Item i : aplicacao.getListaTemp().getListaItens()) {
+                        if (i.getNome().equals(p)) {
+                            if (i.isRealizado()) {
                                 return truue;
-                            else
+                            } else {
                                 return faalse;
+                            }
                         }
                     }
                     return null;
                 }
-                
             };
             listaItens.setItems(itens);
             itens = FXCollections.observableArrayList();
             int index = aplicacao.retornarUsuario().getListas().indexOf(aplicacao.getListaTemp());
-            if(index >= 0){
-                for(Item i : aplicacao.retornarUsuario().getListas().get(index).getListaItens()){
+            if (index >= 0) {
+
+                for (Item i : aplicacao.retornarUsuario().getListas().get(index).getListaItens()) {
                     itens.add(i.getNome());
                 }
                 listaItens.setItems(itens);
-                Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);                
-                
+
+                Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);
+                /*listaItens.addEventHandler(MouseEvent.MOUSE_CLICKED, evento);   
+                 EventHandler<MouseEvent> evento = new EventHandler<MouseEvent>() {
+
+                 @Override
+                 public void handle(MouseEvent t) {
+                 BooleanProperty truue = new SimpleBooleanProperty();
+                 truue.setValue(Boolean.TRUE);
+                 BooleanProperty faalse = new SimpleBooleanProperty();
+                 faalse.setValue(Boolean.FALSE);
+                 if (t.getButton() == MouseButton.SECONDARY) {
+                 Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
+                 Item it = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+            
+                 if (it.isRealizado()) {
+                 it.setRealizado(false);
+                 it.setSelected((SimpleBooleanProperty) faalse);
+                 } else {
+                 it.setRealizado(true);
+                 it.setSelected((SimpleBooleanProperty) truue);
+                 }                  
+                 GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());
+                 abrirListaItens();
+                 }
+                 };
+                 };*/
                 listaItens.setCellFactory(forListView);
+                /*Tentativa falha de listener*/
+                listaItens.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                    @Override
+                    public void changed(ObservableValue<? extends String> objeto, String antigo, String novo) {
+                        System.out.println("Valor antigo: "+ antigo + " -> novo : " + novo);
+                    }
+                });
             }
         }
     }
+
     @FXML
     private void selecionarItem() {
-        if(aplicacao.getListaTemp() != null && listaItens.getSelectionModel().getSelectedItem() != null){
+        if (aplicacao.getListaTemp() != null && listaItens.getSelectionModel().getSelectedItem() != null) {
             Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
             Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
             aplicacao.setListaTemp(lTemp);
             aplicacao.setItemTemp(iTemp);
             Item temp = aplicacao.getItemTemp();
-            if(temp != null){
+            if (temp != null) {
                 txtNome.setText(temp.getNome());
                 txtLocal.setText(temp.getLocal());
                 txtDataCriacao.setText(temp.getDataCriacao());
                 txtPrioridade.setText(String.valueOf(temp.getPrioridade()));
                 txtDataFinalizar.setText(temp.getDataFinalizar());
                 txtDataFinalizado.setText(temp.getDataFinalizado());
-                /* Implementar alteracao de status*/
-                if(temp.getSelected() != null){
-                    temp.setRealizado(temp.getSelected().getValue());
-                }
-                
-                /* Implementar alteracao de status*/
                 abrirListaSubItens();
-            }     
+            }
         }
     }
+
     @FXML
     private void ordenacaoItemAcao() {
         ComparatorChain chain;
         ArrayList<String> lista = new ArrayList<>();
         ObservableList<String> itens = null;
-        if(aplicacao.getItemTemp() != null){
+        if (aplicacao.getItemTemp() != null) {
             listaItens.setItems(itens);
             for (Item l : aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).getListaItens()) {
                 lista.add(l.getNome());
@@ -400,7 +438,7 @@ public class PrincipalController implements Initializable {
                 Collections.sort(lista, chain);
             }
             itens = FXCollections.observableArrayList(lista);
-            listaItens.setItems(itens);   
+            listaItens.setItems(itens);
         }
     }
 
@@ -428,13 +466,14 @@ public class PrincipalController implements Initializable {
             Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
             aplicacao.retornarUsuario()
                     .encontrarLista(aplicacao.getListaTemp().getNome())
-                    .removerItem(iTemp);            
+                    .removerItem(iTemp);
             abrirListaItens();
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
     /* /item */
     /* subitem */
+
     @FXML
     private void abrirListaSubItens() {
         ObservableList<String> itens = null;
@@ -445,14 +484,15 @@ public class PrincipalController implements Initializable {
                 truue.setValue(Boolean.TRUE);
                 BooleanProperty faalse = new SimpleBooleanProperty();
                 faalse.setValue(Boolean.FALSE);
-                for(Subitem s : aplicacao.getItemTemp().getListaSubItens()){
-                        if(s.getNome().equals(p)){
-                            if(s.isRealizado())
-                                return truue;
-                            else
-                                return faalse;
+                for (Subitem s : aplicacao.getItemTemp().getListaSubItens()) {
+                    if (s.getNome().equals(p)) {
+                        if (s.isRealizado()) {
+                            return truue;
+                        } else {
+                            return faalse;
                         }
                     }
+                }
                 return null;
             }
         };
@@ -460,22 +500,24 @@ public class PrincipalController implements Initializable {
         itens = FXCollections.observableArrayList();
         int indexLista = aplicacao.retornarUsuario().getListas().indexOf(aplicacao.getListaTemp());
         int indexItem = aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().indexOf(aplicacao.getItemTemp());
-       
-        if(indexLista >= 0 && indexItem >= 0){
-            for(Subitem s : aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().get(indexItem).getListaSubItens()){
+
+        if (indexLista >= 0 && indexItem >= 0) {
+            for (Subitem s : aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().get(indexItem).getListaSubItens()) {
                 itens.add(s.getNome());
             }
             listaSubItens.setItems(itens);
 
-            Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);                
+            Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);
             listaSubItens.setCellFactory(forListView);
-        }        
+        }
     }
+
     @FXML
-    private void abrirAdicionarSubItem(){        
+    private void abrirAdicionarSubItem() {
         txtNomeSubItem.setText("");
         lblSubItemInfo.setText("");
     }
+
     @FXML
     private void adicionarSubItem() {
         if (!txtNomeSubItem.getText().isEmpty() && aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
@@ -496,6 +538,7 @@ public class PrincipalController implements Initializable {
             lblSubItemInfo.setTextFill(Paint.valueOf("red"));
         }
     }
+
     @FXML
     private void deletarSubItem() {
         if (listaSubItens.getSelectionModel().getSelectedItem() != null) {
@@ -572,7 +615,7 @@ public class PrincipalController implements Initializable {
     class itemPrioridade implements Comparator {
 
         @Override
-        public int compare(Object o1, Object o2) {            
+        public int compare(Object o1, Object o2) {
             Item z1 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o1);
             Item z2 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o2);
             return z2.getPrioridade() - z1.getPrioridade();
