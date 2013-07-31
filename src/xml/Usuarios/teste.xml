@@ -1,13 +1,25 @@
   <usuario login="teste" nome="Novo" senha="teste">
     <listas>
-      <lista nome="tessste" prioridade="0">
+      <lista nome="123" prioridade="4">
         <listaItens/>
       </lista>
-      <lista nome="asdas" prioridade="0">
+      <lista nome="xD" prioridade="3">
         <listaItens/>
       </lista>
-      <lista nome="11" prioridade="0">
-        <listaItens/>
+      <lista nome="sem nome" prioridade="3">
+        <listaItens>
+          <item dataCriacao="10/10/2010" dataFinalizado=" " dataFinalizar="11/11/2011" local="1" nome="3" prioridade="4" realizado="true">
+            <listaSubItens>
+              <subitem nome="123123" realizado="false"/>
+            </listaSubItens>
+          </item>
+          <item dataCriacao="20/10/2010" dataFinalizado=" " dataFinalizar="20/10/2012" local="2" nome="2" prioridade="5" realizado="false">
+            <listaSubItens/>
+          </item>
+          <item dataCriacao="10/10/2010" dataFinalizado=" " dataFinalizar="11/11/2011" local="1" nome="1" prioridade="2" realizado="false">
+            <listaSubItens/>
+          </item>
+        </listaItens>
       </lista>
     </listas>
   </usuario>
