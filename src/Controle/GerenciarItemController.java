@@ -11,6 +11,9 @@ import Persistencia.GravadorXML;
 import Persistencia.ValidarData;
 import Visao.ProjetoFinal;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -42,8 +45,6 @@ public class GerenciarItemController implements Initializable {
     @FXML
     public TextField txtLocal;
     @FXML
-    public TextField txtDataCriacao;
-    @FXML
     public TextField txtDataFinalizar;
     @FXML
     public Label lblInformacao;
@@ -61,19 +62,20 @@ public class GerenciarItemController implements Initializable {
     @FXML
     public void cadastrarAcao() {
         if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty()
-                || txtDataCriacao.getText().isEmpty() || txtDataFinalizar.getText().isEmpty()
-                || comboPrioridade.getSelectionModel().isEmpty()) {
+                || txtDataFinalizar.getText().isEmpty() || comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
-            if (vd.isValid(txtDataCriacao.getText()) && vd.isValid(txtDataFinalizar.getText())) {
+            if (vd.isValid(txtDataFinalizar.getText())) {
                 lblInformacao.setText("Item alterado com sucesso!");
                 lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
                 Item itemtemp = new Item();
                 itemtemp.setNome(txtNome.getText());
                 itemtemp.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
                 itemtemp.setLocal(txtLocal.getText());
-                itemtemp.setDataCriacao(txtDataCriacao.getText());
+                Date agora = new Date();
+                DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+                itemtemp.setDataCriacao(df.format(agora));
                 itemtemp.setDataFinalizar(txtDataFinalizar.getText());
                 itemtemp.setDataFinalizado(" ");
                 Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
@@ -93,8 +95,7 @@ public class GerenciarItemController implements Initializable {
     @FXML
     public void alterarAcao() {
         if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty()
-                || txtDataCriacao.getText().isEmpty() || txtDataFinalizar.getText().isEmpty()
-                || comboPrioridade.getSelectionModel().isEmpty()) {
+                ||  txtDataFinalizar.getText().isEmpty() || comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
@@ -104,7 +105,6 @@ public class GerenciarItemController implements Initializable {
             itemtemp.setNome(txtNome.getText());
             itemtemp.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
             itemtemp.setLocal(txtLocal.getText());
-            itemtemp.setDataCriacao(txtDataCriacao.getText());
             itemtemp.setDataFinalizar(txtDataFinalizar.getText());
             log.info("alterarAcao", "Alterado dados do item");
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
@@ -139,7 +139,6 @@ public class GerenciarItemController implements Initializable {
             Item i = aplicacao.getItemTemp();
             txtNome.setText(i.getNome());
             txtLocal.setText(i.getLocal());
-            txtDataCriacao.setText(i.getDataCriacao());
             txtDataFinalizar.setText(i.getDataFinalizar());
             comboPrioridade.setPromptText(String.valueOf(i.getPrioridade()));
             log.info("initialize", "Iniciado form no modo 'edição', e carregado dados do usuário. url -> " + url);

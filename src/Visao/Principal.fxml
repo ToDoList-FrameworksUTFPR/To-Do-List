@@ -45,14 +45,15 @@
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
                             <ListView fx:id="listaSubItens" layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
-                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
+                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="56.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
+                            <Button id="btnDeletar" fx:id="btnFinalizarSub" contentDisplay="GRAPHIC_ONLY" layoutX="133.0" mnemonicParsing="false" onMouseClicked="#finalizarSubItem" prefHeight="35.0" prefWidth="38.0" />
                           </children>
                         </AnchorPane>
                       </content>
                     </TitledPane>
                   </expandedPane>
                   <panes>
-                    <TitledPane id="x7" alignment="CENTER" contentDisplay="CENTER" styleClass="first-titled-pane" text="Informações do item">
+                    <TitledPane id="x7" fx:id="x2" alignment="CENTER" contentDisplay="CENTER" styleClass="first-titled-pane" text="Informações do item">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
@@ -68,6 +69,7 @@
                             <Label layoutX="7.0" layoutY="119.0" text="Data finalizado" />
                             <TextField fx:id="txtDataFinalizado" editable="false" layoutX="7.0" layoutY="135.0" prefWidth="84.0" />
                             <TextField fx:id="txtNome" editable="false" layoutX="7.0" layoutY="22.0" prefWidth="130.0" />
+                            <Button fx:id="btnFinalizar" layoutX="68.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#finalizarItem" text="Finalizar item!" />
                           </children>
                         </AnchorPane>
                       </content>

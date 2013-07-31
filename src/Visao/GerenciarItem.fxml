@@ -18,11 +18,9 @@
     <Label layoutX="23.0" layoutY="56.0" text="Nome:" />
     <Label layoutX="250.0" layoutY="53.0" text="Prioridade" />
     <TextField fx:id="txtLocal" layoutX="23.0" layoutY="117.0" prefWidth="304.0" />
-    <TextField fx:id="txtDataCriacao" layoutX="22.0" layoutY="163.0" prefWidth="84.0" />
-    <Label layoutX="22.0" layoutY="145.0" text="Data criação" />
     <Label layoutX="23.0" layoutY="102.0" text="Local" />
-    <Label layoutX="208.0" layoutY="145.0" text="Data Finalizar" />
-    <TextField fx:id="txtDataFinalizar" layoutX="208.0" layoutY="163.0" prefWidth="84.0" />
+    <Label layoutX="23.0" layoutY="145.0" text="Data Finalizar" />
+    <TextField fx:id="txtDataFinalizar" layoutX="23.0" layoutY="163.0" prefWidth="84.0" />
     <TextField fx:id="txtNome" layoutX="23.0" layoutY="72.0" prefWidth="208.0" />
     <ComboBox fx:id="comboPrioridade" layoutX="250.0" layoutY="69.0">
       <items>

@@ -30,8 +30,6 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.PieChart;
@@ -46,8 +44,6 @@ import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
@@ -130,6 +126,10 @@ public class PrincipalController implements Initializable {
     private Label lblSubItemInfo;
     @FXML
     private Button btnRemoverSubItem;
+    @FXML
+    private Button btnFinalizar;
+    @FXML
+    private Button btnFinalizarSub;
     @FXML
     private ListView listaSubItens;
     /* /SubItem */
@@ -298,7 +298,6 @@ public class PrincipalController implements Initializable {
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
-    public static String alteracao = null;
 
     @FXML
     private void selecionarLista() {
@@ -385,7 +384,7 @@ public class PrincipalController implements Initializable {
                 listaItens.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
                     @Override
                     public void changed(ObservableValue<? extends String> objeto, String antigo, String novo) {
-                        System.out.println("Valor antigo: "+ antigo + " -> novo : " + novo);
+                        System.out.println("Valor antigo: " + antigo + " -> novo : " + novo);
                     }
                 });
             }
@@ -471,9 +470,26 @@ public class PrincipalController implements Initializable {
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
+
+    @FXML
+    private void finalizarItem() {
+        if (listaItens.getSelectionModel().getSelectedItem() != null) {
+            BooleanProperty truue = new SimpleBooleanProperty();
+            truue.setValue(Boolean.TRUE);
+            Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
+            Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+            iTemp.setRealizado(true);
+            iTemp.setSelected((SimpleBooleanProperty) truue);
+            Date agora = new Date();
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+            iTemp.setDataFinalizado(df.format(agora));
+            abrirListaItens();
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+        }
+    }
+
     /* /item */
     /* subitem */
-
     @FXML
     private void abrirListaSubItens() {
         ObservableList<String> itens = null;
@@ -553,6 +569,21 @@ public class PrincipalController implements Initializable {
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
+    
+    @FXML
+    private void finalizarSubItem() {
+        if (listaSubItens.getSelectionModel().getSelectedItem() != null) {
+            Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
+            Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+            Subitem sTemp = iTemp.encontrarSubitem((String) listaSubItens.getSelectionModel().getSelectedItem());
+            BooleanProperty truue = new SimpleBooleanProperty();
+            truue.setValue(Boolean.TRUE);
+            sTemp.setSelected((SimpleBooleanProperty) truue);
+            sTemp.setRealizado(true);
+            abrirListaSubItens();
+            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+        }
+    }
     /* /subitem */
 
     @Override
@@ -585,6 +616,7 @@ public class PrincipalController implements Initializable {
         Image imagemAdicionar = new Image(getClass().getResourceAsStream("Imagens/adicionar.png"));
         Image imagemEditar = new Image(getClass().getResourceAsStream("Imagens/editar.png"));
         Image imagemRemover = new Image(getClass().getResourceAsStream("Imagens/remover.png"));
+        Image imagemAlterarStatus = new Image(getClass().getResourceAsStream("Imagens/alterarstatus.png"));
 
         adicionarNovaLista.setGraphic(new ImageView(imagemAdicionar));
         editarLista.setGraphic(new ImageView(imagemEditar));
@@ -595,6 +627,7 @@ public class PrincipalController implements Initializable {
         removerItem.setGraphic(new ImageView(imagemRemover));
 
         btnRemoverSubItem.setGraphic(new ImageView(imagemRemover));
+        btnFinalizarSub.setGraphic(new ImageView(imagemAlterarStatus));
 
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));
