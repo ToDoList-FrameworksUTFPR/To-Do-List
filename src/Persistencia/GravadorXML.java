@@ -20,8 +20,10 @@ import org.xml.sax.SAXException;
  * @author Rayan
  */
 public class GravadorXML {
+
     private static Log log = new Log(Autenticador.class);
-    public GravadorXML(Usuario u){
+
+    public GravadorXML(Usuario u) {
         String arquivo = u.getLogin() + ".xml";
         log.info("GravadorXML", "Iniciado chamada de classe");
         BeanWriter writer = new BeanWriter();
@@ -32,15 +34,14 @@ public class GravadorXML {
         }
         writer.getXMLIntrospector().setAttributesForPrimitives(true);
         writer.enablePrettyPrint();
-        writer.setWriteIDs(false);       
+        writer.setWriteIDs(false);
         writer.setWriteEmptyElements(true);
         writer.getXMLIntrospector().setElementNameMapper(new DecapitalizeNameMapper());
-        
-        try {                
+
+        try {
             writer.write(u);
         } catch (IOException | SAXException | IntrospectionException ex) {
             log.fatal("GravadorXML", "Erro ao realizar a gravação de -> " + arquivo, ex);
         }
     }
-    
 }

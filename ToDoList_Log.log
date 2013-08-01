@@ -1337,3 +1337,49 @@ java.lang.NullPointerException: Input stream must not be null
 119  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Jul 31 20:21:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
 531  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 31 20:21:21 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
 945  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Jul 31 20:21:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:24:30 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+37   [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:24:30 BRT 2013 : Retornou lista de arquivos com o filtro
+174  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Aug 01 08:24:31 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+556  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:24:31 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@53443251
+1064 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:24:31 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@53443251
+3230 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Aug 01 08:24:34 BRT 2013 : Criado novo usuario temporario para verificação de login
+16459 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:24:47 BRT 2013 : Iniciado chamada de classe
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:26:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:26:21 BRT 2013 : Retornou lista de arquivos com o filtro
+110  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Aug 01 08:26:22 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+533  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:26:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
+1027 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:26:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
+2909 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Aug 01 08:26:24 BRT 2013 : Criado novo usuario temporario para verificação de login
+5552 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:26:27 BRT 2013 : Iniciado chamada de classe
+9087 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:26:31 BRT 2013 : Iniciado chamada de classe
+136862 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:28:38 BRT 2013 : Iniciado chamada de classe
+139470 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:28:41 BRT 2013 : Iniciado chamada de classe
+140998 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:28:42 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:33:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:33:21 BRT 2013 : Retornou lista de arquivos com o filtro
+99   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Aug 01 08:33:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+474  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:33:21 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
+920  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:33:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
+3428 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Aug 01 08:33:24 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:34:18 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:34:18 BRT 2013 : Retornou lista de arquivos com o filtro
+102  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Aug 01 08:34:18 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+526  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:34:18 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7af33249
+1010 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:34:19 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7af33249
+2499 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Aug 01 08:34:20 BRT 2013 : Criado novo usuario temporario para verificação de login
+6694 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:34:24 BRT 2013 : Iniciado chamada de classe
+11796 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:34:29 BRT 2013 : Iniciado chamada de classe
+14907 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:34:33 BRT 2013 : Iniciado chamada de classe
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:42:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:42:21 BRT 2013 : Retornou lista de arquivos com o filtro
+96   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Aug 01 08:42:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+464  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:42:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
+882  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:42:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
+3940 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Aug 01 08:42:25 BRT 2013 : Criado novo usuario temporario para verificação de login
+10109 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Thu Aug 01 08:42:31 BRT 2013 : Iniciado chamada de classe
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:43:42 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Thu Aug 01 08:43:42 BRT 2013 : Retornou lista de arquivos com o filtro
+94   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Thu Aug 01 08:43:42 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+461  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:43:42 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+904  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Thu Aug 01 08:43:43 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+59063 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Thu Aug 01 08:44:41 BRT 2013 : Criado novo usuario temporario para verificação de login

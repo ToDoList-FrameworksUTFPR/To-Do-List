@@ -43,6 +43,8 @@ import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
@@ -125,10 +127,6 @@ public class PrincipalController implements Initializable {
     private Label lblSubItemInfo;
     @FXML
     private Button btnRemoverSubItem;
-    @FXML
-    private Button btnFinalizar;
-    @FXML
-    private Button btnFinalizarSub;
     @FXML
     private ListView listaSubItens;
     /* /SubItem */
@@ -337,6 +335,7 @@ public class PrincipalController implements Initializable {
                             } else {
                                 return faalse;
                             }
+
                         }
                     }
                     return null;
@@ -353,40 +352,32 @@ public class PrincipalController implements Initializable {
                 listaItens.setItems(itens);
 
                 Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);
-                /*listaItens.addEventHandler(MouseEvent.MOUSE_CLICKED, evento);   
-                 EventHandler<MouseEvent> evento = new EventHandler<MouseEvent>() {
-
-                 @Override
-                 public void handle(MouseEvent t) {
-                 BooleanProperty truue = new SimpleBooleanProperty();
-                 truue.setValue(Boolean.TRUE);
-                 BooleanProperty faalse = new SimpleBooleanProperty();
-                 faalse.setValue(Boolean.FALSE);
-                 if (t.getButton() == MouseButton.SECONDARY) {
-                 Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
-                 Item it = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
-            
-                 if (it.isRealizado()) {
-                 it.setRealizado(false);
-                 it.setSelected((SimpleBooleanProperty) faalse);
-                 } else {
-                 it.setRealizado(true);
-                 it.setSelected((SimpleBooleanProperty) truue);
-                 }                  
-                 GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());
-                 abrirListaItens();
-                 }
-                 };
-                 };*/
                 listaItens.setCellFactory(forListView);
-                /*Tentativa falha de listener*/
-                /*listaItens.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-                    @Override
-                    public void changed(ObservableValue<? extends String> objeto, String antigo, String novo) {
-                        System.out.println("Valor antigo: " + antigo + " -> novo : " + novo);
-                    }
-                });*/
             }
+        }
+    }
+
+    @FXML
+    public void funcaoListItem(MouseEvent e) {
+        if (e.getButton() == MouseButton.PRIMARY) {
+            selecionarItem();
+        } else if (e.getButton() == MouseButton.SECONDARY) {
+            BooleanProperty truue = new SimpleBooleanProperty();
+            truue.setValue(Boolean.TRUE);
+            BooleanProperty faalse = new SimpleBooleanProperty();
+            faalse.setValue(Boolean.FALSE);
+            Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
+            Item it = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+
+            if (it.isRealizado()) {
+                it.setRealizado(false);
+                it.setSelected((SimpleBooleanProperty) faalse);
+            } else {
+                it.setRealizado(true);
+                it.setSelected((SimpleBooleanProperty) truue);
+            }
+            GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());
+            abrirListaItens();
         }
     }
 
@@ -417,7 +408,7 @@ public class PrincipalController implements Initializable {
         ObservableList<String> itens = null;
         if (aplicacao.getItemTemp() != null) {
             listaItens.setItems(itens);
-            for (Item l : aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).getListaItens()) {
+            for (Item l : aplicacao.getListaTemp().getListaItens()) {
                 lista.add(l.getNome());
             }
             if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Nome") {
@@ -568,10 +559,10 @@ public class PrincipalController implements Initializable {
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
-    
+
     @FXML
-    private void finalizarSubItem() {
-        if (listaSubItens.getSelectionModel().getSelectedItem() != null) {
+    private void finalizarSubItem(MouseEvent e) {
+        if (e.getButton() == MouseButton.PRIMARY && listaSubItens.getSelectionModel().getSelectedItem() != null) {
             Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
             Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
             Subitem sTemp = iTemp.encontrarSubitem((String) listaSubItens.getSelectionModel().getSelectedItem());
@@ -615,7 +606,6 @@ public class PrincipalController implements Initializable {
         Image imagemAdicionar = new Image(getClass().getResourceAsStream("Imagens/adicionar.png"));
         Image imagemEditar = new Image(getClass().getResourceAsStream("Imagens/editar.png"));
         Image imagemRemover = new Image(getClass().getResourceAsStream("Imagens/remover.png"));
-        Image imagemAlterarStatus = new Image(getClass().getResourceAsStream("Imagens/alterarstatus.png"));
 
         adicionarNovaLista.setGraphic(new ImageView(imagemAdicionar));
         editarLista.setGraphic(new ImageView(imagemEditar));
@@ -626,7 +616,6 @@ public class PrincipalController implements Initializable {
         removerItem.setGraphic(new ImageView(imagemRemover));
 
         btnRemoverSubItem.setGraphic(new ImageView(imagemRemover));
-        btnFinalizarSub.setGraphic(new ImageView(imagemAlterarStatus));
 
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));

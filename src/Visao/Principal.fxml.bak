@@ -37,22 +37,9 @@
                     </FXCollections>
                   </items>
                 </ComboBox>
-                <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" onMouseClicked="#selecionarItem" prefHeight="248.0" prefWidth="169.0" />
+                <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" onMouseClicked="#funcaoListItem" prefHeight="248.0" prefWidth="169.0" />
                 <Accordion layoutX="362.0" layoutY="75.0" prefHeight="343.0" prefWidth="233.0">
                   <expandedPane>
-                    <TitledPane id="x6" fx:id="accListarSubItens" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
-                      <content>
-                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                          <children>
-                            <ListView fx:id="listaSubItens" layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
-                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="56.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
-                            <Button id="btnDeletar" fx:id="btnFinalizarSub" contentDisplay="GRAPHIC_ONLY" layoutX="133.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
-                          </children>
-                        </AnchorPane>
-                      </content>
-                    </TitledPane>
-                  </expandedPane>
-                  <panes>
                     <TitledPane id="x7" fx:id="x2" alignment="CENTER" contentDisplay="CENTER" styleClass="first-titled-pane" text="Informações do item">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -69,11 +56,13 @@
                             <Label layoutX="7.0" layoutY="119.0" text="Data finalizado" />
                             <TextField fx:id="txtDataFinalizado" editable="false" layoutX="7.0" layoutY="135.0" prefWidth="84.0" />
                             <TextField fx:id="txtNome" editable="false" layoutX="7.0" layoutY="22.0" prefWidth="130.0" />
-                            <Button fx:id="btnFinalizar" layoutX="68.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#finalizarItem" text="Finalizar item!" />
                           </children>
                         </AnchorPane>
                       </content>
                     </TitledPane>
+                  </expandedPane>
+                  <panes>
+                    <fx:reference source="x2" />
                     <TitledPane id="x3" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#abrirAdicionarSubItem" text="Adicionar subitem">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -86,7 +75,16 @@
                         </AnchorPane>
                       </content>
                     </TitledPane>
-                    <fx:reference source="accListarSubItens" />
+                    <TitledPane id="x6" fx:id="accListarSubItens" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                            <ListView fx:id="listaSubItens" layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
+                            <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="56.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
+                          </children>
+                        </AnchorPane>
+                      </content>
+                    </TitledPane>
                   </panes>
                 </Accordion>
                 <Button id="btnDeletar" fx:id="removerLista" contentDisplay="GRAPHIC_ONLY" layoutX="123.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#deletarLista" prefHeight="35.0" prefWidth="38.0" />
