@@ -136,9 +136,8 @@ public class PrincipalController implements Initializable {
     @FXML
     private void abrirAbaGraficos() {
         if (tabMenuGraficos.isSelected()) {
-            int contRealizadasSemAtraso = 0, contRealizadasComAtraso = 0, contNaoRealizadas = 0, totalItens = 0;
+            int contRealizadasSemAtraso = 0, contRealizadasComAtraso = 0, contNaoRealizadas = 0;
             for (Lista l : aplicacao.retornarUsuario().getListas()) {
-                totalItens++;
                 for (Item i : l.getListaItens()) {
                     DateFormat d = new SimpleDateFormat("dd/MM/yyyy");
                     try {
@@ -191,7 +190,7 @@ public class PrincipalController implements Initializable {
                 try {
                     ImageIO.write(img, comboFormato.getValue().toString(), new File(arquivo + "." + comboFormato.getValue().toString()));
                 } catch (IOException ex) {
-                    log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivi ->" + arquivo, ex);
+                    log.fatal("salvarGrafico", "Erro fatal ao exportar imagem para arquivo ->" + arquivo, ex);
                 }
 
             }
