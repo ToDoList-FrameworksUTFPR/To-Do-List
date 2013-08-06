@@ -405,7 +405,7 @@ public class PrincipalController implements Initializable {
         ComparatorChain chain;
         ArrayList<String> lista = new ArrayList<>();
         ObservableList<String> itens = null;
-        if (aplicacao.getItemTemp() != null) {
+        if (aplicacao.getListaTemp()!= null && aplicacao.getItemTemp() != null) {
             listaItens.setItems(itens);
             for (Item l : aplicacao.getListaTemp().getListaItens()) {
                 lista.add(l.getNome());
