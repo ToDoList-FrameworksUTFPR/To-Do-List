@@ -3,7 +3,7 @@
       <lista nome="123" prioridade="4">
         <listaItens/>
       </lista>
-      <lista nome="xD" prioridade="3">
+      <lista nome="xD" prioridade="2">
         <listaItens>
           <item dataCriacao="10/10/2010" dataFinalizado="31/07/2013" dataFinalizar="11/11/2011" local="1" nome="1" prioridade="1" realizado="true">
             <listaSubItens/>
@@ -13,10 +13,14 @@
           </item>
           <item dataCriacao="31/07/2013" dataFinalizado=" " dataFinalizar="10/10/2010" local="123" nome="teste_dt" prioridade="1" realizado="true">
             <listaSubItens>
-              <subitem nome="123123213" realizado="true">
-                <selected bound="false" value="true"/>
-              </subitem>
+              <subitem nome="123123213" realizado="true"/>
             </listaSubItens>
+          </item>
+          <item dataCriacao="07/08/2013" dataFinalizado="07/08/2013" dataFinalizar="10/10/2010" local="Ultimop" nome="teste" prioridade="5" realizado="true">
+            <listaSubItens/>
+          </item>
+          <item dataCriacao="07/08/2013" dataFinalizado="07/08/2013" dataFinalizar="11/11/2011" local="123" nome="123" prioridade="1" realizado="true">
+            <listaSubItens/>
           </item>
         </listaItens>
       </lista>

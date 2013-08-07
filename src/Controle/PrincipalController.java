@@ -29,20 +29,26 @@ import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ContextMenu;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
@@ -89,6 +95,8 @@ public class PrincipalController implements Initializable {
     private ListView listaListas;
     @FXML
     private ComboBox comboOrdenarLista;
+    @FXML
+    private ComboBox comboOrdemLista;
     /* /Lista */
     /* Item */
     @FXML
@@ -99,6 +107,8 @@ public class PrincipalController implements Initializable {
     private Button editarItem;
     @FXML
     private ComboBox comboOrdenarItem;
+    @FXML
+    private ComboBox comboOrdemItem;
     @FXML
     private ListView listaItens;
     /* /Item */
@@ -203,6 +213,18 @@ public class PrincipalController implements Initializable {
     private void abrirAbaTarefas() {
         if (tabMenuTarefas.isSelected()) {
             abrirListas();
+            final ContextMenu cm = new ContextMenu();
+            MenuItem cmItem1 = new MenuItem("Copy Image");
+            cmItem1.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent e) {
+                    Clipboard clipboard = Clipboard.getSystemClipboard();
+                    ClipboardContent content = new ClipboardContent();
+                    content.putString("Deu boa");
+                    clipboard.setContent(content);
+                }
+            });
+            listaItens.setContextMenu(cm);
         }
     }
 
@@ -260,11 +282,23 @@ public class PrincipalController implements Initializable {
             lista.add(l.getNome());
         }
         if (comboOrdenarLista.getSelectionModel().getSelectedItem() == "Nome") {
-            Collections.sort(lista);
+            if (comboOrdemLista.getSelectionModel().getSelectedItem() == "Crescente") {
+                chain = new ComparatorChain();
+                chain.addComparator(new listaPrioridadeCrescente());
+                Collections.sort(lista, chain);
+            } else {
+                Collections.sort(lista);
+            }
         } else if (comboOrdenarLista.getSelectionModel().getSelectedItem() == "Prioridade") {
-            chain = new ComparatorChain();
-            chain.addComparator(new listaPrioridade());
-            Collections.sort(lista, chain);
+            if (comboOrdemLista.getSelectionModel().getSelectedItem() == "Crescente") {
+                chain = new ComparatorChain();
+                chain.addComparator(new listaPrioridadeCrescente());
+                Collections.sort(lista, chain);
+            } else {
+                chain = new ComparatorChain();
+                chain.addComparator(new listaPrioridade());
+                Collections.sort(lista, chain);
+            }
         }
         itens = FXCollections.observableArrayList(lista);
         listaListas.setItems(itens);
@@ -357,30 +391,6 @@ public class PrincipalController implements Initializable {
     }
 
     @FXML
-    public void funcaoListItem(MouseEvent e) {
-        if (e.getButton() == MouseButton.PRIMARY) {
-            selecionarItem();
-        } else if (e.getButton() == MouseButton.SECONDARY) {
-            BooleanProperty truue = new SimpleBooleanProperty();
-            truue.setValue(Boolean.TRUE);
-            BooleanProperty faalse = new SimpleBooleanProperty();
-            faalse.setValue(Boolean.FALSE);
-            Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
-            Item it = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
-
-            if (it.isRealizado()) {
-                it.setRealizado(false);
-                it.setSelected((SimpleBooleanProperty) faalse);
-            } else {
-                it.setRealizado(true);
-                it.setSelected((SimpleBooleanProperty) truue);
-            }
-            GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());
-            abrirListaItens();
-        }
-    }
-
-    @FXML
     private void selecionarItem() {
         if (aplicacao.getListaTemp() != null && listaItens.getSelectionModel().getSelectedItem() != null) {
             Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
@@ -405,25 +415,49 @@ public class PrincipalController implements Initializable {
         ComparatorChain chain;
         ArrayList<String> lista = new ArrayList<>();
         ObservableList<String> itens = null;
-        if (aplicacao.getListaTemp()!= null && aplicacao.getItemTemp() != null) {
+        if (aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
             listaItens.setItems(itens);
             for (Item l : aplicacao.getListaTemp().getListaItens()) {
                 lista.add(l.getNome());
             }
             if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Nome") {
-                Collections.sort(lista);
+                if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemNomeCrescente());
+                    Collections.sort(lista, chain);
+                } else {
+                    Collections.sort(lista);
+                }
             } else if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Prioridade") {
-                chain = new ComparatorChain();
-                chain.addComparator(new itemPrioridade());
-                Collections.sort(lista, chain);
+                if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemPrioridadeCrescente());
+                    Collections.sort(lista, chain);
+                } else {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemPrioridade());
+                    Collections.sort(lista, chain);
+                }
             } else if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Data criação") {
-                chain = new ComparatorChain();
-                chain.addComparator(new itemDataCriacao());
-                Collections.sort(lista, chain);
+                if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemDataCriacaoCrescente());
+                    Collections.sort(lista, chain);
+                } else {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemDataCriacao());
+                    Collections.sort(lista, chain);
+                }
             } else if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Data finalizar") {
-                chain = new ComparatorChain();
-                chain.addComparator(new itemDataFinalizar());
-                Collections.sort(lista, chain);
+                if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemDataFinalizarCrescente());
+                    Collections.sort(lista, chain);
+                } else {
+                    chain = new ComparatorChain();
+                    chain.addComparator(new itemDataFinalizar());
+                    Collections.sort(lista, chain);
+                }
             }
             itens = FXCollections.observableArrayList(lista);
             listaItens.setItems(itens);
@@ -472,6 +506,7 @@ public class PrincipalController implements Initializable {
             Date agora = new Date();
             DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
             iTemp.setDataFinalizado(df.format(agora));
+            selecionarItem();
             abrirListaItens();
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
@@ -588,6 +623,7 @@ public class PrincipalController implements Initializable {
         abrirListas();
         itens = null;
         comboOrdenarLista.setItems(itens);
+        comboOrdemLista.setItems(itens);
         comboOrdenarItem.setItems(itens);
         itens = FXCollections.observableArrayList(
                 "Nome",
@@ -601,6 +637,13 @@ public class PrincipalController implements Initializable {
                 "Prioridade");
         comboOrdenarItem.setItems(itens);
         comboOrdenarItem.setValue(itens.get(0));
+        itens = FXCollections.observableArrayList(
+                "Crescente",
+                "Decrescente");
+        comboOrdemLista.setItems(itens);
+        comboOrdemItem.setItems(itens);
+        comboOrdemLista.setValue(itens.get(1));
+        comboOrdemItem.setValue(itens.get(1));
 
         Image imagemAdicionar = new Image(getClass().getResourceAsStream("Imagens/adicionar.png"));
         Image imagemEditar = new Image(getClass().getResourceAsStream("Imagens/editar.png"));
@@ -618,6 +661,20 @@ public class PrincipalController implements Initializable {
 
         lblSaudacao.setText("Olá, " + aplicacao.retornarUsuario().getNome());
         lblSaudacao.setTextFill(Paint.valueOf("gray"));
+        /* Context Menu para ListaItens */
+        final ContextMenu contextMenu = new ContextMenu();
+        MenuItem itemFinalizar = new MenuItem("Finalizar item!");
+        itemFinalizar.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                finalizarItem();
+            }
+        });
+        contextMenu.getItems().add(itemFinalizar);
+        listaItens.setContextMenu(contextMenu);
+        /* --------------------------  */
+
+
     }
     /* /tabTarefas */
     /* classes para comparador*/
@@ -636,8 +693,15 @@ public class PrincipalController implements Initializable {
 
         @Override
         public int compare(Object o1, Object o2) {
-            Item z1 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o1);
-            Item z2 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o2);
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
             return z2.getPrioridade() - z1.getPrioridade();
         }
     }
@@ -646,12 +710,30 @@ public class PrincipalController implements Initializable {
 
         @Override
         public int compare(Object o1, Object o2) {
-            Item z1 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o1);
-            Item z2 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o2);
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
             DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
             try {
-                Date dtCriacaoO1 = df.parse(z1.getDataCriacao());
-                Date dtCriacaoO2 = df.parse(z2.getDataCriacao());
+                Date dtCriacaoO1;
+                Date dtCriacaoO2;
+                if (z1.getDataCriacao() != null) {
+                    dtCriacaoO1 = df.parse(z1.getDataCriacao());
+                } else {
+                    dtCriacaoO1 = new Date();
+                }
+                if (z2.getDataCriacao() != null) {
+                    dtCriacaoO2 = df.parse(z2.getDataCriacao());
+                } else {
+                    dtCriacaoO2 = new Date();
+                }
+
                 if (dtCriacaoO2.after(dtCriacaoO1)) {
                     return 1;
                 } else if (dtCriacaoO2.before(dtCriacaoO1)) {
@@ -670,8 +752,15 @@ public class PrincipalController implements Initializable {
 
         @Override
         public int compare(Object o1, Object o2) {
-            Item z1 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o1);
-            Item z2 = aplicacao.retornarUsuario().getListas().get(listaListas.getSelectionModel().getSelectedIndex()).encontrarItem((String) o2);
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
             DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
             try {
                 Date dtCriacaoO1 = df.parse(z1.getDataFinalizar());
@@ -699,5 +788,117 @@ public class PrincipalController implements Initializable {
             return z2.getPrioridade() - z1.getPrioridade();
         }
     }
+    /* Classes extras de comparadores */
+
+    class listaPrioridadeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
+            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
+            return z1.getPrioridade() - z2.getPrioridade();
+        }
+    }
+
+    class itemNomeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            String z1 = (String) o1;
+            String z2 = (String) o2;
+            return z1.toUpperCase().compareTo(z2.toUpperCase());
+        }
+    }
+
+    class itemPrioridadeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
+            return z1.getPrioridade() - z2.getPrioridade();
+        }
+    }
+
+    class itemDataCriacaoCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+            try {
+                Date dtCriacaoO1;
+                Date dtCriacaoO2;
+                if (z1.getDataCriacao() != null) {
+                    dtCriacaoO1 = df.parse(z1.getDataCriacao());
+                } else {
+                    dtCriacaoO1 = new Date();
+                }
+                if (z2.getDataCriacao() != null) {
+                    dtCriacaoO2 = df.parse(z2.getDataCriacao());
+                } else {
+                    dtCriacaoO2 = new Date();
+                }
+
+                if (dtCriacaoO1.after(dtCriacaoO2)) {
+                    return 1;
+                } else if (dtCriacaoO1.before(dtCriacaoO2)) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            } catch (ParseException ex) {
+                log.error("itemDataCriacao/compare", "Erro ao realizar parse de datas.", ex);
+            }
+            return 0;
+        }
+    }
+
+    class itemDataFinalizarCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+            try {
+                Date dtCriacaoO1 = df.parse(z1.getDataFinalizar());
+                Date dtCriacaoO2 = df.parse(z2.getDataFinalizar());
+                if (dtCriacaoO1.after(dtCriacaoO2)) {
+                    return 1;
+                } else if (dtCriacaoO1.before(dtCriacaoO2)) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            } catch (ParseException ex) {
+                log.error("itemDataCriacao/compare", "Erro ao realizar parse de datas.", ex);
+            }
+            return 0;
+        }
+    }
+    /* /Classes extras de comparadores */
     /* /classes para comparador */
 }
