@@ -47,8 +47,6 @@ import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.Clipboard;
-import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
@@ -57,10 +55,6 @@ import javafx.util.Callback;
 import javax.imageio.ImageIO;
 import org.apache.commons.collections.comparators.ComparatorChain;
 
-/**
- *
- * @author Rayan
- */
 public class PrincipalController implements Initializable {
 
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
@@ -213,18 +207,6 @@ public class PrincipalController implements Initializable {
     private void abrirAbaTarefas() {
         if (tabMenuTarefas.isSelected()) {
             abrirListas();
-            final ContextMenu cm = new ContextMenu();
-            MenuItem cmItem1 = new MenuItem("Copy Image");
-            cmItem1.setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent e) {
-                    Clipboard clipboard = Clipboard.getSystemClipboard();
-                    ClipboardContent content = new ClipboardContent();
-                    content.putString("Deu boa");
-                    clipboard.setContent(content);
-                }
-            });
-            listaItens.setContextMenu(cm);
         }
     }
 

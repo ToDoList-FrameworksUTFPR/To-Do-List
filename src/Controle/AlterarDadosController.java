@@ -17,11 +17,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
 
-/**
- * FXML Controller class
- *
- * @author Rayan
- */
 public class AlterarDadosController implements Initializable {
 
     private static Log log = new Log(AlterarDadosController.class);

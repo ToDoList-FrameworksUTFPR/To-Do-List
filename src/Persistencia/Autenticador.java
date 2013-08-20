@@ -12,10 +12,6 @@ import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- *
- * @author Rayan
- */
 public final class Autenticador {
     
     protected ArrayList<Usuario> todosUsuarios = null;

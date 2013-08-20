@@ -8,10 +8,6 @@ package Modelo;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Rayan
- */
 public class Usuario {
 
     /**

@@ -8,10 +8,6 @@ import javafx.beans.property.SimpleBooleanProperty;
  */
 
 
-/**
- *
- * @author Rayan
- */
 public class Subitem{
     private String nome;
     private boolean realizado;

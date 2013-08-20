@@ -9,10 +9,6 @@ package Modelo;
 import java.util.ArrayList;
 import javafx.beans.property.SimpleBooleanProperty;
 
-/**
- *
- * @author Rayan
- */
 public class Item implements Comparable<Item>{
     private SimpleBooleanProperty selected;
     private String nome;

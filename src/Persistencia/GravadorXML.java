@@ -15,10 +15,6 @@ import org.apache.commons.betwixt.io.BeanWriter;
 import org.apache.commons.betwixt.strategy.DecapitalizeNameMapper;
 import org.xml.sax.SAXException;
 
-/**
- *
- * @author Rayan
- */
 public class GravadorXML {
 
     private static Log log = new Log(Autenticador.class);

@@ -14,10 +14,6 @@ import org.apache.commons.digester3.binder.DigesterLoader;
 import org.apache.commons.digester3.xmlrules.FromXmlRulesModule;
 import org.xml.sax.SAXException;
 
-/**
- *
- * @author Rayan
- */
 public class ParserXML {
     
     private Usuario retorno = null;

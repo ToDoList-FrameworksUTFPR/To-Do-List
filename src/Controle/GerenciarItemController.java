@@ -25,11 +25,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
 
-/**
- * FXML Controller class
- *
- * @author Rayan
- */
 public class GerenciarItemController implements Initializable {
 
     private static Log log = new Log(GerenciarItemController.class);

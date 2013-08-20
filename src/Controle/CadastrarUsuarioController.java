@@ -18,11 +18,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
 
-/**
- * FXML Controller class
- *
- * @author Rayan
- */
 public class CadastrarUsuarioController implements Initializable {
 
     /**

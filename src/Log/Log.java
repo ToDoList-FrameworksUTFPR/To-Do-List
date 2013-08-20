@@ -8,12 +8,8 @@ import java.util.Date;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
-/**
- *
- * @author Rayan
- */
 public class Log {
-    public static Logger log;
+    private static Logger log;
     
     public Log(Class c){
         log = Logger.getLogger(c.getName());

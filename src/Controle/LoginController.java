@@ -13,10 +13,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
 
-/**
- *
- * @author Rayan
- */
 public class LoginController implements Initializable {
 
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
