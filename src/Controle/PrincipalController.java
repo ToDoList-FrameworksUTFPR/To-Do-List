@@ -51,7 +51,6 @@ import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
 import javax.imageio.ImageIO;
-import org.apache.commons.collections.comparators.ComparatorChain;
 
 public class PrincipalController implements Initializable {
 
@@ -253,7 +252,6 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void ordenacaoListaAcao() {
-        ComparatorChain chain;
         ArrayList<String> lista = new ArrayList<>();
         ObservableList<String> itens = null;
 
@@ -263,21 +261,15 @@ public class PrincipalController implements Initializable {
         }
         if (comboOrdenarLista.getSelectionModel().getSelectedItem() == "Nome") {
             if (comboOrdemLista.getSelectionModel().getSelectedItem() == "Crescente") {
-                chain = new ComparatorChain();
-                chain.addComparator(new listaPrioridadeCrescente());
-                Collections.sort(lista, chain);
+                Collections.sort(lista, new listaNomeCrescente());
             } else {
-                Collections.sort(lista);
+                Collections.sort(lista, new listaNomeDecrescente());
             }
         } else if (comboOrdenarLista.getSelectionModel().getSelectedItem() == "Prioridade") {
             if (comboOrdemLista.getSelectionModel().getSelectedItem() == "Crescente") {
-                chain = new ComparatorChain();
-                chain.addComparator(new listaPrioridadeCrescente());
-                Collections.sort(lista, chain);
+                Collections.sort(lista, new listaPrioridadeCrescente());
             } else {
-                chain = new ComparatorChain();
-                chain.addComparator(new listaPrioridade());
-                Collections.sort(lista, chain);
+                Collections.sort(lista, new listaPrioridadeDecrescente());
             }
         }
         itens = FXCollections.observableArrayList(lista);
@@ -369,7 +361,6 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void selecionarItem() {
-        System.out.println("");
         if (aplicacao.getListaTemp() != null && listaListas.getSelectionModel().getSelectedItem() != null) {
             Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
             aplicacao.setListaTemp(lTemp);
@@ -392,7 +383,6 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void ordenacaoItemAcao() {
-        ComparatorChain chain;
         ArrayList<String> lista = new ArrayList<>();
         ObservableList<String> itens = null;
         if (aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
@@ -402,41 +392,27 @@ public class PrincipalController implements Initializable {
             }
             if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Nome") {
                 if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemNomeCrescente());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemNomeCrescente());
                 } else {
-                    Collections.sort(lista);
+                    Collections.sort(lista, new itemNomeDecrescente());
                 }
             } else if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Prioridade") {
                 if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemPrioridadeCrescente());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemPrioridadeCrescente());
                 } else {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemPrioridade());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemPrioridadeDecrescente());
                 }
             } else if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Data criação") {
                 if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemDataCriacaoCrescente());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemDataCriacaoCrescente());
                 } else {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemDataCriacao());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemDataCriacaoDecrescente());
                 }
             } else if (comboOrdenarItem.getSelectionModel().getSelectedItem() == "Data finalizar") {
                 if (comboOrdemItem.getSelectionModel().getSelectedItem() == "Crescente") {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemDataFinalizarCrescente());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemDataFinalizarCrescente());
                 } else {
-                    chain = new ComparatorChain();
-                    chain.addComparator(new itemDataFinalizar());
-                    Collections.sort(lista, chain);
+                    Collections.sort(lista, new itemDataFinalizarDecrescente());
                 }
             }
             itens = FXCollections.observableArrayList(lista);
@@ -702,7 +678,57 @@ public class PrincipalController implements Initializable {
     /* /tabTarefas */
     /* classes para comparador*/
 
-    class itemNome implements Comparator {
+    class listaNomeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
+            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
+            return z1.getNome().toLowerCase().compareTo(z2.getNome().toLowerCase());
+        }
+    }
+
+    class listaNomeDecrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
+            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
+            return z2.getNome().toLowerCase().compareTo(z1.getNome().toLowerCase());
+        }
+    }
+
+    class listaPrioridadeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
+            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
+            return z1.getPrioridade() - z2.getPrioridade();
+        }
+    }
+
+    class listaPrioridadeDecrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
+            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
+            return z2.getPrioridade() - z1.getPrioridade();
+        }
+    }
+
+    class itemNomeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            String z1 = (String) o1;
+            String z2 = (String) o2;
+            return z1.toUpperCase().compareTo(z2.toUpperCase());
+        }
+    }
+
+    class itemNomeDecrescente implements Comparator {
 
         @Override
         public int compare(Object o1, Object o2) {
@@ -712,7 +738,24 @@ public class PrincipalController implements Initializable {
         }
     }
 
-    class itemPrioridade implements Comparator {
+    class itemPrioridadeCrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z1 = encontrada.encontrarItem((String) o1);
+            Item z2 = encontrada.encontrarItem((String) o2);
+            return z1.getPrioridade() - z2.getPrioridade();
+        }
+    }
+
+    class itemPrioridadeDecrescente implements Comparator {
 
         @Override
         public int compare(Object o1, Object o2) {
@@ -729,7 +772,7 @@ public class PrincipalController implements Initializable {
         }
     }
 
-    class itemDataCriacao implements Comparator {
+    class itemDataCriacaoCrescente implements Comparator {
 
         @Override
         public int compare(Object o1, Object o2) {
@@ -757,9 +800,9 @@ public class PrincipalController implements Initializable {
                     dtCriacaoO2 = new Date();
                 }
 
-                if (dtCriacaoO2.after(dtCriacaoO1)) {
+                if (dtCriacaoO1.after(dtCriacaoO2)) {
                     return 1;
-                } else if (dtCriacaoO2.before(dtCriacaoO1)) {
+                } else if (dtCriacaoO1.before(dtCriacaoO2)) {
                     return -1;
                 } else {
                     return 0;
@@ -771,7 +814,7 @@ public class PrincipalController implements Initializable {
         }
     }
 
-    class itemDataFinalizar implements Comparator {
+    class itemDataCriacaoDecrescente implements Comparator {
 
         @Override
         public int compare(Object o1, Object o2) {
@@ -782,87 +825,8 @@ public class PrincipalController implements Initializable {
                     break;
                 }
             }
-            Item z1 = encontrada.encontrarItem((String) o1);
-            Item z2 = encontrada.encontrarItem((String) o2);
-            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-            try {
-                Date dtCriacaoO1 = df.parse(z1.getDataFinalizar());
-                Date dtCriacaoO2 = df.parse(z2.getDataFinalizar());
-                if (dtCriacaoO2.after(dtCriacaoO1)) {
-                    return 1;
-                } else if (dtCriacaoO2.before(dtCriacaoO1)) {
-                    return -1;
-                } else {
-                    return 0;
-                }
-            } catch (ParseException ex) {
-                log.error("itemDataCriacao/compare", "Erro ao realizar parse de datas.", ex);
-            }
-            return 0;
-        }
-    }
-
-    class listaPrioridade implements Comparator {
-
-        @Override
-        public int compare(Object o1, Object o2) {
-            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
-            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
-            return z2.getPrioridade() - z1.getPrioridade();
-        }
-    }
-    /* Classes extras de comparadores */
-
-    class listaPrioridadeCrescente implements Comparator {
-
-        @Override
-        public int compare(Object o1, Object o2) {
-            Lista z1 = aplicacao.retornarUsuario().encontrarLista((String) o1);
-            Lista z2 = aplicacao.retornarUsuario().encontrarLista((String) o2);
-            return z1.getPrioridade() - z2.getPrioridade();
-        }
-    }
-
-    class itemNomeCrescente implements Comparator {
-
-        @Override
-        public int compare(Object o1, Object o2) {
-            String z1 = (String) o1;
-            String z2 = (String) o2;
-            return z1.toUpperCase().compareTo(z2.toUpperCase());
-        }
-    }
-
-    class itemPrioridadeCrescente implements Comparator {
-
-        @Override
-        public int compare(Object o1, Object o2) {
-            Lista encontrada = aplicacao.getListaTemp();
-            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
-                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
-                    encontrada = listas;
-                    break;
-                }
-            }
-            Item z1 = encontrada.encontrarItem((String) o1);
-            Item z2 = encontrada.encontrarItem((String) o2);
-            return z1.getPrioridade() - z2.getPrioridade();
-        }
-    }
-
-    class itemDataCriacaoCrescente implements Comparator {
-
-        @Override
-        public int compare(Object o1, Object o2) {
-            Lista encontrada = aplicacao.getListaTemp();
-            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
-                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
-                    encontrada = listas;
-                    break;
-                }
-            }
-            Item z1 = encontrada.encontrarItem((String) o1);
-            Item z2 = encontrada.encontrarItem((String) o2);
+            Item z2 = encontrada.encontrarItem((String) o1);
+            Item z1 = encontrada.encontrarItem((String) o2);
             DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
             try {
                 Date dtCriacaoO1;
@@ -922,6 +886,36 @@ public class PrincipalController implements Initializable {
             return 0;
         }
     }
-    /* /Classes extras de comparadores */
+
+    class itemDataFinalizarDecrescente implements Comparator {
+
+        @Override
+        public int compare(Object o1, Object o2) {
+            Lista encontrada = aplicacao.getListaTemp();
+            for (Lista listas : aplicacao.retornarUsuario().getListas()) {
+                if (listas.encontrarItem((String) o1) != null || listas.encontrarItem((String) o2) != null) {
+                    encontrada = listas;
+                    break;
+                }
+            }
+            Item z2 = encontrada.encontrarItem((String) o1);
+            Item z1 = encontrada.encontrarItem((String) o2);
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+            try {
+                Date dtCriacaoO1 = df.parse(z1.getDataFinalizar());
+                Date dtCriacaoO2 = df.parse(z2.getDataFinalizar());
+                if (dtCriacaoO1.after(dtCriacaoO2)) {
+                    return 1;
+                } else if (dtCriacaoO1.before(dtCriacaoO2)) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            } catch (ParseException ex) {
+                log.error("itemDataCriacao/compare", "Erro ao realizar parse de datas.", ex);
+            }
+            return 0;
+        }
+    }
     /* /classes para comparador */
 }

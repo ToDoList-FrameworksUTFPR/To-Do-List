@@ -1,3 +1,34 @@
-  <usuario login="teste" nome="Novo" senha="teste">      
+  <usuario login="teste" nome="Novo" senha="teste">
+    <listas>
+      <lista nome="Teste" prioridade="3">
+        <listaItens>
+          <item dataCriacao="23/08/2013" dataFinalizado=" " dataFinalizar="11/11/2010" local="22222" nome="22222" prioridade="2" realizado="false">
+            <listaSubItens/>
+          </item>
+        </listaItens>
+      </lista>
+      <lista nome="teste" prioridade="2">
+        <listaItens>
+          <item dataCriacao="23/08/2013" dataFinalizado=" " dataFinalizar="10/10/2010" local="ASd" nome="ASD" prioridade="2" realizado="false">
+            <listaSubItens/>
+          </item>
+          <item dataCriacao="23/08/2013" dataFinalizado=" " dataFinalizar="10/10/2010" local="123" nome="ASD0" prioridade="3" realizado="false">
+            <listaSubItens/>
+          </item>
+        </listaItens>
+      </lista>
+      <lista nome="Zeg" prioridade="2">
+        <listaItens>
+          <item dataCriacao="23/08/2013" dataFinalizado=" " dataFinalizar="10/10/2010" local="123" nome="Abc" prioridade="1" realizado="false">
+            <listaSubItens/>
+          </item>
+          <item dataCriacao="23/08/2013" dataFinalizado=" " dataFinalizar="11/11/2011" local="asdasd" nome="Bcd" prioridade="2" realizado="false">
+            <listaSubItens/>
+          </item>
+          <item dataCriacao="23/08/2013" dataFinalizado=" " dataFinalizar="12/12/2012" local="111" nome="Cde" prioridade="3" realizado="false">
+            <listaSubItens/>
+          </item>
+        </listaItens>
+      </lista>
     </listas>
   </usuario>

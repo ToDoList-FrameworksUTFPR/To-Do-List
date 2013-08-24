@@ -241,3 +241,201 @@
 46790 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:22:01 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
 46791 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:22:01 BRT 2013 : Retornou lista de arquivos com o filtro
 46822 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [_constructor] Fri Aug 23 22:22:01 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:37:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+6    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:37:21 BRT 2013 : Retornou lista de arquivos com o filtro
+110  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:37:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+176  [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - Parse Fatal Error at line 2 column 7: O tipo de elemento usuario" deve ser encerrado pela tag final correspondente "</usuario>".
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/teste.xml; lineNumber: 2; columnNumber: 7; O tipo de elemento usuario" deve ser encerrado pela tag final correspondente "</usuario>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1388)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1709)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2900)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:36)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:33)
+	at Persistencia.Autenticador.<init>(Autenticador.java:40)
+	at Controle.LoginController.<init>(LoginController.java:20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:91)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+1000 [JavaFX Application Thread] ERROR org.apache.commons.digester3.Digester  - An error occurred while parsing XML from 'file:/D:/GIT/To-Do-List/src/xml/Usuarios/teste.xml', see nested exceptions
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/teste.xml; lineNumber: 2; columnNumber: 7; O tipo de elemento usuario" deve ser encerrado pela tag final correspondente "</usuario>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1236)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:36)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:33)
+	at Persistencia.Autenticador.<init>(Autenticador.java:40)
+	at Controle.LoginController.<init>(LoginController.java:20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:91)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+1314 [JavaFX Application Thread] ERROR Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:37:22 BRT 2013 : Realizando parser. Variavel arquivo -> src\xml\Usuarios\teste.xml
+org.xml.sax.SAXParseException; systemId: file:/D:/GIT/To-Do-List/src/xml/Usuarios/teste.xml; lineNumber: 2; columnNumber: 7; O tipo de elemento usuario" deve ser encerrado pela tag final correspondente "</usuario>".
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1236)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1642)
+	at org.apache.commons.digester3.Digester.parse(Digester.java:1588)
+	at Persistencia.ParserXML.<init>(ParserXML.java:36)
+	at Persistencia.Autenticador.instanciarUsuarios(Autenticador.java:33)
+	at Persistencia.Autenticador.<init>(Autenticador.java:40)
+	at Controle.LoginController.<init>(LoginController.java:20)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at sun.reflect.misc.ReflectUtil.newInstance(ReflectUtil.java:46)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:731)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:775)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:180)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:563)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2314)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2131)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2028)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2744)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2723)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2709)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2696)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2685)
+	at Visao.ProjetoFinal.start(ProjetoFinal.java:91)
+	at com.sun.javafx.application.LauncherImpl$5.run(LauncherImpl.java:319)
+	at com.sun.javafx.application.PlatformImpl$5.run(PlatformImpl.java:215)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:179)
+	at com.sun.javafx.application.PlatformImpl$4$1.run(PlatformImpl.java:176)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl$4.run(PlatformImpl.java:176)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.access$100(WinApplication.java:29)
+	at com.sun.glass.ui.win.WinApplication$3$1.run(WinApplication.java:73)
+	at java.lang.Thread.run(Thread.java:722)
+1839 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:37:23 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@793a404a
+2249 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:37:23 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@793a404a
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:37:56 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:37:56 BRT 2013 : Retornou lista de arquivos com o filtro
+100  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:37:56 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+447  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:37:57 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@310d32ac
+864  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:37:57 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@310d32ac
+3958 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:38:00 BRT 2013 : Criado novo usuario temporario para verificação de login
+13204 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [cadastrarAcao] Fri Aug 23 22:38:09 BRT 2013 : Gerado uma nova lista a ser cadastrada
+13207 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:38:09 BRT 2013 : Iniciado chamada de classe
+18289 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:38:14 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1466353019/To-Do-List.jar!/Visao/GerenciarItem.fxml
+29739 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:38:26 BRT 2013 : Gerado uma nova lista a ser cadastrada
+29740 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:38:26 BRT 2013 : Iniciado chamada de classe
+32221 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Fri Aug 23 22:38:28 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1466353019/To-Do-List.jar!/Visao/GerenciarItem.fxml
+41760 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:38:38 BRT 2013 : Cadastro de item realizado.
+41760 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:38:38 BRT 2013 : Iniciado chamada de classe
+45013 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Fri Aug 23 22:38:41 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1466353019/To-Do-List.jar!/Visao/GerenciarItem.fxml
+55011 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:38:51 BRT 2013 : Cadastro de item realizado.
+55011 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:38:51 BRT 2013 : Iniciado chamada de classe
+59243 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Fri Aug 23 22:38:55 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1466353019/To-Do-List.jar!/Visao/GerenciarItem.fxml
+73181 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:39:09 BRT 2013 : Cadastro de item realizado.
+73182 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:39:09 BRT 2013 : Iniciado chamada de classe
+108586 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:39:45 BRT 2013 : Gerado uma nova lista a ser cadastrada
+108587 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:39:45 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:42:27 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:42:27 BRT 2013 : Retornou lista de arquivos com o filtro
+100  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:42:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+458  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:42:27 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+879  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:42:28 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+2969 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:42:30 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:43:28 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:43:28 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:43:28 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+457  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:43:28 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+876  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:43:28 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+2872 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:43:30 BRT 2013 : Criado novo usuario temporario para verificação de login
+12816 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:43:40 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1661296376/To-Do-List.jar!/Visao/GerenciarItem.fxml
+21221 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 22:43:49 BRT 2013 : Cadastro de item realizado.
+21224 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:43:49 BRT 2013 : Iniciado chamada de classe
+23201 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Fri Aug 23 22:43:51 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1661296376/To-Do-List.jar!/Visao/GerenciarItem.fxml
+30703 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:43:58 BRT 2013 : Cadastro de item realizado.
+30704 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:43:58 BRT 2013 : Iniciado chamada de classe
+33498 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Fri Aug 23 22:44:01 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1661296376/To-Do-List.jar!/Visao/GerenciarItem.fxml
+41383 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:44:09 BRT 2013 : Cadastro de item realizado.
+41383 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:44:09 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:46:02 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:46:02 BRT 2013 : Retornou lista de arquivos com o filtro
+95   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:46:02 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+479  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:46:02 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
+906  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:46:03 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
+3338 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:46:05 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:47:25 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:47:25 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:47:26 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+503  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:47:26 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@5a770658
+918  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:47:26 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@5a770658
+3227 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:47:29 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:52:09 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:52:09 BRT 2013 : Retornou lista de arquivos com o filtro
+101  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:52:09 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+464  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:52:10 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+868  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:52:10 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+2597 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:52:12 BRT 2013 : Criado novo usuario temporario para verificação de login
