@@ -17,18 +17,18 @@
           <content>
             <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="600.0">
               <children>
-                <Button id="editarLista" fx:id="editarItem" contentDisplay="GRAPHIC_ONLY" layoutX="251.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#editarItem" prefHeight="35.0" prefWidth="38.0">
+                <Button id="editarLista" fx:id="editarItem" contentDisplay="GRAPHIC_ONLY" layoutX="251.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#editarItem" prefHeight="35.0" prefWidth="38.0">
                   <font>
                     <Font size="9.0" fx:id="x5" />
                   </font>
                 </Button>
-                <Label layoutX="242.0" layoutY="67.0" text="Itens">
+                <Label layoutX="242.0" layoutY="55.0" text="Itens">
                   <font>
                     <Font size="20.0" fx:id="x4" />
                   </font>
                 </Label>
-                <Label layoutX="185.0" layoutY="141.0" text="Ordenar por:" />
-                <ComboBox id="comboFiltro" fx:id="comboOrdenarItem" layoutX="256.0" layoutY="138.0" onAction="#ordenacaoItemAcao" prefHeight="21.0" prefWidth="91.0">
+                <Label layoutX="185.0" layoutY="129.0" text="Ordenar por:" />
+                <ComboBox id="comboFiltro" fx:id="comboOrdenarItem" layoutX="256.0" layoutY="126.0" onAction="#ordenacaoItemAcao" prefHeight="21.0" prefWidth="91.0">
                   <items>
                     <FXCollections fx:factory="observableArrayList">
                       <String fx:value="Item 1" />
@@ -37,14 +37,14 @@
                     </FXCollections>
                   </items>
                 </ComboBox>
-                <ListView fx:id="listaItens" layoutX="183.0" layoutY="168.0" onMouseClicked="#selecionarItem" prefHeight="248.0" prefWidth="169.0" />
+                <ListView fx:id="listaItens" layoutX="183.0" layoutY="182.0" onMouseClicked="#selecionarItem" prefHeight="234.0" prefWidth="169.0" />
                 <Accordion layoutX="362.0" layoutY="75.0" prefHeight="343.0" prefWidth="233.0">
                   <expandedPane>
                     <TitledPane id="x6" fx:id="accListarSubItens" alignment="CENTER" contentDisplay="CENTER" text="Listar subitens">
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                            <ListView fx:id="listaSubItens" layoutY="39.0" onMouseClicked="#finalizarSubItem" prefHeight="236.0" prefWidth="231.0" />
+                            <ListView fx:id="listaSubItens" layoutY="39.0" prefHeight="236.0" prefWidth="231.0" />
                             <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
                           </children>
                         </AnchorPane>
@@ -114,13 +114,23 @@
                     </FXCollections>
                   </items>
                 </ComboBox>
-                <Button id="adicionar" fx:id="adicionarItem" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" font="$x5" layoutX="192.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#cadastrarItem" prefHeight="35.0" prefWidth="38.0" />
-                <Button id="btnDeletar" fx:id="removerItem" contentDisplay="GRAPHIC_ONLY" layoutX="309.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#deletarItem" prefHeight="35.0" prefWidth="38.0" />
+                <Button id="adicionar" fx:id="adicionarItem" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" font="$x5" layoutX="192.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#cadastrarItem" prefHeight="35.0" prefWidth="38.0" />
+                <Button id="btnDeletar" fx:id="removerItem" contentDisplay="GRAPHIC_ONLY" layoutX="309.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#deletarItem" prefHeight="35.0" prefWidth="38.0" />
                 <Separator layoutX="355.0" layoutY="26.0" orientation="VERTICAL" prefHeight="395.0" />
                 <Label fx:id="lblSair" layoutX="569.0" layoutY="5.0" onMouseClicked="#sair" onMouseEntered="#sair_mouseEmCima" onMouseExited="#sair_mouseFora" text="Sair" textFill="$x1" />
                 <Label layoutX="559.0" layoutY="5.0" text="|" textFill="#bfbfbf" />
                 <Label layoutX="8.0" layoutY="138.0" text="Ordem:" />
                 <ComboBox fx:id="comboOrdemLista" layoutX="66.0" layoutY="136.0" onAction="#ordenacaoListaAcao" prefHeight="21.0" prefWidth="102.0" visibleRowCount="2">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Item 1" />
+                      <String fx:value="Item 2" />
+                      <String fx:value="Item 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Label layoutX="185.0" layoutY="154.0" text="Ordem:" />
+                <ComboBox fx:id="comboOrdemItem" layoutX="245.0" layoutY="154.0" onAction="#ordenacaoItemAcao" prefHeight="21.0" prefWidth="102.0">
                   <items>
                     <FXCollections fx:factory="observableArrayList">
                       <String fx:value="Item 1" />

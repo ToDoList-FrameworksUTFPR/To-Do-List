@@ -44,7 +44,7 @@
                       <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                           <children>
-                            <ListView fx:id="listaSubItens" layoutY="39.0" onMouseClicked="#finalizarSubItem" prefHeight="236.0" prefWidth="231.0" />
+                            <ListView fx:id="listaSubItens" layoutY="39.0" onMouseClicked="#selecionarSubitem" prefHeight="236.0" prefWidth="231.0" />
                             <Button id="btnDeletar" fx:id="btnRemoverSubItem" contentDisplay="GRAPHIC_ONLY" layoutX="96.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#deletarSubItem" prefHeight="35.0" prefWidth="38.0" />
                           </children>
                         </AnchorPane>

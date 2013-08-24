@@ -61,36 +61,41 @@ public class GerenciarItemController implements Initializable {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
-            if (vd.isValid(txtDataFinalizar.getText())) {
-                lblInformacao.setText("Item alterado com sucesso!");
-                lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
-                Item itemtemp = new Item();
-                itemtemp.setNome(txtNome.getText());
-                itemtemp.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
-                itemtemp.setLocal(txtLocal.getText());
-                Date agora = new Date();
-                DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-                itemtemp.setDataCriacao(df.format(agora));
-                itemtemp.setDataFinalizar(txtDataFinalizar.getText());
-                itemtemp.setDataFinalizado(" ");
-                Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
-                l.adicionarItem(itemtemp);
-                log.info("cadastrarAcao", "Cadastro de item realizado.");
-                GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
-                aplicacao.setItemTemp(null);
-                aplicacao.setListaTemp(null);
-                aplicacao.goTo("Principal");
-            } else {
-                lblInformacao.setText("Favor preencher as datas no formato dd/MM/yyyy.");
-                lblInformacao.setTextFill(Paint.valueOf("orange"));
-            }
+            if (aplicacao.getListaTemp().encontrarItem(txtNome.getText()) == null) {
+                if (vd.isValid(txtDataFinalizar.getText())) {
+                    lblInformacao.setText("Item alterado com sucesso!");
+                    lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
+                    Item itemtemp = new Item();
+                    itemtemp.setNome(txtNome.getText());
+                    itemtemp.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
+                    itemtemp.setLocal(txtLocal.getText());
+                    Date agora = new Date();
+                    DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+                    itemtemp.setDataCriacao(df.format(agora));
+                    itemtemp.setDataFinalizar(txtDataFinalizar.getText());
+                    itemtemp.setDataFinalizado(" ");
+                    Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
+                    l.adicionarItem(itemtemp);
+                    log.info("cadastrarAcao", "Cadastro de item realizado.");
+                    GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+                    aplicacao.setItemTemp(null);
+                    aplicacao.setListaTemp(null);
+                    aplicacao.goTo("Principal");
+                } else {
+                    lblInformacao.setText("Favor preencher as datas no formato dd/MM/yyyy.");
+                    lblInformacao.setTextFill(Paint.valueOf("orange"));
+                }
+            }else {
+                    lblInformacao.setText("Já existe um item com esse nome.");
+                    lblInformacao.setTextFill(Paint.valueOf("orange"));
+                }
         }
     }
 
     @FXML
     public void alterarAcao() {
         if (txtNome.getText().isEmpty() || txtLocal.getText().isEmpty()
-                ||  txtDataFinalizar.getText().isEmpty() || comboPrioridade.getSelectionModel().isEmpty()) {
+                || txtDataFinalizar.getText().isEmpty() || comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher todos os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {

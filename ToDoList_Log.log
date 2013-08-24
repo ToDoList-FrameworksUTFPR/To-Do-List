@@ -1,1007 +1,243 @@
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Sun Aug 04 19:06:39 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Sun Aug 04 19:06:39 BRT 2013 : Retornou lista de arquivos com o filtro
-61   [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - setDocumentLocator(null)
-75   [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - setDocumentLocator(null)
-93   [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - setDocumentLocator(com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy@23b3d342)
-93   [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startDocument()
-96   [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - resolveEntity('-//Apache Commons //DTD digester-rules XML V1.0//EN', 'http://commons.apache.org/digester/dtds/digester-rules-3.0.dtd')
-96   [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -  Resolving to alternate DTD 'jar:file:/C:/Digester/commons-digester3-3.2.jar!/org/apache/commons/digester3/xmlrules/digester-rules.dtd'
-105  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,digester-rules)
-105  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-106  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules'
-106  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetNamespaceURIRule@3447c30b
-106  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-    )
-107  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,pattern)
-107  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-107  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern'
-108  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-113  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-        )
-113  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,object-create-rule)
-114  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-114  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/object-create-rule'
-114  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-115  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,object-create-rule)
-115  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/object-create-rule'
-118  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-118  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-141  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-141  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-141  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-        )
-142  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,pattern)
-142  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-142  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern'
-142  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-142  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-            )
-163  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,object-create-rule)
-163  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-163  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/object-create-rule'
-163  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-164  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,object-create-rule)
-164  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/object-create-rule'
-164  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-164  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-186  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-186  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-186  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(        
-            )
-187  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,pattern)
-187  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-187  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern'
-187  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-187  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                )
-228  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,object-create-rule)
-229  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-229  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/object-create-rule'
-229  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-230  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,object-create-rule)
-230  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/object-create-rule'
-230  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-230  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-251  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-251  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-251  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                )
-252  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,pattern)
-252  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-252  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/pattern'
-252  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-253  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                    )
-253  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,object-create-rule)
-272  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-272  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/pattern/object-create-rule'
-272  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-273  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,object-create-rule)
-273  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/pattern/object-create-rule'
-274  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-274  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-303  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-303  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.ObjectCreateRule@3bd193c9
-303  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                    )
-303  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-properties-rule)
-303  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-304  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/pattern/set-properties-rule'
-304  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-304  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-properties-rule)
-332  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/pattern/set-properties-rule'
-332  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-332  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-332  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-332  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-333  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                    )
-333  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-next-rule)
-333  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-333  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/pattern/set-next-rule'
-361  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-361  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-next-rule)
-362  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/pattern/set-next-rule'
-362  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-362  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-362  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-362  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-393  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                )
-395  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,pattern)
-395  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/pattern'
-395  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-395  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-396  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-396  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-396  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                )
-396  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-properties-rule)
-422  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-422  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/set-properties-rule'
-422  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-423  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-properties-rule)
-423  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/set-properties-rule'
-423  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-423  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-423  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-447  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-447  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-                )
-447  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-next-rule)
-447  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-448  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/pattern/set-next-rule'
-448  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-448  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-next-rule)
-448  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern/set-next-rule'
-477  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-477  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-477  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-478  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-478  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-            )
-478  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,pattern)
-478  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/pattern'
-478  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-478  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-503  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-504  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-504  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-            )
-504  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-properties-rule)
-504  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-504  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/set-properties-rule'
-505  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-505  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-properties-rule)
-534  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/set-properties-rule'
-534  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-535  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-535  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-535  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-535  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(         
-            )
-535  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-next-rule)
-535  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-563  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/pattern/set-next-rule'
-564  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-564  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-next-rule)
-564  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern/set-next-rule'
-564  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-564  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-564  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-570  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-594  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-        )
-594  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,pattern)
-594  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/pattern'
-594  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-594  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-594  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-595  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-595  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-        )
-595  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-properties-rule)
-623  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-623  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/set-properties-rule'
-623  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-624  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-properties-rule)
-624  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/set-properties-rule'
-624  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-624  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-624  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-655  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetPropertiesRule@3d17d1c5
-655  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-        )
-656  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,set-next-rule)
-656  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-656  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='digester-rules/pattern/set-next-rule'
-656  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-657  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,set-next-rule)
-657  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern/set-next-rule'
-682  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-682  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-682  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-683  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetNextRule@3e0d6c32
-683  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-    )
-683  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,pattern)
-683  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules/pattern'
-683  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-683  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-712  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-713  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.PatternRule@535621fd
-713  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - ignorableWhitespace(
-)
-713  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,digester-rules)
-714  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='digester-rules'
-714  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-714  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for org.apache.commons.digester3.xmlrules.SetNamespaceURIRule@3447c30b
-714  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-714  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for org.apache.commons.digester3.xmlrules.SetNamespaceURIRule@3447c30b
-746  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endDocument()
-748  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Sun Aug 04 19:06:39 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-749  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - setDocumentLocator(com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$LocatorProxy@6c0089ab)
-750  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startDocument()
-750  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,usuario)
-750  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text ''
-751  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario'
-765  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Usuario, attributeName=null]
-803  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario} New 'Modelo.Usuario' using default empty constructor
-803  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-804  [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario} Setting property 'login' to 'login'
-834  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Setting default value: false
-834  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Converting 'Boolean' value 'false' to type 'Boolean'
-835  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  -     No conversion required, value is already a Boolean
-842  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ByteConverter  - Setting default value: 0
-842  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ByteConverter  - Converting 'Integer' value '0' to type 'Byte'
-842  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ByteConverter  -     Converted to Byte value '0'
-843  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.CharacterConverter  - Setting default value:  
-843  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.CharacterConverter  - Converting 'Character' value ' ' to type 'Character'
-844  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.CharacterConverter  -     No conversion required, value is already a Character
-845  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.DoubleConverter  - Setting default value: 0
-845  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.DoubleConverter  - Converting 'Integer' value '0' to type 'Double'
-867  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.DoubleConverter  -     Converted to Double value '0.0'
-868  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.FloatConverter  - Setting default value: 0
-868  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.FloatConverter  - Converting 'Integer' value '0' to type 'Float'
-868  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.FloatConverter  -     Converted to Float value '0.0'
-873  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Setting default value: 0
-873  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'Integer' value '0' to type 'Integer'
-874  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No conversion required, value is already a Integer
-875  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.LongConverter  - Setting default value: 0
-902  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.LongConverter  - Converting 'Integer' value '0' to type 'Long'
-902  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.LongConverter  -     Converted to Long value '0'
-903  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ShortConverter  - Setting default value: 0
-903  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ShortConverter  - Converting 'Integer' value '0' to type 'Short'
-904  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ShortConverter  -     Converted to Short value '0'
-907  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter  - Setting default value: 0.0
-907  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter  - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
-907  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BigDecimalConverter  -     No conversion required, value is already a BigDecimal
-936  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter  - Setting default value: 0
-937  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter  - Converting 'BigInteger' value '0' to type 'BigInteger'
-937  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BigIntegerConverter  -     No conversion required, value is already a BigInteger
-937  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Setting default value: false
-937  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Converting 'Boolean' value 'false' to type 'Boolean'
-937  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  -     No conversion required, value is already a Boolean
-937  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ByteConverter  - Setting default value: 0
-970  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ByteConverter  - Converting 'Integer' value '0' to type 'Byte'
-971  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ByteConverter  -     Converted to Byte value '0'
-971  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.CharacterConverter  - Setting default value:  
-971  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.CharacterConverter  - Converting 'Character' value ' ' to type 'Character'
-972  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.CharacterConverter  -     No conversion required, value is already a Character
-972  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.DoubleConverter  - Setting default value: 0
-972  [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.DoubleConverter  - Converting 'Integer' value '0' to type 'Double'
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.DoubleConverter  -     Converted to Double value '0.0'
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.FloatConverter  - Setting default value: 0
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.FloatConverter  - Converting 'Integer' value '0' to type 'Float'
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.FloatConverter  -     Converted to Float value '0.0'
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Setting default value: 0
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'Integer' value '0' to type 'Integer'
-1002 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No conversion required, value is already a Integer
-1003 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.LongConverter  - Setting default value: 0
-1034 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.LongConverter  - Converting 'Integer' value '0' to type 'Long'
-1034 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.LongConverter  -     Converted to Long value '0'
-1034 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ShortConverter  - Setting default value: 0
-1034 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ShortConverter  - Converting 'Integer' value '0' to type 'Short'
-1034 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ShortConverter  -     Converted to Short value '0'
-1035 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Setting default value: 
-1035 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '' to type 'String'
-1047 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Z@30aa769a
-1070 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'boolean[]' value '[Z@30aa769a' to type 'boolean[]'
-1071 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a boolean[]
-1071 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [B@3a7b4d34
-1071 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'byte[]' value '[B@3a7b4d34' to type 'byte[]'
-1071 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a byte[]
-1072 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [C@4ebac0ad
-1072 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'char[]' value '[C@4ebac0ad' to type 'char[]'
-1104 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a char[]
-1105 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [D@586fb16d
-1105 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'double[]' value '[D@586fb16d' to type 'double[]'
-1105 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a double[]
-1106 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [F@3c18b340
-1106 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'float[]' value '[F@3c18b340' to type 'float[]'
-1106 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a float[]
-1133 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [I@b44eaa0
-1133 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'int[]' value '[I@b44eaa0' to type 'int[]'
-1134 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a int[]
-1134 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [J@5c449a5c
-1134 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'long[]' value '[J@5c449a5c' to type 'long[]'
-1134 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a long[]
-1134 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [S@3c992916
-1162 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'short[]' value '[S@3c992916' to type 'short[]'
-1162 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a short[]
-1163 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.math.BigDecimal;@7fdb3ad0
-1163 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@7fdb3ad0' to type 'BigDecimal[]'
-1163 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a BigDecimal[]
-1163 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.math.BigInteger;@4366e290
-1164 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@4366e290' to type 'BigInteger[]'
-1193 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a BigInteger[]
-1193 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Boolean;@306d94ee
-1193 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@306d94ee' to type 'Boolean[]'
-1193 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Boolean[]
-1193 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Byte;@5039e02d
-1193 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Byte[]' value '[Ljava.lang.Byte;@5039e02d' to type 'Byte[]'
-1220 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Byte[]
-1221 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Character;@6371be16
-1221 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Character[]' value '[Ljava.lang.Character;@6371be16' to type 'Character[]'
-1221 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Character[]
-1221 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Double;@23feea1e
-1222 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Double[]' value '[Ljava.lang.Double;@23feea1e' to type 'Double[]'
-1222 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Double[]
-1248 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Float;@7f057212
-1248 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Float[]' value '[Ljava.lang.Float;@7f057212' to type 'Float[]'
-1248 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Float[]
-1248 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Integer;@5bb9bccc
-1248 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Integer[]' value '[Ljava.lang.Integer;@5bb9bccc' to type 'Integer[]'
-1249 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Integer[]
-1275 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Long;@d39b06a
-1275 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Long[]' value '[Ljava.lang.Long;@d39b06a' to type 'Long[]'
-1276 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Long[]
-1276 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Short;@1fa07061
-1276 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Short[]' value '[Ljava.lang.Short;@1fa07061' to type 'Short[]'
-1276 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Short[]
-1276 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.String;@24bec229
-1303 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'String[]' value '[Ljava.lang.String;@24bec229' to type 'String[]'
-1303 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a String[]
-1304 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.lang.Class;@32ad6ab6
-1304 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Class[]' value '[Ljava.lang.Class;@32ad6ab6' to type 'Class[]'
-1304 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Class[]
-1304 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.util.Date;@271684ac
-1305 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Date[]' value '[Ljava.util.Date;@271684ac' to type 'Date[]'
-1337 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Date[]
-1337 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.util.Calendar;@37b70047
-1337 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'Calendar[]' value '[Ljava.util.Calendar;@37b70047' to type 'Calendar[]'
-1337 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a Calendar[]
-1338 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.io.File;@1c05787c
-1338 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'java.io.File[]' value '[Ljava.io.File;@1c05787c' to type 'java.io.File[]'
-1370 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a java.io.File[]
-1371 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.sql.Date;@2366c122
-1371 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@2366c122' to type 'java.sql.Date[]'
-1371 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a java.sql.Date[]
-1371 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.sql.Time;@75ea6b61
-1371 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@75ea6b61' to type 'java.sql.Time[]'
-1397 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a java.sql.Time[]
-1398 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.sql.Timestamp;@6f4a3622
-1398 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@6f4a3622' to type 'java.sql.Timestamp[]'
-1398 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a java.sql.Timestamp[]
-1398 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Setting default value: [Ljava.net.URL;@4303418
-1399 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  - Converting 'java.net.URL[]' value '[Ljava.net.URL;@4303418' to type 'java.net.URL[]'
-1399 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.ArrayConverter  -     No conversion required, value is already a java.net.URL[]
-1457 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario} Setting property 'nome' to 'nome'
-1458 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario} Setting property 'senha' to 'senha'
-1458 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario} Set 'Modelo.Usuario' properties
-1458 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Usuario@592561dc, {nome=Novo, login=teste, senha=teste})
-1459 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'Novo' to class 'java.lang.String'
-1459 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value 'Novo' to type 'String'
-1459 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'teste' to class 'java.lang.String'
-1464 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value 'teste' to type 'String'
-1464 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'teste' to class 'java.lang.String'
-1464 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value 'teste' to type 'String'
-1465 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=add, paramType=class Modelo.Usuario, paramTypeName=Modelo.Usuario, useExactMatch=false, fireOnBegin=false]
-1465 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-    )
-1465 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listas)
-1465 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-    '
-1491 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas'
-1491 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas'.
-1492 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-      )
-1492 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,lista)
-1492 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-      '
-1492 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista'
-1492 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-1492 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista} New 'Modelo.Lista' using default empty constructor
-1519 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1519 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Setting property 'nome' to 'nome'
-1522 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Setting property 'prioridade' to 'prioridade'
-1523 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Set 'Modelo.Lista' properties
-1523 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Lista@2936dabd, {nome=123, prioridade=4})
-1523 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '123' to class 'java.lang.String'
-1523 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '123' to type 'String'
-1548 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '4' to class 'int'
-1549 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'String' value '4' to type 'Integer'
-1549 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No NumberFormat, using default conversion
-1549 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     Converted to Integer value '4'
-1549 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-1550 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-        )
-1550 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listaItens)
-1573 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-        '
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens'
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens'.
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listaItens)
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens'
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens'.
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-        '
-1574 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-      )
-1606 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,lista)
-1607 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista'
-1607 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-        
-      '
-1607 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-1608 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1608 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-1608 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-      '
-1609 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-1639 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista} Call Modelo.Usuario.adicionarLista(Modelo.Lista@2936dabd)
-1642 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1642 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-1642 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista} Pop 'Modelo.Lista'
-1642 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-      )
-1643 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,lista)
-1643 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-      
-      '
-1667 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista'
-1668 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-1668 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista} New 'Modelo.Lista' using default empty constructor
-1668 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1669 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Setting property 'nome' to 'nome'
-1669 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Setting property 'prioridade' to 'prioridade'
-1669 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Set 'Modelo.Lista' properties
-1690 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Lista@3e940a85, {nome=xD, prioridade=3})
-1691 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'xD' to class 'java.lang.String'
-1691 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value 'xD' to type 'String'
-1691 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '3' to class 'int'
-1691 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'String' value '3' to type 'Integer'
-1691 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No NumberFormat, using default conversion
-1692 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     Converted to Integer value '3'
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-        )
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listaItens)
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-        '
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens'
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens'.
-1716 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-          )
-1717 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,item)
-1745 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-          '
-1746 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item'
-1746 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-1746 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item} New 'Modelo.Item' using default empty constructor
-1747 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1747 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataCriacao' to 'dataCriacao'
-1752 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataFinalizado' to 'dataFinalizado'
-1772 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataFinalizar' to 'dataFinalizar'
-1772 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'local' to 'local'
-1772 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'nome' to 'nome'
-1772 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'prioridade' to 'prioridade'
-1773 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'realizado' to 'realizado'
-1797 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Set 'Modelo.Item' properties
-1798 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Item@63848ddf, {dataFinalizar=11/11/2011, realizado=true, nome=1, dataFinalizado=31/07/2013, dataCriacao=10/10/2010, local=1, prioridade=1})
-1798 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '11/11/2011' to class 'java.lang.String'
-1798 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '11/11/2011' to type 'String'
-1798 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'true' to class 'boolean'
-1798 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Converting 'String' value 'true' to type 'Boolean'
-1798 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  -     Converted to Boolean value 'true'
-1821 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '1' to class 'java.lang.String'
-1822 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '1' to type 'String'
-1822 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '31/07/2013' to class 'java.lang.String'
-1822 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '31/07/2013' to type 'String'
-1822 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '10/10/2010' to class 'java.lang.String'
-1822 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '10/10/2010' to type 'String'
-1823 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '1' to class 'java.lang.String'
-1867 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '1' to type 'String'
-1867 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '1' to class 'int'
-1867 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'String' value '1' to type 'Integer'
-1867 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No NumberFormat, using default conversion
-1867 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     Converted to Integer value '1'
-1868 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-1868 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-            )
-1889 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listaSubItens)
-1889 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-            '
-1889 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item/listaSubItens'
-1889 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens'.
-1889 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listaSubItens)
-1890 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item/listaSubItens'
-1890 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-1891 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens'.
-1952 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-            '
-1952 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-          )
-1952 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,item)
-1952 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item'
-1953 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-            
-          '
-1953 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-1953 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1954 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-1984 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-          '
-1985 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-1985 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista/listaItens/item} Call Modelo.Lista.adicionarItem(Modelo.Item@63848ddf)
-1986 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-1986 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-1986 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item} Pop 'Modelo.Item'
-2012 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-          )
-2012 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,item)
-2012 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-          
-          '
-2012 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item'
-2013 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-2013 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item} New 'Modelo.Item' using default empty constructor
-2013 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2047 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataCriacao' to 'dataCriacao'
-2048 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataFinalizado' to 'dataFinalizado'
-2048 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataFinalizar' to 'dataFinalizar'
-2048 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'local' to 'local'
-2049 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'nome' to 'nome'
-2049 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'prioridade' to 'prioridade'
-2065 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'realizado' to 'realizado'
-2066 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Set 'Modelo.Item' properties
-2066 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Item@137e5e84, {dataFinalizar=10/10/2015, realizado=true, nome=22, dataFinalizado=01/08/2013, dataCriacao=11/11/2011, local=22, prioridade=3})
-2066 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '10/10/2015' to class 'java.lang.String'
-2066 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '10/10/2015' to type 'String'
-2067 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'true' to class 'boolean'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Converting 'String' value 'true' to type 'Boolean'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  -     Converted to Boolean value 'true'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '22' to class 'java.lang.String'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '22' to type 'String'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '01/08/2013' to class 'java.lang.String'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '01/08/2013' to type 'String'
-2088 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '11/11/2011' to class 'java.lang.String'
-2112 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '11/11/2011' to type 'String'
-2112 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '22' to class 'java.lang.String'
-2113 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '22' to type 'String'
-2113 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '3' to class 'int'
-2113 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'String' value '3' to type 'Integer'
-2113 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No NumberFormat, using default conversion
-2113 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     Converted to Integer value '3'
-2114 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-            )
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listaSubItens)
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-            '
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item/listaSubItens'
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens'.
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listaSubItens)
-2138 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item/listaSubItens'
-2166 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-2166 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens'.
-2166 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-            '
-2166 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-          )
-2167 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,item)
-2167 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item'
-2167 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-            
-          '
-2167 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-2167 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2192 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-2193 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-          
-          '
-2193 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-2193 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista/listaItens/item} Call Modelo.Lista.adicionarItem(Modelo.Item@137e5e84)
-2194 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2220 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-2220 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item} Pop 'Modelo.Item'
-2220 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-          )
-2221 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,item)
-2221 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-          
-          
-          '
-2221 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item'
-2221 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-2221 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item} New 'Modelo.Item' using default empty constructor
-2244 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2245 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataCriacao' to 'dataCriacao'
-2246 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataFinalizado' to 'dataFinalizado'
-2246 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'dataFinalizar' to 'dataFinalizar'
-2247 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'local' to 'local'
-2247 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'nome' to 'nome'
-2276 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'prioridade' to 'prioridade'
-2277 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Setting property 'realizado' to 'realizado'
-2277 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item} Set 'Modelo.Item' properties
-2277 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Item@4d6f361b, {dataFinalizar=10/10/2010, realizado=true, nome=teste_dt, dataFinalizado= , dataCriacao=31/07/2013, local=123, prioridade=1})
-2277 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '10/10/2010' to class 'java.lang.String'
-2355 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '10/10/2010' to type 'String'
-2356 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'true' to class 'boolean'
-2356 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Converting 'String' value 'true' to type 'Boolean'
-2356 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  -     Converted to Boolean value 'true'
-2356 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'teste_dt' to class 'java.lang.String'
-2356 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value 'teste_dt' to type 'String'
-2356 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string ' ' to class 'java.lang.String'
-2357 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value ' ' to type 'String'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '31/07/2013' to class 'java.lang.String'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '31/07/2013' to type 'String'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '123' to class 'java.lang.String'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '123' to type 'String'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '1' to class 'int'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'String' value '1' to type 'Integer'
-2380 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No NumberFormat, using default conversion
-2406 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     Converted to Integer value '1'
-2406 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-2406 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-            )
-2407 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listaSubItens)
-2407 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-            '
-2407 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item/listaSubItens'
-2407 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens'.
-2435 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-              )
-2435 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,subitem)
-2435 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-              '
-2435 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item/listaSubItens/subitem'
-2436 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Subitem, attributeName=null]
-2436 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item/listaSubItens/subitem} New 'Modelo.Subitem' using default empty constructor
-2436 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2436 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item/listaSubItens/subitem} Setting property 'nome' to 'nome'
-2464 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item/listaSubItens/subitem} Setting property 'realizado' to 'realizado'
-2465 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista/listaItens/item/listaSubItens/subitem} Set 'Modelo.Subitem' properties
-2465 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Subitem@6d630f90, {realizado=true, nome=123123213})
-2465 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'true' to class 'boolean'
-2465 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  - Converting 'String' value 'true' to type 'Boolean'
-2465 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.BooleanConverter  -     Converted to Boolean value 'true'
-2486 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '123123213' to class 'java.lang.String'
-2486 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value '123123213' to type 'String'
-2486 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarSubitem, paramType=class Modelo.Subitem, paramTypeName=Modelo.Subitem, useExactMatch=false, fireOnBegin=false]
-2486 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-                )
-2486 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,selected)
-2486 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-                '
-2487 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens/item/listaSubItens/subitem/selected'
-2511 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens/subitem/selected'.
-2511 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,selected)
-2512 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item/listaSubItens/subitem/selected'
-2512 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-2512 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens/subitem/selected'.
-2512 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-                '
-2512 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-              )
-2535 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,subitem)
-2535 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item/listaSubItens/subitem'
-2536 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-                
-              '
-2536 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Subitem, attributeName=null]
-2536 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2537 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarSubitem, paramType=class Modelo.Subitem, paramTypeName=Modelo.Subitem, useExactMatch=false, fireOnBegin=false]
-2537 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-              '
-2559 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarSubitem, paramType=class Modelo.Subitem, paramTypeName=Modelo.Subitem, useExactMatch=false, fireOnBegin=false]
-2559 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista/listaItens/item/listaSubItens/subitem} Call Modelo.Item.adicionarSubitem(Modelo.Subitem@6d630f90)
-2560 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2560 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Subitem, attributeName=null]
-2560 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item/listaSubItens/subitem} Pop 'Modelo.Subitem'
-2561 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-            )
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listaSubItens)
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item/listaSubItens'
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-              
-            '
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens/item/listaSubItens'.
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-            '
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-          )
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,item)
-2582 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens/item'
-2608 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-            
-          '
-2608 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-2609 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2609 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-2609 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-          
-          
-          '
-2610 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarItem, paramType=class Modelo.Item, paramTypeName=Modelo.Item, useExactMatch=false, fireOnBegin=false]
-2637 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista/listaItens/item} Call Modelo.Lista.adicionarItem(Modelo.Item@4d6f361b)
-2638 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2638 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Item, attributeName=null]
-2638 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista/listaItens/item} Pop 'Modelo.Item'
-2639 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-        )
-2639 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listaItens)
-2639 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens'
-2639 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-          
-          
-          
-        '
-2662 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens'.
-2662 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-        '
-2662 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-      )
-2662 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,lista)
-2663 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista'
-2663 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-        
-      '
-2663 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-2663 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2688 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-2689 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-      
-      '
-2689 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-2689 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista} Call Modelo.Usuario.adicionarLista(Modelo.Lista@3e940a85)
-2690 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2690 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-2717 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista} Pop 'Modelo.Lista'
-2717 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-      )
-2718 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,lista)
-2718 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-      
-      
-      '
-2718 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista'
-2718 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-2719 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista} New 'Modelo.Lista' using default empty constructor
-2719 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2743 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Setting property 'nome' to 'nome'
-2743 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Setting property 'prioridade' to 'prioridade'
-2744 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetPropertiesRule]{usuario/listas/lista} Set 'Modelo.Lista' properties
-2744 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.BeanUtils  - BeanUtils.populate(Modelo.Lista@292ef0b, {nome=sem nome, prioridade=3})
-2744 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string 'sem nome' to class 'java.lang.String'
-2744 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.StringConverter  - Converting 'String' value 'sem nome' to type 'String'
-2769 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.ConvertUtils  - Convert string '3' to class 'int'
-2769 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  - Converting 'String' value '3' to type 'Integer'
-2769 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     No NumberFormat, using default conversion
-2770 [JavaFX Application Thread] DEBUG org.apache.commons.beanutils.converters.IntegerConverter  -     Converted to Integer value '3'
-2770 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire begin() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-2770 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-        )
-2770 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - startElement(,,listaItens)
-2771 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Pushing body text '
-        '
-2793 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   New match='usuario/listas/lista/listaItens'
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens'.
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listaItens)
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista/listaItens'
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText=''
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas/lista/listaItens'.
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-        '
-2794 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-      )
-2820 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,lista)
-2820 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas/lista'
-2820 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-        
-      '
-2820 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-2821 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2821 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-2821 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-      
-      
-      '
-2822 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=adicionarLista, paramType=class Modelo.Lista, paramTypeName=Modelo.Lista, useExactMatch=false, fireOnBegin=false]
-2846 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario/listas/lista} Call Modelo.Usuario.adicionarLista(Modelo.Lista@292ef0b)
-2846 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2847 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Lista, attributeName=null]
-2847 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario/listas/lista} Pop 'Modelo.Lista'
-2847 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-    )
-2847 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,listas)
-2847 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario/listas'
-2869 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-      
-      
-      
-    '
-2869 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   No rules found matching 'usuario/listas'.
-2870 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text '
-    '
-2870 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - characters(
-  )
-2870 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endElement(,,usuario)
-2870 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   match='usuario'
-2870 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   bodyText='
-    
-  '
-2870 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for ObjectCreateRule[className=Modelo.Usuario, attributeName=null]
-2871 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2891 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire body() for SetNextRule[methodName=add, paramType=class Modelo.Usuario, paramTypeName=Modelo.Usuario, useExactMatch=false, fireOnBegin=false]
-2892 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Popping body text ''
-2892 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetNextRule[methodName=add, paramType=class Modelo.Usuario, paramTypeName=Modelo.Usuario, useExactMatch=false, fireOnBegin=false]
-2892 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [SetNextRule]{usuario} Call java.util.ArrayList.add(Modelo.Usuario@592561dc)
-2895 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for SetPropertiesRule[aliases={}, ignoreMissingProperty=false]
-2895 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  -   Fire end() for ObjectCreateRule[className=Modelo.Usuario, attributeName=null]
-2929 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester  - [ObjectCreateRule]{usuario} Pop 'Modelo.Usuario'
-2930 [JavaFX Application Thread] DEBUG org.apache.commons.digester3.Digester.sax  - endDocument()
-3306 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Sun Aug 04 19:06:42 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@25b56115
-3771 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Sun Aug 04 19:06:42 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@25b56115
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 14:48:17 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-26   [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 14:48:17 BRT 2013 : Retornou lista de arquivos com o filtro
-178  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 14:48:18 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-1135 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 14:48:18 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-2372 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 14:48:20 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-5407 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 14:48:23 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:26:18 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:26:18 BRT 2013 : Retornou lista de arquivos com o filtro
-113  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:26:18 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-570  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:26:18 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
-1074 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:26:19 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
-4199 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:26:22 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:26:45 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:26:45 BRT 2013 : Retornou lista de arquivos com o filtro
-117  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:26:45 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-522  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:26:46 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
-999  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:26:46 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
-2989 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:26:48 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:30:01 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:30:01 BRT 2013 : Retornou lista de arquivos com o filtro
-108  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:30:01 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-508  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:30:01 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
-978  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:30:02 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
-3484 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:30:04 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:30:32 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:30:32 BRT 2013 : Retornou lista de arquivos com o filtro
-106  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:30:32 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-502  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:30:33 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
-970  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:30:33 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
-2687 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:30:35 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:32:20 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-5    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:32:20 BRT 2013 : Retornou lista de arquivos com o filtro
-116  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:32:20 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-510  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:32:20 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
-961  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:32:21 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
-2486 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:32:22 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:38:06 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:38:06 BRT 2013 : Retornou lista de arquivos com o filtro
-108  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:38:06 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-552  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:38:06 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
-1040 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:38:07 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
-3109 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:38:09 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:38:39 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-4    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:38:39 BRT 2013 : Retornou lista de arquivos com o filtro
-107  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:38:39 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-514  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:38:40 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
-976  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:38:40 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
-3650 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:38:43 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:45:16 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:45:16 BRT 2013 : Retornou lista de arquivos com o filtro
-103  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:45:16 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-496  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:45:16 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-964  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:45:17 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-2996 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:45:19 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:47:59 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:47:59 BRT 2013 : Retornou lista de arquivos com o filtro
-104  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:47:59 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-489  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:47:59 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-952  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:48:00 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-3450 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:48:02 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:48:59 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:48:59 BRT 2013 : Retornou lista de arquivos com o filtro
-106  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:49:00 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-500  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:49:00 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
-976  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:49:00 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
-2885 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:49:02 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:50:20 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:50:20 BRT 2013 : Retornou lista de arquivos com o filtro
-107  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:50:20 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-502  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:50:21 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c41a9ce
-972  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:50:21 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c41a9ce
-3502 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:50:24 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:51:04 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-4    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:51:04 BRT 2013 : Retornou lista de arquivos com o filtro
-112  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:51:04 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-510  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:51:05 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-976  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:51:05 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-3488 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:51:07 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:51:39 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:51:39 BRT 2013 : Retornou lista de arquivos com o filtro
-108  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:51:39 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-501  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:51:40 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
-955  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:51:40 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
-3320 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:51:43 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:54:17 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:54:17 BRT 2013 : Retornou lista de arquivos com o filtro
-106  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:54:17 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-510  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:54:18 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-963  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:54:18 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-2683 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:54:20 BRT 2013 : Criado novo usuario temporario para verificação de login
-9317 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Wed Aug 07 15:54:26 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1597930630/To-Do-List.jar!/Visao/GerenciarItem.fxml
-18558 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Wed Aug 07 15:54:36 BRT 2013 : Cadastro de item realizado.
-18561 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Wed Aug 07 15:54:36 BRT 2013 : Iniciado chamada de classe
-21805 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Wed Aug 07 15:54:39 BRT 2013 : Iniciado chamada de classe
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:55:56 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-4    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 15:55:56 BRT 2013 : Retornou lista de arquivos com o filtro
-111  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 15:55:56 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-515  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:55:57 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1890e38
-967  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 15:55:57 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1890e38
-2578 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 15:55:59 BRT 2013 : Criado novo usuario temporario para verificação de login
-5311 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Wed Aug 07 15:56:01 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1196029345/To-Do-List.jar!/Visao/GerenciarItem.fxml
-15154 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Wed Aug 07 15:56:11 BRT 2013 : Cadastro de item realizado.
-15164 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Wed Aug 07 15:56:11 BRT 2013 : Iniciado chamada de classe
-18381 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Wed Aug 07 15:56:14 BRT 2013 : Iniciado chamada de classe
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:05:43 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-7    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:05:43 BRT 2013 : Retornou lista de arquivos com o filtro
-172  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:05:43 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-759  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:05:44 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
-1228 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:05:44 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
-5704 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:05:49 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:07:25 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:07:25 BRT 2013 : Retornou lista de arquivos com o filtro
-107  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:07:25 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-510  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:07:26 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
-979  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:07:26 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
-4715 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:07:30 BRT 2013 : Criado novo usuario temporario para verificação de login
-1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:08:52 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-6    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:08:52 BRT 2013 : Retornou lista de arquivos com o filtro
-142  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:08:52 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-540  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:08:52 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@53443251
-1006 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:08:53 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@53443251
-3453 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:08:55 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:09:49 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:09:49 BRT 2013 : Retornou lista de arquivos com o filtro
-106  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:09:49 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-511  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:09:49 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-975  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:09:50 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-2364 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:09:51 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:15:11 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:15:11 BRT 2013 : Retornou lista de arquivos com o filtro
-107  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:15:11 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-509  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:15:12 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
-973  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:15:12 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
-5642 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:15:17 BRT 2013 : Criado novo usuario temporario para verificação de login
-1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:18:12 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-5    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:18:12 BRT 2013 : Retornou lista de arquivos com o filtro
-111  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:18:12 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-535  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:18:13 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
-1016 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:18:13 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
-3348 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:18:16 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:19:03 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:19:03 BRT 2013 : Retornou lista de arquivos com o filtro
-115  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:19:04 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-568  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:19:04 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@746a95ae
-1055 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:19:05 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@746a95ae
-3143 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:19:07 BRT 2013 : Criado novo usuario temporario para verificação de login
-25460 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Wed Aug 07 16:19:29 BRT 2013 : Iniciado chamada de classe
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:21:01 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:21:01 BRT 2013 : Retornou lista de arquivos com o filtro
-107  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:21:01 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-508  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:21:01 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
-966  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:21:02 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
-3147 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:21:04 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:27:41 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Wed Aug 07 16:27:41 BRT 2013 : Retornou lista de arquivos com o filtro
-113  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Wed Aug 07 16:27:41 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-612  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:27:42 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c41a9ce
-1080 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Wed Aug 07 16:27:42 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c41a9ce
-6173 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Wed Aug 07 16:27:47 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 16 09:14:40 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-30   [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 16 09:14:40 BRT 2013 : Retornou lista de arquivos com o filtro
-149  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 16 09:14:40 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-817  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 16 09:14:41 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1890e38
-1943 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 16 09:14:42 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1890e38
-3621 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 16 09:14:44 BRT 2013 : Criado novo usuario temporario para verificação de login
-0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 16 09:15:51 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
-2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 16 09:15:51 BRT 2013 : Retornou lista de arquivos com o filtro
-124  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 16 09:15:51 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
-505  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 16 09:15:51 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
-982  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 16 09:15:52 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
-4229 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 16 09:15:55 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:24:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:24:21 BRT 2013 : Retornou lista de arquivos com o filtro
+116  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:24:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+567  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:24:21 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+1140 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:24:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+3598 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:24:25 BRT 2013 : Criado novo usuario temporario para verificação de login
+8314 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:29 BRT 2013 : Iniciado chamada de classe
+9994 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:31 BRT 2013 : Iniciado chamada de classe
+11635 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:33 BRT 2013 : Iniciado chamada de classe
+17316 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:38 BRT 2013 : Iniciado chamada de classe
+21815 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:43 BRT 2013 : Iniciado chamada de classe
+32325 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:53 BRT 2013 : Iniciado chamada de classe
+34160 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:24:55 BRT 2013 : Iniciado chamada de classe
+39838 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:25:01 BRT 2013 : Iniciado chamada de classe
+42001 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:25:03 BRT 2013 : Iniciado chamada de classe
+43265 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:25:04 BRT 2013 : Iniciado chamada de classe
+48462 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:25:09 BRT 2013 : Iniciado chamada de classe
+51007 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:25:12 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+51008 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:25:12 BRT 2013 : Retornou lista de arquivos com o filtro
+51025 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [_constructor] Fri Aug 23 21:25:12 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:26:16 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:26:16 BRT 2013 : Retornou lista de arquivos com o filtro
+98   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:26:17 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+465  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:26:17 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1890e38
+948  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:26:17 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1890e38
+5343 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:26:22 BRT 2013 : Criado novo usuario temporario para verificação de login
+16263 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:26:33 BRT 2013 : Iniciado chamada de classe
+21917 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:26:38 BRT 2013 : Iniciado chamada de classe
+130256 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:28:27 BRT 2013 : Iniciado chamada de classe
+131810 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:28:28 BRT 2013 : Iniciado chamada de classe
+177479 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [GravadorXML] Fri Aug 23 21:29:14 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:35:34 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:35:34 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:35:34 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+454  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:35:35 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1890e38
+880  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:35:35 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1890e38
+2921 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:35:37 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:36:32 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:36:32 BRT 2013 : Retornou lista de arquivos com o filtro
+107  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:36:32 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+506  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:36:32 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c41a9ce
+921  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:36:33 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c41a9ce
+4604 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:36:37 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:40:31 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:40:31 BRT 2013 : Retornou lista de arquivos com o filtro
+102  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:40:31 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+466  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:40:31 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
+877  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:40:32 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
+3141 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:40:34 BRT 2013 : Criado novo usuario temporario para verificação de login
+6986 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 21:40:38 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run124878236/To-Do-List.jar!/Visao/GerenciarItem.fxml
+12590 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 21:40:43 BRT 2013 : Cadastro de item realizado.
+12594 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:40:43 BRT 2013 : Iniciado chamada de classe
+17290 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:40:48 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:42:14 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:42:14 BRT 2013 : Retornou lista de arquivos com o filtro
+101  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:42:14 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+521  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:42:14 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
+967  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:42:15 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
+6752 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:42:20 BRT 2013 : Criado novo usuario temporario para verificação de login
+12763 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:42:26 BRT 2013 : Iniciado chamada de classe
+16582 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 21:42:30 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1090613540/To-Do-List.jar!/Visao/GerenciarItem.fxml
+22684 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 21:42:36 BRT 2013 : Cadastro de item realizado.
+22699 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [GravadorXML] Fri Aug 23 21:42:36 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:43:26 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:43:26 BRT 2013 : Retornou lista de arquivos com o filtro
+97   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:43:27 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+449  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:43:27 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@2a4200d3
+867  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:43:27 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@2a4200d3
+3884 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:43:30 BRT 2013 : Criado novo usuario temporario para verificação de login
+7210 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:43:34 BRT 2013 : Iniciado chamada de classe
+8515 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 21:43:35 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1736712521/To-Do-List.jar!/Visao/GerenciarItem.fxml
+17072 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 21:43:44 BRT 2013 : Cadastro de item realizado.
+17077 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [GravadorXML] Fri Aug 23 21:43:44 BRT 2013 : Iniciado chamada de classe
+23635 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:43:50 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:44:14 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:44:14 BRT 2013 : Retornou lista de arquivos com o filtro
+95   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:44:14 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+460  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:44:14 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+874  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:44:14 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+3279 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:44:17 BRT 2013 : Criado novo usuario temporario para verificação de login
+19896 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:44:34 BRT 2013 : Iniciado chamada de classe
+25546 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:44:39 BRT 2013 : Iniciado chamada de classe
+27310 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:44:41 BRT 2013 : Iniciado chamada de classe
+34717 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 21:44:48 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2040651377/To-Do-List.jar!/Visao/GerenciarItem.fxml
+42863 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 21:44:56 BRT 2013 : Cadastro de item realizado.
+42863 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [GravadorXML] Fri Aug 23 21:44:56 BRT 2013 : Iniciado chamada de classe
+50718 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:45:04 BRT 2013 : Iniciado chamada de classe
+54334 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:45:08 BRT 2013 : Iniciado chamada de classe
+58595 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:45:12 BRT 2013 : Iniciado chamada de classe
+60843 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:45:14 BRT 2013 : Iniciado chamada de classe
+71216 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 21:45:25 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+71217 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 21:45:25 BRT 2013 : Retornou lista de arquivos com o filtro
+71234 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [_constructor] Fri Aug 23 21:45:25 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:46:51 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:46:51 BRT 2013 : Retornou lista de arquivos com o filtro
+101  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:46:51 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+459  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:46:51 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+870  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:46:52 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+4839 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:46:56 BRT 2013 : Criado novo usuario temporario para verificação de login
+11463 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:47:02 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:48:43 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:48:43 BRT 2013 : Retornou lista de arquivos com o filtro
+111  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:48:43 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+521  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:48:43 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@22438e8c
+945  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:48:44 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@22438e8c
+13024 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:48:56 BRT 2013 : Criado novo usuario temporario para verificação de login
+18895 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:49:02 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:49:44 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:49:44 BRT 2013 : Retornou lista de arquivos com o filtro
+96   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:49:44 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+473  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:49:44 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1890e38
+894  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:49:45 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1890e38
+22494 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:50:06 BRT 2013 : Criado novo usuario temporario para verificação de login
+27688 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:50:12 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:50:49 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:50:49 BRT 2013 : Retornou lista de arquivos com o filtro
+99   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:50:49 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+484  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:50:49 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+907  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:50:50 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+15564 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:51:04 BRT 2013 : Criado novo usuario temporario para verificação de login
+20483 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:51:09 BRT 2013 : Iniciado chamada de classe
+38048 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:51:27 BRT 2013 : Iniciado chamada de classe
+41964 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:51:31 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:53:56 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 21:53:56 BRT 2013 : Retornou lista de arquivos com o filtro
+111  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 21:53:56 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+682  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:53:57 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3c41a9ce
+1163 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 21:53:57 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3c41a9ce
+12452 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 21:54:09 BRT 2013 : Criado novo usuario temporario para verificação de login
+50280 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:54:47 BRT 2013 : Iniciado chamada de classe
+67378 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:55:04 BRT 2013 : Iniciado chamada de classe
+69625 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:55:06 BRT 2013 : Iniciado chamada de classe
+84803 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:55:21 BRT 2013 : Iniciado chamada de classe
+87378 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 21:55:24 BRT 2013 : Iniciado chamada de classe
+90591 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 21:55:27 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run2050409543/To-Do-List.jar!/Visao/GerenciarItem.fxml
+97232 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 21:55:33 BRT 2013 : Cadastro de item realizado.
+97232 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [GravadorXML] Fri Aug 23 21:55:33 BRT 2013 : Iniciado chamada de classe
+106875 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:55:43 BRT 2013 : Iniciado chamada de classe
+109058 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:55:45 BRT 2013 : Iniciado chamada de classe
+114320 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:55:51 BRT 2013 : Iniciado chamada de classe
+118725 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 21:55:55 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:00:45 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:00:45 BRT 2013 : Retornou lista de arquivos com o filtro
+99   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:00:45 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+454  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:00:45 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@53443251
+860  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:00:45 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@53443251
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:03:04 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+1    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:03:04 BRT 2013 : Retornou lista de arquivos com o filtro
+100  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:03:05 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+465  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:03:05 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
+878  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:03:05 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
+9160 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:03:14 BRT 2013 : Criado novo usuario temporario para verificação de login
+17664 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:03:22 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run711407083/To-Do-List.jar!/Visao/GerenciarItem.fxml
+24143 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 22:03:29 BRT 2013 : Cadastro de item realizado.
+24162 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:03:29 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:04:21 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:04:21 BRT 2013 : Retornou lista de arquivos com o filtro
+101  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:04:21 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+485  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:04:22 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
+900  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:04:22 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
+5016 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:04:26 BRT 2013 : Criado novo usuario temporario para verificação de login
+8044 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:04:29 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1292189869/To-Do-List.jar!/Visao/GerenciarItem.fxml
+15325 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 22:04:36 BRT 2013 : Cadastro de item realizado.
+15333 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:04:36 BRT 2013 : Iniciado chamada de classe
+20399 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:04:42 BRT 2013 : Iniciado chamada de classe
+22399 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:04:44 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:07:07 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:07:07 BRT 2013 : Retornou lista de arquivos com o filtro
+95   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:07:07 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+459  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:07:07 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
+870  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:07:08 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
+12813 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:07:19 BRT 2013 : Criado novo usuario temporario para verificação de login
+16168 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:07:23 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run411754783/To-Do-List.jar!/Visao/GerenciarItem.fxml
+22396 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 22:07:29 BRT 2013 : Cadastro de item realizado.
+22399 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:07:29 BRT 2013 : Iniciado chamada de classe
+28500 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:07:35 BRT 2013 : Iniciado chamada de classe
+32172 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:07:39 BRT 2013 : Iniciado chamada de classe
+109647 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:08:56 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+109648 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:08:56 BRT 2013 : Retornou lista de arquivos com o filtro
+109701 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [_constructor] Fri Aug 23 22:08:56 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:10:10 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:10:11 BRT 2013 : Retornou lista de arquivos com o filtro
+96   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:10:11 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+461  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:10:11 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@7d6eb456
+870  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:10:11 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@7d6eb456
+5029 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:10:16 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:11:30 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:11:30 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:11:30 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+452  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:11:30 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@1439ae7
+874  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:11:31 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@1439ae7
+3440 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:11:33 BRT 2013 : Criado novo usuario temporario para verificação de login
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:14:55 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:14:55 BRT 2013 : Retornou lista de arquivos com o filtro
+93   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:14:55 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+464  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:14:55 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@53443251
+882  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:14:55 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@53443251
+8526 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:15:03 BRT 2013 : Criado novo usuario temporario para verificação de login
+15192 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:15:10 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:17:20 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:17:20 BRT 2013 : Retornou lista de arquivos com o filtro
+105  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:17:20 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+479  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:17:20 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@5a770658
+919  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:17:21 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@5a770658
+3828 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:17:23 BRT 2013 : Criado novo usuario temporario para verificação de login
+8375 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:17:28 BRT 2013 : Iniciado chamada de classe
+10449 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:17:30 BRT 2013 : Iniciado chamada de classe
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:18:37 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+3    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:18:37 BRT 2013 : Retornou lista de arquivos com o filtro
+122  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:18:37 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+691  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:18:38 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@3906173b
+1313 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:18:38 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@3906173b
+41806 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:19:19 BRT 2013 : Criado novo usuario temporario para verificação de login
+54404 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:19:31 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/To-Do-List.jar!/Visao/GerenciarItem.fxml
+61256 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [cadastrarAcao] Fri Aug 23 22:19:38 BRT 2013 : Cadastro de item realizado.
+61267 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:19:38 BRT 2013 : Iniciado chamada de classe
+66999 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:19:44 BRT 2013 : Iniciado chamada de classe
+69559 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:19:46 BRT 2013 : Iniciado chamada de classe
+71969 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:19:49 BRT 2013 : Iniciado chamada de classe
+75457 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:19:52 BRT 2013 : Iniciado chamada de classe
+84658 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:20:02 BRT 2013 : Iniciado chamada de classe
+86673 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:20:04 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+86674 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:20:04 BRT 2013 : Retornou lista de arquivos com o filtro
+86692 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [_constructor] Fri Aug 23 22:20:04 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+0    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:21:14 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+2    [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [instanciarUsuarios] Fri Aug 23 22:21:14 BRT 2013 : Retornou lista de arquivos com o filtro
+94   [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [_constructor] Fri Aug 23 22:21:15 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml
+459  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:21:15 BRT 2013 : Carregando recurso de cenajavafx.stage.Stage@6f01ba6f
+876  [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [start] Fri Aug 23 22:21:15 BRT 2013 : Apresentando recurso, e chamando stage : javafx.stage.Stage@6f01ba6f
+3085 [JavaFX Application Thread] INFO  Persistencia.ParserXML  - [entrarAcao] Fri Aug 23 22:21:18 BRT 2013 : Criado novo usuario temporario para verificação de login
+6956 [JavaFX Application Thread] INFO  Controle.GerenciarListaController  - [cadastrarAcao] Fri Aug 23 22:21:21 BRT 2013 : Gerado uma nova lista a ser cadastrada
+6960 [JavaFX Application Thread] INFO  Persistencia.Autenticador  - [GravadorXML] Fri Aug 23 22:21:21 BRT 2013 : Iniciado chamada de classe
+9002 [JavaFX Application Thread] INFO  Controle.GerenciarItemController  - [initialize] Fri Aug 23 22:21:23 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1392680071/To-Do-List.jar!/Visao/GerenciarItem.fxml
+14052 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:21:29 BRT 2013 : Gerado uma nova lista a ser cadastrada
+14053 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:21:29 BRT 2013 : Iniciado chamada de classe
+19028 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:21:33 BRT 2013 : Iniciado chamada de classe
+27724 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:21:42 BRT 2013 : Iniciado chamada de classe
+31939 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [initialize] Fri Aug 23 22:21:46 BRT 2013 : Iniciado form no modo 'inserção', e carregado dados do usuário. url -> jar:file:/D:/GIT/To-Do-List/dist/run1392680071/To-Do-List.jar!/Visao/GerenciarItem.fxml
+39743 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [cadastrarAcao] Fri Aug 23 22:21:54 BRT 2013 : Cadastro de item realizado.
+39743 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [GravadorXML] Fri Aug 23 22:21:54 BRT 2013 : Iniciado chamada de classe
+46790 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:22:01 BRT 2013 : Iniciou a funcao e instanciou variavel local e listaArquivosUsuarios
+46791 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [instanciarUsuarios] Fri Aug 23 22:22:01 BRT 2013 : Retornou lista de arquivos com o filtro
+46822 [JavaFX Application Thread] INFO  Controle.PrincipalController  - [_constructor] Fri Aug 23 22:22:01 BRT 2013 :  Instanciado digester. Variavel arquivo -> src\xml\Usuarios\teste.xml

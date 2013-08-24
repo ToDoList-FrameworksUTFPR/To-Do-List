@@ -21,10 +21,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
 
 public class GerenciarListaController implements Initializable {
-    
+
     private ProjetoFinal aplicacao = ProjetoFinal.getInstance();
     private static Log log = new Log(GerenciarListaController.class);
-
     @FXML
     public TextField txtNome;
     @FXML
@@ -43,57 +42,67 @@ public class GerenciarListaController implements Initializable {
         aplicacao.setSubItemTemp(null);
         aplicacao.goTo("Principal");
     }
+
     @FXML
     public void cadastrarAcao() {
         if (txtNome.getText().isEmpty() || comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher corretamente os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
         } else {
-            lblInformacao.setText("Lista cadastrada com sucesso!");
-            lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
-            Lista l = new Lista();
-            log.info("cadastrarAcao", "Gerado uma nova lista a ser cadastrada");
-            l.setNome(txtNome.getText());
-            l.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
-            aplicacao.retornarUsuario().adicionarLista(l);
-            aplicacao.setListaTemp(null);
-            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario()); 
-            aplicacao.goTo("Principal");       
+            if (aplicacao.retornarUsuario().encontrarLista(txtNome.getText()) == null) {
+                lblInformacao.setText("Lista cadastrada com sucesso!");
+                lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
+                Lista l = new Lista();
+                log.info("cadastrarAcao", "Gerado uma nova lista a ser cadastrada");
+                l.setNome(txtNome.getText());
+                l.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
+                aplicacao.retornarUsuario().adicionarLista(l);
+                aplicacao.setListaTemp(null);
+                GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+                aplicacao.goTo("Principal");
+            } else {
+                lblInformacao.setText("Já existe uma lista cadastrada com esse nome!");
+                lblInformacao.setTextFill(Paint.valueOf("orange"));
+            }
         }
     }
+
     @FXML
     public void alterarAcao() {
         if (txtNome.getText().isEmpty() || comboPrioridade.getSelectionModel().isEmpty()) {
             lblInformacao.setText("Favor preencher corretamente os campos.");
             lblInformacao.setTextFill(Paint.valueOf("orange"));
-        } else {            
+        } else {
             lblInformacao.setText("Lista alterada com sucesso!");
             lblInformacao.setTextFill(Paint.valueOf("darkgreen"));
             Lista l = aplicacao.retornarUsuario().encontrarLista(aplicacao.getListaTemp().getNome());
             l.setNome(txtNome.getText());
             l.setPrioridade(Integer.parseInt(comboPrioridade.getSelectionModel().getSelectedItem().toString()));
-            GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());  
+            GravadorXML gravadorXML = new GravadorXML(aplicacao.retornarUsuario());
             aplicacao.setListaTemp(null);
-            aplicacao.goTo("Principal");       
+            aplicacao.goTo("Principal");
         }
     }
+
     @FXML
     public void acaoAcao() {
-        if(aplicacao.getListaTemp() != null)
+        if (aplicacao.getListaTemp() != null) {
             alterarAcao();
-        else
-            cadastrarAcao();        
+        } else {
+            cadastrarAcao();
+        }
     }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<String> itens = null;
         comboPrioridade.setItems(itens);
         itens = FXCollections.observableArrayList("1", "2", "3", "4", "5");
         comboPrioridade.setItems(itens);
-        if(aplicacao.getListaTemp() == null){
+        if (aplicacao.getListaTemp() == null) {
             lblTitulo.setText("Cadastrar lista");
             btnAcao.setText("Cadastrar");
-        }else{
+        } else {
             lblTitulo.setText("Alterar lista");
             btnAcao.setText("Alterar");
             txtNome.setText(aplicacao.getListaTemp().getNome());

@@ -1,31 +1,3 @@
-  <usuario login="teste" nome="Novo" senha="teste">
-    <listas>
-      <lista nome="123" prioridade="4">
-        <listaItens/>
-      </lista>
-      <lista nome="xD" prioridade="2">
-        <listaItens>
-          <item dataCriacao="10/10/2010" dataFinalizado="31/07/2013" dataFinalizar="11/11/2011" local="1" nome="1" prioridade="1" realizado="true">
-            <listaSubItens/>
-          </item>
-          <item dataCriacao="11/11/2011" dataFinalizado="01/08/2013" dataFinalizar="10/10/2015" local="22" nome="22" prioridade="3" realizado="true">
-            <listaSubItens/>
-          </item>
-          <item dataCriacao="31/07/2013" dataFinalizado=" " dataFinalizar="10/10/2010" local="123" nome="teste_dt" prioridade="1" realizado="true">
-            <listaSubItens>
-              <subitem nome="123123213" realizado="true"/>
-            </listaSubItens>
-          </item>
-          <item dataCriacao="07/08/2013" dataFinalizado="07/08/2013" dataFinalizar="10/10/2010" local="Ultimop" nome="teste" prioridade="5" realizado="true">
-            <listaSubItens/>
-          </item>
-          <item dataCriacao="07/08/2013" dataFinalizado="07/08/2013" dataFinalizar="11/11/2011" local="123" nome="123" prioridade="1" realizado="true">
-            <listaSubItens/>
-          </item>
-        </listaItens>
-      </lista>
-      <lista nome="sem nome" prioridade="3">
-        <listaItens/>
-      </lista>
+  <usuario login="teste" nome="Novo" senha="teste">      
     </listas>
   </usuario>

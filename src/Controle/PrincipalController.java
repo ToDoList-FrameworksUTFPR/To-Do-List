@@ -47,8 +47,6 @@ import javafx.scene.control.TitledPane;
 import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.util.Callback;
@@ -350,7 +348,6 @@ public class PrincipalController implements Initializable {
                             } else {
                                 return faalse;
                             }
-
                         }
                     }
                     return null;
@@ -360,12 +357,10 @@ public class PrincipalController implements Initializable {
             itens = FXCollections.observableArrayList();
             int index = aplicacao.retornarUsuario().getListas().indexOf(aplicacao.getListaTemp());
             if (index >= 0) {
-
                 for (Item i : aplicacao.retornarUsuario().getListas().get(index).getListaItens()) {
                     itens.add(i.getNome());
                 }
                 listaItens.setItems(itens);
-
                 Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);
                 listaItens.setCellFactory(forListView);
             }
@@ -374,20 +369,23 @@ public class PrincipalController implements Initializable {
 
     @FXML
     private void selecionarItem() {
-        if (aplicacao.getListaTemp() != null && listaItens.getSelectionModel().getSelectedItem() != null) {
+        System.out.println("");
+        if (aplicacao.getListaTemp() != null && listaListas.getSelectionModel().getSelectedItem() != null) {
             Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
-            Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
             aplicacao.setListaTemp(lTemp);
-            aplicacao.setItemTemp(iTemp);
-            Item temp = aplicacao.getItemTemp();
-            if (temp != null) {
-                txtNome.setText(temp.getNome());
-                txtLocal.setText(temp.getLocal());
-                txtDataCriacao.setText(temp.getDataCriacao());
-                txtPrioridade.setText(String.valueOf(temp.getPrioridade()));
-                txtDataFinalizar.setText(temp.getDataFinalizar());
-                txtDataFinalizado.setText(temp.getDataFinalizado());
-                abrirListaSubItens();
+            if (lTemp != null) {
+                Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+                aplicacao.setItemTemp(iTemp);
+                Item temp = aplicacao.getItemTemp();
+                if (temp != null) {
+                    txtNome.setText(temp.getNome());
+                    txtLocal.setText(temp.getLocal());
+                    txtDataCriacao.setText(temp.getDataCriacao());
+                    txtPrioridade.setText(String.valueOf(temp.getPrioridade()));
+                    txtDataFinalizar.setText(temp.getDataFinalizar());
+                    txtDataFinalizado.setText(temp.getDataFinalizado());
+                    abrirListaSubItens();
+                }
             }
         }
     }
@@ -488,8 +486,7 @@ public class PrincipalController implements Initializable {
             Date agora = new Date();
             DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
             iTemp.setDataFinalizado(df.format(agora));
-            selecionarItem();
-            abrirListaItens();
+            selecionarLista();
             GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
         }
     }
@@ -520,17 +517,20 @@ public class PrincipalController implements Initializable {
         };
         listaSubItens.setItems(itens);
         itens = FXCollections.observableArrayList();
-        int indexLista = aplicacao.retornarUsuario().getListas().indexOf(aplicacao.getListaTemp());
-        int indexItem = aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().indexOf(aplicacao.getItemTemp());
 
-        if (indexLista >= 0 && indexItem >= 0) {
-            for (Subitem s : aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().get(indexItem).getListaSubItens()) {
-                itens.add(s.getNome());
+        if (aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
+            int indexLista = aplicacao.retornarUsuario().getListas().indexOf(aplicacao.getListaTemp());
+            int indexItem = aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().indexOf(aplicacao.getItemTemp());
+
+            if (indexLista >= 0 && indexItem >= 0) {
+                for (Subitem s : aplicacao.retornarUsuario().getListas().get(indexLista).getListaItens().get(indexItem).getListaSubItens()) {
+                    itens.add(s.getNome());
+                }
+                listaSubItens.setItems(itens);
+
+                Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);
+                listaSubItens.setCellFactory(forListView);
             }
-            listaSubItens.setItems(itens);
-
-            Callback<ListView<String>, ListCell<String>> forListView = CheckBoxListCell.forListView(getProperty);
-            listaSubItens.setCellFactory(forListView);
         }
     }
 
@@ -545,16 +545,21 @@ public class PrincipalController implements Initializable {
         if (!txtNomeSubItem.getText().isEmpty() && aplicacao.getListaTemp() != null && aplicacao.getItemTemp() != null) {
             lblSubItemInfo.setText("Subitem adicionado com sucesso.");
             lblSubItemInfo.setTextFill(Paint.valueOf("darkgreen"));
-            Subitem subitemtemp = new Subitem();
-            subitemtemp.setRealizado(false);
-            subitemtemp.setNome(txtNomeSubItem.getText());
-            aplicacao.retornarUsuario()
-                    .encontrarLista(aplicacao.getListaTemp().getNome())
-                    .encontrarItem(aplicacao.getItemTemp().getNome())
-                    .adicionarSubitem(subitemtemp);
-            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
-            abrirListaSubItens();
-            accListarSubItens.setExpanded(true);
+            if (aplicacao.getItemTemp().encontrarSubitem(txtNomeSubItem.getText()) == null) {
+                Subitem subitemtemp = new Subitem();
+                subitemtemp.setRealizado(false);
+                subitemtemp.setNome(txtNomeSubItem.getText());
+                aplicacao.retornarUsuario()
+                        .encontrarLista(aplicacao.getListaTemp().getNome())
+                        .encontrarItem(aplicacao.getItemTemp().getNome())
+                        .adicionarSubitem(subitemtemp);
+                GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+                abrirListaSubItens();
+                accListarSubItens.setExpanded(true);
+            } else {
+                lblSubItemInfo.setText("Já existe um subitem com esse nome.");
+                lblSubItemInfo.setTextFill(Paint.valueOf("red"));
+            }
         } else {
             lblSubItemInfo.setText("Erro ao adicionar subitem.");
             lblSubItemInfo.setTextFill(Paint.valueOf("red"));
@@ -577,18 +582,44 @@ public class PrincipalController implements Initializable {
     }
 
     @FXML
-    private void finalizarSubItem(MouseEvent e) {
-        if (e.getButton() == MouseButton.PRIMARY && listaSubItens.getSelectionModel().getSelectedItem() != null) {
-            Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
-            Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
-            Subitem sTemp = iTemp.encontrarSubitem((String) listaSubItens.getSelectionModel().getSelectedItem());
+    private void finalizarSubItem() {
+        if (listaSubItens.getSelectionModel().getSelectedItem() != null) {
             BooleanProperty truue = new SimpleBooleanProperty();
             truue.setValue(Boolean.TRUE);
-            sTemp.setSelected((SimpleBooleanProperty) truue);
-            sTemp.setRealizado(true);
-            abrirListaSubItens();
-            GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+            Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
+            aplicacao.setListaTemp(lTemp);
+            if (lTemp != null) {
+                Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+                aplicacao.setItemTemp(iTemp);
+                if (iTemp != null) {
+                    Subitem sTemp = iTemp.encontrarSubitem((String) listaSubItens.getSelectionModel().getSelectedItem());
+                    aplicacao.setSubItemTemp(sTemp);
+                    sTemp = aplicacao.getSubItemTemp();
+                    if (sTemp != null) {
+                        sTemp.setSelected((SimpleBooleanProperty) truue);
+                        sTemp.setRealizado(true);
+                        selecionarItem();
+                        GravadorXML gravador = new GravadorXML(aplicacao.retornarUsuario());
+                    }
+                }
+            }
         }
+    }
+
+    @FXML
+    private void selecionarSubitem() {
+        Lista lTemp = aplicacao.retornarUsuario().encontrarLista((String) listaListas.getSelectionModel().getSelectedItem());
+        aplicacao.setListaTemp(lTemp);
+        if (lTemp != null) {
+            Item iTemp = lTemp.encontrarItem((String) listaItens.getSelectionModel().getSelectedItem());
+            aplicacao.setItemTemp(iTemp);
+            if (iTemp != null) {
+                Subitem sTemp = iTemp.encontrarSubitem((String) listaSubItens.getSelectionModel().getSelectedItem());
+                aplicacao.setSubItemTemp(sTemp);
+            }
+        }
+
+
     }
     /* /subitem */
 
@@ -655,6 +686,16 @@ public class PrincipalController implements Initializable {
         contextMenu.getItems().add(itemFinalizar);
         listaItens.setContextMenu(contextMenu);
         /* --------------------------  */
+        final ContextMenu contextMenu1 = new ContextMenu();
+        MenuItem subItemFinalizar = new MenuItem("Finalizar subitem!");
+        subItemFinalizar.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                finalizarSubItem();
+            }
+        });
+        contextMenu1.getItems().add(subItemFinalizar);
+        listaSubItens.setContextMenu(contextMenu1);
 
 
     }
